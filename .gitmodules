@@ -1,3 +1,3 @@
 [submodule "themes/coder"]
 	path = themes/coder
-	url = gh:/mkjmdski/hugo-coder.git
+	url = https://github.com/mkjmdski/hugo-coder.git
