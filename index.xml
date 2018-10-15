@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mikołaj Młodzikowski</title>
+    <link>https://mlodzikowski.pl/</link>
+    <description>Recent content on Mikołaj Młodzikowski</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Oct 2018 22:42:44 +0200</lastBuildDate>
+    
+	<atom:link href="https://mlodzikowski.pl/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contact</title>
+      <link>https://mlodzikowski.pl/contact/</link>
+      <pubDate>Sun, 14 Oct 2018 22:42:44 +0200</pubDate>
+      
+      <guid>https://mlodzikowski.pl/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>https://mlodzikowski.pl/projects/</link>
+      <pubDate>Sun, 14 Oct 2018 22:42:34 +0200</pubDate>
+      
+      <guid>https://mlodzikowski.pl/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Post number 1</title>
+      <link>https://mlodzikowski.pl/posts/post/</link>
+      <pubDate>Sun, 14 Oct 2018 14:27:47 +0200</pubDate>
+      
+      <guid>https://mlodzikowski.pl/posts/post/</guid>
+      <description>This is my awesome post</description>
+    </item>
+    
+    <item>
+      <title>A</title>
+      <link>https://mlodzikowski.pl/about/</link>
+      <pubDate>Sun, 14 Oct 2018 14:05:52 +0200</pubDate>
+      
+      <guid>https://mlodzikowski.pl/about/</guid>
+      <description>Hey ho</description>
+    </item>
+    
+  </channel>
+</rss>

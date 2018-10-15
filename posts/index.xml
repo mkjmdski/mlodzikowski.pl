@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Mikołaj Młodzikowski</title>
+    <link>https://mlodzikowski.pl/posts/</link>
+    <description>Recent content in Posts on Mikołaj Młodzikowski</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Oct 2018 14:27:47 +0200</lastBuildDate>
+    
+	<atom:link href="https://mlodzikowski.pl/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Post number 1</title>
+      <link>https://mlodzikowski.pl/posts/post/</link>
+      <pubDate>Sun, 14 Oct 2018 14:27:47 +0200</pubDate>
+      
+      <guid>https://mlodzikowski.pl/posts/post/</guid>
+      <description>This is my awesome post</description>
+    </item>
+    
+  </channel>
+</rss>
