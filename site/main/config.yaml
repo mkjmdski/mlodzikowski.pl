@@ -17,12 +17,6 @@ tagline: &tagline
     fabIcon: fa-linux
 
 quickLinks: &quickLinks
-  - name: Introduction to terraform
-    href: /terraform
-    title: Presentation from SysOps/DevOps Polska meetup
-  - name: About configuring ZSH
-    href: https://blog.apptension.com/2018/08/30/shell-configuration-hack-your-zsh/
-    title: Article from apptension blog
   - name: DigitalOcean referal link 100$
     href: https://m.do.co/c/21d96d6ebff2
     title: Use this link to signup on DigitalOcean with 100$
