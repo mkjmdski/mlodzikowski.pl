@@ -21,39 +21,12 @@
     </item>
     
     <item>
-      <title>Projects</title>
-      <link>https://mlodzikowski.pl/projects/</link>
-      <pubDate>Sun, 14 Oct 2018 22:42:34 +0200</pubDate>
-      
-      <guid>https://mlodzikowski.pl/projects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Post number 1</title>
-      <link>https://mlodzikowski.pl/posts/post/</link>
-      <pubDate>Sun, 14 Oct 2018 14:27:47 +0200</pubDate>
-      
-      <guid>https://mlodzikowski.pl/posts/post/</guid>
-      <description>This is my awesome post</description>
-    </item>
-    
-    <item>
       <title>Terraform presentation</title>
       <link>https://mlodzikowski.pl/presentations/terraform/</link>
       <pubDate>Sun, 14 Oct 2018 14:27:47 +0200</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/</guid>
       <description>HACKY INDEX</description>
-    </item>
-    
-    <item>
-      <title>A</title>
-      <link>https://mlodzikowski.pl/about/</link>
-      <pubDate>Sun, 14 Oct 2018 14:05:52 +0200</pubDate>
-      
-      <guid>https://mlodzikowski.pl/about/</guid>
-      <description>Hey ho</description>
     </item>
     
   </channel>
