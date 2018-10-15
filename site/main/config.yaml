@@ -1,17 +1,11 @@
 # Site configuration
 menu:
   main:
-    - name: Blog
+    - name: Presentations
       weight: 1
-      url: /posts/
-    - name: About
+      url: /presentations/
+    - name: Let's talk
       weight: 2
-      url: /about/
-    - name: Projects
-      weight: 3
-      url: /projects/
-    - name: Contact me
-      weight: 5
       url: /contact/
 
 tagline: &tagline
@@ -47,6 +41,23 @@ social: &social
     weight: 3
     url: https://bitbucket.org/mkjmdski
 
+meta: &meta
+  description: Mikołaj's personal website
+  keywords: devops,linux,developer,blog
+
+landing: &landing
+  author: '"MikoSoft" Mikołaj Młodzikowski'
+  title: Hello, I'm Miko!
+  avatarurl: images/avatar.jpg
+
+params:
+  <<: *meta
+  <<: *landing
+  tagline: *tagline
+  quickLinks: *quickLinks
+  social: *social
+  hideCredits: true
+
 # Hugo configuration
 publishdir: ../public
 baseurl: 'https://mlodzikowski.pl'
@@ -59,13 +70,3 @@ pygmentsstyle: dracula
 pygmentscodefences: true
 pygmentscodefencesguesssyntax: true
 disqusShortname: mlodzikowski
-params:
-  author: '"MikoSoft" Mikołaj Młodzikowski'
-  title: Hello, I'm Miko!
-  description: Mikołaj's personal website
-  keywords: devops,linux,developer,blog
-  avatarurl: images/avatar.jpg
-  tagline: *tagline
-  quickLinks: *quickLinks
-  social: *social
-  hideCredits: true
