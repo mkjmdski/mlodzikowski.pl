@@ -17,7 +17,7 @@
       <pubDate>Sun, 14 Oct 2018 22:42:44 +0200</pubDate>
       
       <guid>https://mlodzikowski.pl/contact/</guid>
-      <description></description>
+      <description> Your Name:   Your Email:   Your Role: Leader Follower   Message:   Send </description>
     </item>
     
     <item>
@@ -36,6 +36,15 @@
       
       <guid>https://mlodzikowski.pl/posts/post/</guid>
       <description>This is my awesome post</description>
+    </item>
+    
+    <item>
+      <title>Terraform presentation</title>
+      <link>https://mlodzikowski.pl/presentations/terraform/</link>
+      <pubDate>Sun, 14 Oct 2018 14:27:47 +0200</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/terraform/</guid>
+      <description>HACKY INDEX</description>
     </item>
     
     <item>

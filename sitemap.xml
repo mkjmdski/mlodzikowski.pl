@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>https://mlodzikowski.pl/presentations/terraform/</loc>
+    <lastmod>2018-10-14T14:27:47+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mlodzikowski.pl/about/</loc>
     <lastmod>2018-10-14T14:05:52+02:00</lastmod>
   </url>
@@ -35,6 +40,12 @@
   
   <url>
     <loc>https://mlodzikowski.pl/posts/</loc>
+    <lastmod>2018-10-14T14:27:47+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mlodzikowski.pl/presentations/</loc>
     <lastmod>2018-10-14T14:27:47+02:00</lastmod>
     <priority>0</priority>
   </url>
