@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 script:
-  - make
+  - ./build_dist.sh
 branches:
   only:
     - master

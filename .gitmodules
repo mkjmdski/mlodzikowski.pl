@@ -1,3 +1,6 @@
-[submodule "themes/coder"]
-	path = themes/coder
+[submodule "site/main/themes/coder"]
+	path = site/main/themes/coder
 	url = https://github.com/mkjmdski/hugo-coder.git
+[submodule "site/presentations/themes/reveal"]
+	path = site/presentations/themes/reveal
+	url = https://github.com/dzello/reveal-hugo.git
