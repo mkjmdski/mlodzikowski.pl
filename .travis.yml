@@ -5,14 +5,14 @@ script:
   - make
 branches:
   only:
-    - develop
+    - master
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $github_token
   keep-history: true
   local-dir: public
-  target-branch: master
+  target-branch: production
   verbose: true
   on:
-    branch: develop
+    branch: master
