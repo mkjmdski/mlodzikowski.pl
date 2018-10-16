@@ -80,7 +80,7 @@ root@sodo-meetup # terraform apply introduction
 * Communication is JSON based (HCL Compilation) <!-- .element: class="fragment fade-up" data-fragment-index="2" -->
 * Extends by plugins written in Golang <!-- .element: class="fragment fade-up" data-fragment-index="2" -->
 
-![Go gopher writting code](img/golang.gif) <!-- .element: class="fragment fade-up" data-fragment-index="2" -->
+![Go gopher writting code](/presentations/img/terraform/golang.gif) <!-- .element: class="fragment fade-up" data-fragment-index="2" -->
 
 ---
 

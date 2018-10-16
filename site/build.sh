@@ -2,5 +2,8 @@
 ./build_indexes.py
 for module in main presentations; do (
     cd $module
-    hugo
+    if [ "$module" != "main" ]; then
+        baseURL="$baseURL/$module"
+    fi
+    hugo --baseURL="$baseURL"
 ) done
