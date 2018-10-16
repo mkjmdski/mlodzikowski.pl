@@ -1,13 +1,15 @@
 version: "3.4"
 services:
-  nginx:
+  server:
     build:
       context: site
       target: local_server
       args:
-        baseURL: 'http://localhost.test'
+        baseURL: &baseURL 'http://localhost.test'
     ports:
       - target: 80
         published: 80
         protocol: tcp
         mode: host
+    environment:
+      baseURL: *baseURL
