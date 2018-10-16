@@ -24,40 +24,31 @@
     <div class="reveal">
       <div class="slides">
   
-<section>
-
-<p><img src="/presentations/img/terraform/terraform.png" alt="terraform logo" /></p>
-
-<h5 id="sysops-devops-polska-poznań-5">SysOps/DevOps Polska - Poznań #5</h5>
-
+<section><img src="/presentations/img/terraform/terraform.png" alt="terraform logo"/>
+<h5>SysOps/DevOps Polska - Poznań #5</h5>
 <hr/>
+<h5>Mikołaj Młodzikowski</h5>
 
-<h5 id="mikołaj-młodzikowski">Mikołaj Młodzikowski</h5>
-</section><section data-noprocess data-markdown
-  data-separator="^\r?\n---\r?\n$"
-  data-separator-vertical="^\r?\n------\r?\n$"
-  data-separator-notes="notes?:">
-  <script type="text/template">
-    <pre><code class="language-plaintext">root@sodo-meetup # terraform plan -out=introduction
-</code></pre>
+---
 
+<pre>
+    <code class="language-plaintext">
+        root@sodo-meetup # terraform plan -out=introduction
+    </code>
+</pre>
 <ul>
-<li>Infrastructure as Code - short summary <!-- .element: class="fragment fade-up" data-fragment-index="1" --></li>
-<li>Terraform features specification <!-- .element: class="fragment fade-up" data-fragment-index="1" --></li>
-<li>HCL - HashiCorp Configuration language <!-- .element: class="fragment fade-up" data-fragment-index="2" --></li>
-<li>&rdquo;${interpolation}&rdquo; features <!-- .element: class="fragment fade-up" data-fragment-index="2" --></li>
-<li>Using/Writting Modules <!-- .element: class="fragment fade-up" data-fragment-index="3" --></li>
-<li>Adapting terraform to your stack <!-- .element: class="fragment fade-up" data-fragment-index="3" --></li>
-<li>Snippets! <!-- .element: class="fragment fade-up" data-fragment-index="4" --></li>
+    <li class="fragment fade-up">Infrastructure as Code - short summary</li>
+    <li class="fragment fade-up">Terraform features specification</li>
+    <li class="fragment fade-up">HCL - HashiCorp Configuration language</li>
+    <li class="fragment fade-up">"${interpolation}" features</li>
+    <li class="fragment fade-up">Using/Writting Modules</li>
+    <li class="fragment fade-up">Snippets!</li>
 </ul>
-
-<pre><code class="language-plaintext">root@sodo-meetup # terraform apply introduction
-</code></pre>
-
-<!-- .element: class="fragment fade-up" data-fragment-index="5" -->
-
-  </script>
-</section>
+<pre class="fragment fade-up">
+    <code class="language-plaintext">
+        root@sodo-meetup # terraform apply introduction
+    </code>
+</pre>
 </section><section><section data-shortcode-section>
 <p><h3>IaC Approach</h3>
 <div class="fragment fade-up">

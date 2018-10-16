@@ -12,20 +12,11 @@
     
     <item>
       <title></title>
-      <link>https://mlodzikowski.pl/presentations/terraform/0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mlodzikowski.pl/presentations/terraform/0/</guid>
-      <description> SysOps/DevOps Polska - Poznań #5  Mikołaj Młodzikowski </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://mlodzikowski.pl/presentations/terraform/1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/1/</guid>
-      <description>root@sodo-meetup # terraform plan -out=introduction   Infrastructure as Code - short summary  Terraform features specification  HCL - HashiCorp Configuration language  &amp;rdquo;${interpolation}&amp;rdquo; features  Using/Writting Modules  Adapting terraform to your stack  Snippets!   root@sodo-meetup # terraform apply introduction    </description>
+      <description>SysOps/DevOps Polska - Poznań #5  Mikołaj Młodzikowski ---  root@sodo-meetup # terraform plan -out=introduction    Infrastructure as Code - short summary Terraform features specification HCL - HashiCorp Configuration language &#34;${interpolation}&#34; features Using/Writting Modules Snippets!  root@sodo-meetup # terraform apply introduction   </description>
     </item>
     
     <item>
