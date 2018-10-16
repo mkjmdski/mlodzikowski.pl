@@ -3,7 +3,7 @@ title = "Terraform presentation"
 outputs = ["Reveal"]
 draft = false
 date = 2018-10-14T14:27:47+02:00
-inFewWords = "This is presentation about terraform"
+description = "This is presentation about terraform"
 +++
 
 ![terraform logo](/presentations/img/terraform/terraform.png)
