@@ -33,6 +33,106 @@
 <hr/>
 
 <h5 id="mikołaj-młodzikowski">Mikołaj Młodzikowski</h5>
+
+</section><section>
+
+<pre><code class="language-plaintext">root@sodo-meetup # terraform plan -out=introduction
+</code></pre>
+
+<ul>
+<li>Infrastructure as Code - short summary <!-- .element: class="fragment fade-up" data-fragment-index="1" --></li>
+<li>Terraform features specification <!-- .element: class="fragment fade-up" data-fragment-index="1" --></li>
+<li>HCL - HashiCorp Configuration language <!-- .element: class="fragment fade-up" data-fragment-index="2" --></li>
+<li>&rdquo;${interpolation}&rdquo; features <!-- .element: class="fragment fade-up" data-fragment-index="2" --></li>
+<li>Using/Writting Modules <!-- .element: class="fragment fade-up" data-fragment-index="3" --></li>
+<li>Adapting terraform to your stack <!-- .element: class="fragment fade-up" data-fragment-index="3" --></li>
+<li>Snippets! <!-- .element: class="fragment fade-up" data-fragment-index="4" --></li>
+</ul>
+
+<pre><code class="language-plaintext">root@sodo-meetup # terraform apply introduction
+</code></pre>
+
+<!-- .element: class="fragment fade-up" data-fragment-index="5" -->
+
+</section><section>
+
+<section data-shortcode-section>
+<h3 id="iac-approach">IaC Approach</h3>
+
+<div class="fragment fade-up">
+📖 Wikipedia definiton:
+<blockquote>
+    Infrastructure as code (IaC) is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.
+</blockquote>
+<p>A good starting article from <a href="https://www.thorntech.com/2018/01/infrastructureascodebenefits/" target="_blank">thorntech</a></p>
+</div>
+
+</section><section>
+
+<h3 id="pros">Pros</h3>
+
+<p>🤓 Operations: <!-- .element: class="fragment fade-up" data-fragment-index="1" --></p>
+
+<ul>
+<li>Infrastructure is self-documentating by its code <!-- .element: class="fragment fade-up" data-fragment-index="1" --></li>
+<li>Configuration can become part of Continuous Configuration Automation <!-- .element: class="fragment fade-up"  data-fragment-index="2" --></li>
+<li>Keeping IaC inside VCS: changes tracking, easier rollbacks and reviewing process <!-- .element: class="fragment fade-up"  data-fragment-index="3" --></li>
+</ul>
+
+<p>💰 Buisness: <!-- .element: class="fragment fade-up"  data-fragment-index="4" --></p>
+
+<ul>
+<li>costs reduction &amp; faster execution &amp; reduced risk  <!-- .element: class="fragment fade-up"  data-fragment-index="4" --></li>
+</ul>
+
+</section><section>
+
+<h3 id="cons">✋ Cons</h3>
+
+<ul>
+<li>Using IaC with manual setup leads to heavy problems <!-- .element: class="fragment fade-up" --></li>
+<li>High learning curve <!-- .element: class="fragment fade-up" --></li>
+</ul>
+
+</section>
+
+</section><section>
+
+<section data-shortcode-section>
+<h3 id="facts-about-terraform">Facts about terraform</h3>
+
+<ul>
+<li>Is declarative -&gt; tell <strong>what</strong> you want</li>
+<li>Uses <strong>push</strong> configuration method</li>
+<li>Communication is JSON based (HCL Compilation) <!-- .element: class="fragment fade-up" data-fragment-index="2" --></li>
+<li>Extends by plugins written in Golang <!-- .element: class="fragment fade-up" data-fragment-index="2" --></li>
+</ul>
+
+<p><img src="img/golang.gif" alt="Go gopher writting code" /> <!-- .element: class="fragment fade-up" data-fragment-index="2" --></p>
+
+</section><section>
+
+<h3 id="digest-set-of-providers">Digest set of providers</h3>
+
+<ul>
+<li>Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack <!-- .element: class="fragment fade-up" --></li>
+<li>Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty <!-- .element: class="fragment fade-up" --></li>
+<li>Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes <!-- .element: class="fragment fade-up" --></li>
+<li>Networks: Cloudflare, DNS Servers, HTTP Requests <!-- .element: class="fragment fade-up" --></li>
+<li>Databases, scripts, archives, vcs, many more&hellip; <!-- .element: class="fragment fade-up" --></li>
+</ul>
+
+<p><a href="https://www.terraform.io/docs/providers/">Terraform docs on providers</a> <!-- .element: class="fragment fade-up" --></p>
+
+</section><section>
+
+<h3 id="important-features">Important features</h3>
+
+<ul>
+<li>import</li>
+</ul>
+
+</section>
 </section>
 
 </div>
