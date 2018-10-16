@@ -33,10 +33,12 @@
 <hr/>
 
 <h5 id="mikołaj-młodzikowski">Mikołaj Młodzikowski</h5>
-
-</section><section>
-
-<pre><code class="language-plaintext">root@sodo-meetup # terraform plan -out=introduction
+</section><section data-noprocess data-markdown
+  data-separator="^\r?\n---\r?\n$"
+  data-separator-vertical="^\r?\n------\r?\n$"
+  data-separator-notes="notes?:">
+  <script type="text/template">
+    <pre><code class="language-plaintext">root@sodo-meetup # terraform plan -out=introduction
 </code></pre>
 
 <ul>
@@ -54,86 +56,65 @@
 
 <!-- .element: class="fragment fade-up" data-fragment-index="5" -->
 
-</section><section>
-
-<section data-shortcode-section>
-<h3 id="iac-approach">IaC Approach</h3>
-
+  </script>
+</section>
+</section><section><section data-shortcode-section>
+<p><h3>IaC Approach</h3>
 <div class="fragment fade-up">
 📖 Wikipedia definiton:
 <blockquote>
     Infrastructure as code (IaC) is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.
 </blockquote>
 <p>A good starting article from <a href="https://www.thorntech.com/2018/01/infrastructureascodebenefits/" target="_blank">thorntech</a></p>
-</div>
+</div></p>
 
 </section><section>
 
-<h3 id="pros">Pros</h3>
-
-<p>🤓 Operations: <!-- .element: class="fragment fade-up" data-fragment-index="1" --></p>
-
+<p><h3>Pros</h3>
+<p class="fragment fade-up" data-fragment-index="1">🤓 Operations:</p>
 <ul>
-<li>Infrastructure is self-documentating by its code <!-- .element: class="fragment fade-up" data-fragment-index="1" --></li>
-<li>Configuration can become part of Continuous Configuration Automation <!-- .element: class="fragment fade-up"  data-fragment-index="2" --></li>
-<li>Keeping IaC inside VCS: changes tracking, easier rollbacks and reviewing process <!-- .element: class="fragment fade-up"  data-fragment-index="3" --></li>
-</ul>
+    <li class="fragment fade-up" data-fragment-index="1">Infrastructure is self-documentating by its code </li>
+    <li class="fragment fade-up" data-fragment-index="2">Configuration can become part of Continuous Configuration Automation</li>
+    <li class="fragment fade-up"  data-fragment-index="3">Keeping IaC inside VCS: changes tracking, easier rollbacks and reviewing process</li>
+</ul></p>
 
-<p>💰 Buisness: <!-- .element: class="fragment fade-up"  data-fragment-index="4" --></p>
-
+<p><p class="fragment fade-up" data-fragment-index="4">💰 Buisness:</p>
 <ul>
-<li>costs reduction &amp; faster execution &amp; reduced risk  <!-- .element: class="fragment fade-up"  data-fragment-index="4" --></li>
-</ul>
+    <li class="fragment fade-up"  data-fragment-index="4">costs reduction &amp; faster execution &amp; reduced risk</li>
+</ul></p>
 
 </section><section>
 
-<h3 id="cons">✋ Cons</h3>
-
+<p><h3>Cons</h3>
 <ul>
-<li>Using IaC with manual setup leads to heavy problems <!-- .element: class="fragment fade-up" --></li>
-<li>High learning curve <!-- .element: class="fragment fade-up" --></li>
-</ul>
+    <li>Mixing manual and automated setup leads to many problems</li>
+    <li>High learning curve</li>
+</ul></p>
 
-</section>
+</section></section><section><section data-shortcode-section>
+<p><h3>Facts about terraform</h3>
+<ul>
+    <li>Is declarative -&gt; tell <b>what</b> you want</li>
+    <li>Uses <b>push</b> configuration method</li>
+    <li class="fragment fade-up" data-fragment-index="2">Communication is JSON based (HCL Compilation)</li>
+    <li class="fragment fade-up" data-fragment-index="2">Extends by plugins written in Golang</li>
+</ul>
+<img class="fragment fade-up" data-fragment-index="2" alt="Go gopher writting code" src="/presentations/img/terraform/golang.gif"/></p>
 
 </section><section>
 
-<section data-shortcode-section>
-<h3 id="facts-about-terraform">Facts about terraform</h3>
-
+<p><h3>Digest of the providers set</h3>
 <ul>
-<li>Is declarative -&gt; tell <strong>what</strong> you want</li>
-<li>Uses <strong>push</strong> configuration method</li>
-<li>Communication is JSON based (HCL Compilation) <!-- .element: class="fragment fade-up" data-fragment-index="2" --></li>
-<li>Extends by plugins written in Golang <!-- .element: class="fragment fade-up" data-fragment-index="2" --></li>
-</ul>
+    <li class="fragment fade-up">Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack</li>
+    <li class="fragment fade-up">Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty</li>
+    <li class="fragment fade-up">Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes</li>
+    <li class="fragment fade-up">Networks: Cloudflare, DNS Servers, HTTP Requests</li>
+    <li class="fragment fade-up">Databases, scripts, archives, vcs, many more&hellip;</li>
+</ul></p>
 
-<p><img src="/presentations/img/terraform/golang.gif" alt="Go gopher writting code" /> <!-- .element: class="fragment fade-up" data-fragment-index="2" --></p>
+<p><a class="fragment fade-up" href="https://www.terraform.io/docs/providers/" target="_blank">Terraform docs on providers</a></p>
 
-</section><section>
-
-<h3 id="digest-set-of-providers">Digest set of providers</h3>
-
-<ul>
-<li>Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack <!-- .element: class="fragment fade-up" --></li>
-<li>Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty <!-- .element: class="fragment fade-up" --></li>
-<li>Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes <!-- .element: class="fragment fade-up" --></li>
-<li>Networks: Cloudflare, DNS Servers, HTTP Requests <!-- .element: class="fragment fade-up" --></li>
-<li>Databases, scripts, archives, vcs, many more&hellip; <!-- .element: class="fragment fade-up" --></li>
-</ul>
-
-<p><a href="https://www.terraform.io/docs/providers/">Terraform docs on providers</a> <!-- .element: class="fragment fade-up" --></p>
-
-</section><section>
-
-<h3 id="important-features">Important features</h3>
-
-<ul>
-<li>import</li>
-</ul>
-
-</section>
-</section>
+</section></section>
 
 </div>
       
