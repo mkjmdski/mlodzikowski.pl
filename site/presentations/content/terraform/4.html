@@ -1,0 +1,89 @@
++++
++++
+{{% section %}}
+
+<h3>HCL && "${interpolation}"</h3>
+<ul>
+    <li class="fragment fade-up">
+        HCL is compromise between human-friendly and machine-friendly configurations
+    </li>
+    <li class="fragment fade-up">
+        HCL is fusion of full programing languages and data structure languages
+    </li>
+    <li class="fragment fade-up">
+        HCL is JSON-compatible - you can generate JSON and run it as HCL
+    </li>
+    <li class="fragment fade-up">
+        HCL supports comments and &lt;&lt;EOF syntax for multiline strings.
+    </li>
+</ul>
+<p>
+Exact specification on the language can be found in the Hashicorps
+<a href="https://github.com/hashicorp/hcl" target="_blank"> repository</a>
+</p>
+
+---
+
+<h3>Logical statements</h3>
+<ul>
+    <li class="fragment fade-up">
+        if: subnet = "${var.env == "production" ? var.prod_subnet : var.dev_subnet}"
+    </li>
+    <li class="fragment fade-up">
+        comprassions and boolean logic: == != &gt; &lt; &gt;= &lt;=
+    </li>
+    <li class="fragment fade-up">
+            looping (0.11): ${count.index} -> creating ++like loops
+    </li>
+    <li class="fragment fade-up">
+        looping (0.12): %{ for instance in aws_instance.example ~}server ${instance.id}%{ endfor }. -> templating
+    </li>
+</ul>
+
+---
+
+<h3>References</h3>
+<ul>
+    <li class="fragment fade-up">
+        vars: "${var.aws_account_number}" (0.11), var.aws_account_number (0.12)
+    </li>
+    <li class="fragment fade-up">
+        maps: "${var.aws_account_number['client1']}"
+    </li>
+    <li class="fragment fade-up">
+        lists: "${var.aws_account_number[count.index]}"
+    </li>
+    <li class="fragment fade-up">
+        single resources/data: "${data.aws_ec2_instance.single.ipv4}"
+    </li>
+    <li class="fragment fade-up">
+        multiple: "${data.aws_ec2_instance.cluster.*.ipv4}"
+    </li>
+    <li class="fragment fade-up">
+        modules: "${module.module_name.output_name.key}"
+    </li>
+</ul>
+
+---
+
+<h3>Functions</h3>
+<ul>
+    <li class="fragment fade-up">
+        Math functions: floor, abs, log, pow, max, signum, ${2 + 2}
+    </li>
+    <li class="fragment fade-up">
+        String functions: base64, concat, chomp, format, indent, join, lower
+    </li>
+    <li class="fragment fade-up">
+        Data types operations: chunklist, element, map, list, jsonencode, keys, sort, slice
+    </li>
+    <li class="fragment fade-up">
+        System calls: dirname, file, timestamp
+    </li>
+</ul>
+<p>
+All interpolations can be found in the
+<a href="https://github.com/hashicorp/hcl" target="_blank"> docs</a>.
+</p>
+
+{{% /section %}}
