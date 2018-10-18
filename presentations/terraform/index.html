@@ -34,12 +34,21 @@
     </code>
 </pre>
 <ul>
-    <li class="fragment fade-up">Infrastructure as Code - short summary</li>
-    <li class="fragment fade-up">Terraform features specification</li>
-    <li class="fragment fade-up">HCL - HashiCorp Configuration language</li>
-    <li class="fragment fade-up">"${interpolation}" features</li>
-    <li class="fragment fade-up">Using/Writting Modules</li>
-    <li class="fragment fade-up">Snippets!</li>
+    <li class="fragment fade-up">
+        Infrastructure as Code - short summary
+    </li>
+    <li class="fragment fade-up">
+        Terraform features specification
+    </li>
+    <li class="fragment fade-up">
+        HCL - HashiCorp Configuration language & "${interpolation}" features
+    </li>
+    <li class="fragment fade-up">
+        Using/Writting Modules
+    </li>
+    <li class="fragment fade-up">
+        Snippets!
+    </li>
 </ul>
 <pre class="fragment fade-up">
     <code class="language-plaintext">
@@ -53,7 +62,12 @@
 <blockquote>
     Infrastructure as code (IaC) is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.
 </blockquote>
-<p>A good starting article from <a href="https://www.thorntech.com/2018/01/infrastructureascodebenefits/" target="_blank">thorntech</a></p>
+<p>
+    A good starting article about IaC from
+    <a href="https://www.thorntech.com/2018/01/infrastructureascodebenefits/" target="_blank">
+        thorntech
+    </a>
+</p>
 </div></p>
 
 </section><section>
@@ -61,31 +75,53 @@
 <p><h3>Pros</h3>
 <p class="fragment fade-up" data-fragment-index="1">🤓 Operations:</p>
 <ul>
-    <li class="fragment fade-up" data-fragment-index="1">Infrastructure is self-documentating by its code </li>
-    <li class="fragment fade-up" data-fragment-index="2">Configuration can become part of Continuous Configuration Automation</li>
-    <li class="fragment fade-up"  data-fragment-index="3">Keeping IaC inside VCS: changes tracking, easier rollbacks and reviewing process</li>
+    <li class="fragment fade-up" data-fragment-index="1">
+        Infrastructure is self-documentating by its code
+    </li>
+    <li class="fragment fade-up" data-fragment-index="2">
+        Configuration can become part of Continuous Configuration Automation
+    </li>
+    <li class="fragment fade-up"  data-fragment-index="3">
+        Keeping IaC inside VCS: changes tracking, easier rollbacks and reviewing process
+    </li>
 </ul></p>
 
-<p><p class="fragment fade-up" data-fragment-index="4">💰 Buisness:</p>
+<p><p class="fragment fade-up" data-fragment-index="4">
+    💰 Buisness:
+</p>
 <ul>
-    <li class="fragment fade-up"  data-fragment-index="4">costs reduction &amp; faster execution &amp; reduced risk</li>
+    <li class="fragment fade-up"  data-fragment-index="4">
+        costs reduction &amp; faster execution &amp; reduced risk
+    </li>
 </ul></p>
 
 </section><section>
 
 <p><h3>Cons</h3>
 <ul>
-    <li>Mixing manual and automated setup leads to many problems</li>
-    <li>High learning curve</li>
+    <li class="fragment fade-up">
+        Mixing manual and automated setup leads to many problems
+    </li>
+    <li class="fragment fade-up">
+        High learning curve
+    </li>
 </ul></p>
 
 </section></section><section><section data-shortcode-section>
 <p><h3>Facts about terraform</h3>
 <ul>
-    <li>Is declarative -&gt; tell <b>what</b> you want</li>
-    <li>Uses <b>push</b> configuration method</li>
-    <li class="fragment fade-up" data-fragment-index="2">Communication is JSON based (HCL Compilation)</li>
-    <li class="fragment fade-up" data-fragment-index="2">Extends by plugins written in Golang</li>
+    <li class="fragment fade-up" data-fragment-index="1">
+        Is declarative -&gt; tell <b>what</b> you want
+    </li>
+    <li class="fragment fade-up" data-fragment-index="1">
+        Uses <b>push</b> configuration method
+    </li>
+    <li class="fragment fade-up" data-fragment-index="2">
+        Communication is JSON based (HCL Compilation)
+    </li>
+    <li class="fragment fade-up" data-fragment-index="2">
+        Extends by plugins written in Golang
+    </li>
 </ul>
 <img class="fragment fade-up" data-fragment-index="2" alt="Go gopher writting code" src="/presentations/img/terraform/golang.gif"/></p>
 
@@ -93,16 +129,105 @@
 
 <p><h3>Digest of the providers set</h3>
 <ul>
-    <li class="fragment fade-up">Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack</li>
-    <li class="fragment fade-up">Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty</li>
-    <li class="fragment fade-up">Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes</li>
-    <li class="fragment fade-up">Networks: Cloudflare, DNS Servers, HTTP Requests</li>
-    <li class="fragment fade-up">Databases, scripts, archives, vcs, many more&hellip;</li>
+    <li class="fragment fade-up">
+        Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack
+    </li>
+    <li class="fragment fade-up">
+        Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty
+    </li>
+    <li class="fragment fade-up">
+        Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes
+    </li>
+    <li class="fragment fade-up">
+        Networks: Cloudflare, DNS Servers, HTTP Requests
+    </li>
+    <li class="fragment fade-up">
+        Databases, scripts, archives, vcs, many more&hellip;
+    </li>
 </ul></p>
 
 <p><a class="fragment fade-up" href="https://www.terraform.io/docs/providers/" target="_blank">Terraform docs on providers</a></p>
 
-</section></section>
+</section><section>
+
+<p><h3>Terraform features</h3>
+<ul>
+    <li class="fragment fade-up">
+        Importing exsiting resources into your tfstate
+    </li>
+    <li class="fragment fade-up">
+        Mixing providers in one configuration
+    </li>
+    <li class="fragment fade-up">
+        Displaying plans before apply
+    </li>
+    <li class="fragment fade-up">
+        Packing configurations into modules with outputs
+    </li>
+    <li class="fragment fade-up">
+        Validating configuration
+    </li>
+    <li class="fragment fade-up">
+        Formatter included in CLI
+    </li>
+    <li class="fragment fade-up">
+        Taint - marking resources for recreation
+    </li>
+    <li class="fragment fade-up">
+        Generating graphs of resources
+    </li>
+</ul></p>
+
+</section></section><section><section data-shortcode-section>
+<p><h3>HCL Features</h3>
+<ul>
+    <li class="fragment fade-up">
+        HCL is compromise between machine-friendly configurations like JSON, and human-friendly markdowns like YAML
+    </li>
+    <li class="fragment fade-up">
+        HCL is compromise between full programing languages like Ruby 💎 and data structure languages such as JSON
+    </li>
+    <li class="fragment fade-up">
+        So obviously HCL is JSON-compatible, you can generate JSON and run it as HCL
+    </li>
+    <li class="fragment fade-up">
+        HCL supports comments! And EOF for multiline strings.
+    </li>
+    <li class="fragment fade-up">
+        You can write number as 10, 16, 8 based. Also scientific notation is allowed.
+    </li>
+</ul>
+<p>
+Exact specification on the language can be found in the Hashicorps
+<a href="https://github.com/hashicorp/hcl" target="_blank"> repository</a>
+</p></p>
+
+</section><section>
+
+<p><h3>Terraform &ldquo;${interpolation}&rdquo;</h3>
+<ul>
+    <li class="fragment fade-up"></p>
+
+<pre><code>&lt;/li&gt;
+&lt;li class=&quot;fragment fade-up&quot;&gt;
+
+&lt;/li&gt;
+&lt;li class=&quot;fragment fade-up&quot;&gt;
+
+&lt;/li&gt;
+&lt;li class=&quot;fragment fade-up&quot;&gt;
+
+&lt;/li&gt;
+</code></pre>
+
+<p></ul>
+<p>
+All examples of interpolation can be found in the
+<a href="https://github.com/hashicorp/hcl" target="_blank"> docs</a>.
+</p></p>
+
+</section>
+</section>
 
 </div>
       
