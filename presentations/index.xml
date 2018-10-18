@@ -45,7 +45,7 @@ Pros 🤓 Operations:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/3/</guid>
-      <description>Facts about terraform  Is declarative -&amp;gt; tell what you want  Uses push configuration method  Communication is JSON based (HCL Compilation)  Extends by plugins written in Golang   Digest of the providers set  Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack  Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty  Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes  Networks: Cloudflare, DNS Servers, HTTP Requests  Databases, scripts, archives, vcs, many more&amp;hellip;</description>
+      <description>Facts about terraform  Is declarative -&amp;gt; tell what you want  Uses push configuration method  Communication is JSON based  Extends by plugins written in Golang   Digest of the providers set  Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack  Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty  Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes  Networks: Cloudflare, DNS Servers, HTTP Requests  Databases, scripts, archives, vcs, many more&amp;hellip;</description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@ Pros 🤓 Operations:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/4/</guid>
-      <description>HCL Features  HCL is compromise between machine-friendly configurations like JSON, and human-friendly markdowns like YAML  HCL is compromise between full programing languages like Ruby 💎 and data structure languages such as JSON  So obviously HCL is JSON-compatible, you can generate JSON and run it as HCL  HCL supports comments! And EOF for multiline strings.  You can write number as 10, 16, 8 based. Also scientific notation is allowed.</description>
+      <description>HCL Features  HCL is compromise between machine-friendly configurations like JSON, and human-friendly markdowns like YAML  HCL is compromise between full programing languages like Ruby 💎 and data structure languages such as JSON  So obviously HCL is JSON-compatible, you can generate JSON and run it as HCL  HCL supports comments! And EOF for multiline strings.  Multiple number bases: 10, 16, 8, scientific notation.    Exact specification on the language can be found in the Hashicorps repository Terraform &amp;ldquo;${interpolation}&amp;rdquo;  Hehe  Hihi  Hoho  Huhu    All examples of interpolation can be found in the docs.</description>
     </item>
     
   </channel>
