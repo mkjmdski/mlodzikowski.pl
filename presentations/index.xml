@@ -17,8 +17,7 @@
       
       <guid>https://mlodzikowski.pl/presentations/terraform/0/</guid>
       <description>SysOps/DevOps Polska - Poznań #5  Mikołaj Młodzikowski
-About this presentation  The main aim is to popularize IaC approach using terraform as an example   Terraform will be broadly presented as a tool without any complex examples  
- root@sodo-meetup # whoami    My name is Miko  I just started my career as a Build Automation Engineer @ Egnyte, previously Java Developer and DevOps  I like lingustics, travels and programing   ---  root@sodo-meetup # terraform plan -out=introduction    Infrastructure as Code - short summary  Terraform features specification  HCL - HashiCorp Configuration language &amp; &#34;</description>
+ root@sodo-meetup # neofetch   About this presentation  The main aim is to popularize IaC approach using terraform as an example  Terraform will be broadly presented as a tool without any complex examples   ---  root@sodo-meetup # whoami   About me  My name is Miko  I just started my career as a Build Automation Engineer @ Egnyte, previously Java Developer and DevOps  I like lingustics, travels and programing   ---  root@sodo-meetup # terraform plan -out=introduction   Presentation plan  Infrastructure as Code - short summary  Terraform features specification  HCL - HashiCorp Configuration language &amp; &#34;</description>
     </item>
     
     <item>
