@@ -72,9 +72,8 @@ Pros Operations:  Infrastructure is self-documentating by its code  Configuratio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/6/</guid>
-      <description>Thank you! presentation can be found under https://mlodzikowski.pl/presentations/terraform
-Sources and helpful links to study terraform:
-Jakub Jańczak article  pointing terraform cons  Alexander Savchuk post  on Continous Configuration Automation   Pavan Belagatti&#39;s analyze  on terraforms increasing popularity   Two articles from shippable about terraform on AWS: provisioning infrastructure  by Manisha Sahasrabudhe and creating container cluster  by Tom Trahan   Hashicrop webinars  </description>
+      <description>Thank you! online @ https://mlodzikowski.pl/presentations/terraform Sources and helpful links to study terraform:
+ Jakub Jańczak article  pointing terraform cons  Alexander Savchuk post  on Continous Configuration Automation   Pavan Belagatti&amp;rsquo;s analyze  on terraforms increasing popularity   Two articles from shippable about terraform on AWS: provisioning infrastructure  by Manisha Sahasrabudhe and creating container cluster  by Tom Trahan   Hashicrop webinars</description>
     </item>
     
   </channel>
