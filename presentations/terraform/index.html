@@ -24,11 +24,46 @@
     <div class="reveal">
       <div class="slides">
   
-<section><img src="/presentations/img/terraform/terraform.png" alt="terraform logo"/>
+<section><section data-shortcode-section>
+<p><img src="/presentations/img/terraform/terraform.png" alt="terraform logo"/>
 <h5>SysOps/DevOps Polska - Poznań #5</h5>
 <hr/>
-<h5>Mikołaj Młodzikowski</h5>
-</section><section><pre>
+<h5>Mikołaj Młodzikowski</h5></p>
+
+</section><section>
+
+<p><h3>About this presentation</h3>
+<ul>
+    <li class="fade-up fragment">
+        The main aim is to popularize IaC approach using terraform as an example
+    </li>
+    <li>
+        Terraform will be broadly presented as a tool without any complex examples
+    </li>
+</ul></p>
+
+</section><section>
+
+<pre>
+    <code class="language-plaintext">
+        root@sodo-meetup # whoami
+    </code>
+</pre>
+<ul>
+    <li class="fade-up fragment">
+        My name is Miko
+    </li>
+    <li class="fade-up fragment">
+        I just started my career as a Build Automation Engineer @ Egnyte, previously Java Developer and DevOps
+    </li>
+    <li class="fade-up fragment">
+        I like lingustics, travels and programing
+    </li>
+</ul>
+
+---
+
+<pre>
     <code class="language-plaintext">
         root@sodo-meetup # terraform plan -out=introduction
     </code>
@@ -55,7 +90,8 @@
         root@sodo-meetup # terraform apply introduction
     </code>
 </pre>
-</section><section><section data-shortcode-section>
+
+</section></section><section><section data-shortcode-section>
 <p><h3>IaC Approach</h3>
 <div class="fragment fade-up">
 📖 Wikipedia definiton:
@@ -100,10 +136,10 @@
 <p><h3>Cons</h3>
 <ul>
     <li class="fragment fade-up">
-        Mixing manual and automated setup leads to many problems
+        Mixing manual and automated setup leads to many problems 🖥️ 🛑 ✋
     </li>
     <li class="fragment fade-up">
-        High learning curve
+        High learning curve ⤴️
     </li>
 </ul></p>
 
@@ -146,7 +182,7 @@
     </li>
 </ul></p>
 
-<p><a class="fragment fade-up" href="https://www.terraform.io/docs/providers/" target="_blank">Terraform docs on providers</a></p>
+<p><a href="https://www.terraform.io/docs/providers/" target="_blank">Terraform docs on providers</a></p>
 
 </section><section>
 
@@ -162,13 +198,10 @@
         Displaying plans before apply
     </li>
     <li class="fragment fade-up">
-        Packing configurations into modules with outputs
+        Data sources (immutable) and resources (mutable)
     </li>
     <li class="fragment fade-up">
-        Validating configuration
-    </li>
-    <li class="fragment fade-up">
-        Formatter included in CLI
+        Validating configuration and standard formatter
     </li>
     <li class="fragment fade-up">
         Taint - marking resources for recreation
@@ -191,7 +224,7 @@
         HCL is JSON-compatible - you can generate JSON and run it as HCL
     </li>
     <li class="fragment fade-up">
-        HCL supports comments! And EOF for multiline strings.
+        HCL supports comments and &lt;&lt;EOF syntax for multiline strings.
     </li>
 </ul>
 <p>
@@ -201,23 +234,59 @@ Exact specification on the language can be found in the Hashicorps
 
 </section><section>
 
-<p><h3>Terraform &ldquo;${interpolation}&rdquo;</h3>
+<p><h3>Terraform &ldquo;${interpolation}&rdquo; - logical statements</h3>
 <ul>
     <li class="fragment fade-up">
-        Hehe
+        looping (0.11): ${count.index} -&gt; creating pseudoloops
     </li>
     <li class="fragment fade-up">
-        Hihi
+        looping (0.12): %{ for instance in aws_instance.example ~}server ${instance.id}%{ endfor }. -&gt; templating
     </li>
     <li class="fragment fade-up">
-        Hoho
+        if: subnet = &ldquo;${var.env == &ldquo;production&rdquo; ? var.prod_subnet : var.dev_subnet}&rdquo;
     </li>
     <li class="fragment fade-up">
-        Huhu
+        comprassions and boolean logic: ==, !=, &gt;, &lt;, &gt;=, &lt;=
+    </li>
+</ul></p>
+
+</section><section>
+
+<p><h3>Terraform &ldquo;${interpolation}&rdquo; - references</h3>
+<ul>
+    <li class="fragment fade-up">
+        &ldquo;${var.aws_account_number}&rdquo; -&gt; using variables (in 0.12 will be replaced by &lsquo;var.aws_account_number&rsquo;)
+    </li>
+    <li class="fragment fade-up">
+        using maps -&gt; &ldquo;${var.aws_account_number[&lsquo;client1&rsquo;]}&rdquo;
+    </li>
+    <li class="fragment fade-up">
+        using lists -&gt; &ldquo;${var.aws_account_number[count.index]}&rdquo;
+    </li>
+    <li class="fragment fade-up">
+        referencig resources, data and modules -&gt; &ldquo;${data.aws_ec2_instance.single.ipv4}&ldquo;, &ldquo;${data.aws_ec2_instance.cluster.*.ipv4}&rdquo;
+    </li>
+</ul></p>
+
+</section><section>
+
+<p><h3>Terraform &ldquo;${interpolation} - brief on functions</h3>
+<ul>
+    <li class="fragment fade-up">
+        Math functions: floor, abs, log, pow, max, signum, ${2 + 2}
+    </li>
+    <li class="fragment fade-up">
+        String functions: base64, concat, chomp, format, indent, join, lower
+    </li>
+    <li class="fragment fade-up">
+        Data types operations: chunklist, element, map, list, jsonencode, keys, sort, slice
+    </li>
+    <li class="fragment fade-up">
+        System calls: dirname, file, timestamp,
     </li>
 </ul>
 <p>
-All examples of interpolation can be found in the
+All interpolations can be found in the
 <a href="https://github.com/hashicorp/hcl" target="_blank"> docs</a>.
 </p></p>
 
