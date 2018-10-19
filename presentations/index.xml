@@ -63,7 +63,8 @@ Pros Operations:  Infrastructure is self-documentating by its code  Configuratio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/5/</guid>
-      <description>Terraform modules  </description>
+      <description>Terraform modules  Modules are blackbox configuration in which only some set of parameters is provided in aim to create more complex infrastructure behind the scenes.  Modules usually have a set of outputs which can be referenced in your terraform file.  
+Source of modules  First source is official terraform registry  You can also find terraform modules on github repositories. There are plenty of them.  If you don&amp;rsquo;t feel satisfied you can always create your own modules</description>
     </item>
     
     <item>
