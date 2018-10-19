@@ -28,7 +28,7 @@
 <h5>SysOps/DevOps Polska - Poznań #5</h5>
 <hr/>
 <h5>Mikołaj Młodzikowski</h5></section><section><section data-shortcode-section>
-<pre>
+<p><pre>
     <code class="language-plaintext">
         root@sodo-meetup # neofetch
     </code>
@@ -40,11 +40,11 @@
     <li class="fragment fade-up">
         Terraform will be broadly presented as a tool without any complex examples
     </li>
-</ul>
+</ul></p>
 
----
+</section><section>
 
-<pre>
+<p><pre>
     <code class="language-plaintext">
         root@sodo-meetup # whoami
     </code>
@@ -56,11 +56,11 @@
     <li class="fragment fade-up">
         I just started my career as a Build Automation Engineer, previously Java Developer and DevOps
     </li>
-</ul>
+</ul></p>
 
----
+</section><section>
 
-<pre>
+<p><pre>
     <code class="language-plaintext">
         root@sodo-meetup # terraform plan -out=introduction
     </code>
@@ -73,7 +73,7 @@
         Terraform features specification
     </li>
     <li class="fragment fade-up">
-        HCL - HashiCorp Configuration language & "${interpolation}" features
+        HCL - HashiCorp Configuration language &amp; &ldquo;${interpolation}&rdquo; features
     </li>
     <li class="fragment fade-up">
         Using/Writting Modules
@@ -81,12 +81,7 @@
     <li class="fragment fade-up">
         Snippets!
     </li>
-</ul>
-<pre class="fragment fade-up">
-    <code class="language-plaintext">
-        root@sodo-meetup # terraform apply introduction
-    </code>
-</pre>
+</ul></p>
 
 </section></section><section><section data-shortcode-section>
 <p><h3>IaC Approach</h3>
@@ -211,7 +206,7 @@
 </ul></p>
 
 </section></section><section><section data-shortcode-section>
-<p><h3>HCL Features</h3>
+<p><h3>HCL &amp;&amp; &ldquo;${interpolation}&rdquo;</h3>
 <ul>
     <li class="fragment fade-up">
         HCL is compromise between human-friendly and machine-friendly configurations
@@ -233,7 +228,7 @@ Exact specification on the language can be found in the Hashicorps
 
 </section><section>
 
-<p><h3>Terraform &ldquo;${interpolation}&rdquo; - logical statements</h3>
+<p><h3>Logical statements</h3>
 <ul>
     <li class="fragment fade-up">
         looping (0.11): ${count.index} -&gt; creating pseudoloops
@@ -245,22 +240,22 @@ Exact specification on the language can be found in the Hashicorps
         if: subnet = &ldquo;${var.env == &ldquo;production&rdquo; ? var.prod_subnet : var.dev_subnet}&rdquo;
     </li>
     <li class="fragment fade-up">
-        comprassions and boolean logic: ==, !=, &gt;, &lt;, &gt;=, &lt;=
+        comprassions and boolean logic: == != &gt; &lt; &gt;= &lt;=
     </li>
 </ul></p>
 
 </section><section>
 
-<p><h3>Terraform &ldquo;${interpolation}&rdquo; - references</h3>
+<p><h3>References</h3>
 <ul>
     <li class="fragment fade-up">
-        &ldquo;${var.aws_account_number}&rdquo; -&gt; using variables (in 0.12 will be replaced by &lsquo;var.aws_account_number&rsquo;)
+        vars: &ldquo;${var.aws_account_number}&rdquo; (0.11), var.aws_account_number (0.12)
     </li>
     <li class="fragment fade-up">
-        using maps -&gt; &ldquo;${var.aws_account_number[&lsquo;client1&rsquo;]}&rdquo;
+        maps: &ldquo;${var.aws_account_number[&lsquo;client1&rsquo;]}&rdquo;
     </li>
     <li class="fragment fade-up">
-        using lists -&gt; &ldquo;${var.aws_account_number[count.index]}&rdquo;
+        lists: &ldquo;${var.aws_account_number[count.index]}&rdquo;
     </li>
     <li class="fragment fade-up">
         referencig resources, data and modules -&gt; &ldquo;${data.aws_ec2_instance.single.ipv4}&ldquo;, &ldquo;${data.aws_ec2_instance.cluster.*.ipv4}&rdquo;
@@ -269,7 +264,7 @@ Exact specification on the language can be found in the Hashicorps
 
 </section><section>
 
-<p><h3>Terraform &ldquo;${interpolation} - brief on functions</h3>
+<p><h3>Functions</h3>
 <ul>
     <li class="fragment fade-up">
         Math functions: floor, abs, log, pow, max, signum, ${2 + 2}
@@ -293,23 +288,22 @@ All interpolations can be found in the
 </section><section><h3>Thank you!</h3>
 <p>Sources and helpful links to study terraform:</p>
 <ul>
-    <li>
+    <li> Reddit
         <a href="https://www.reddit.com/r/devops/comments/9bhpe3/9_reasons_why_terraform_is_a_pain_and_1_making_it/" target="_blank">
-            Reddit article pointing terraform cons
-        </a>
+            article
+        </a>  pointing terraform cons
     </li>
-    <li></li>
-    <li>
+    <li>Xero devblog
         <a href="https://devblog.xero.com/ci-cd-with-jenkins-pipelines-part-2-managing-infrastructure-with-terraform-and-docker-bd4b81554aa7" target="_blank">
-            Xero devblog article on Continous Configuration Automation
-        </a>
+            post
+        </a> on Continous Configuration Automation
     </li>
-    <li>
+    <li> Medium
         <a href="https://medium.com/devopslinks/why-should-terraform-be-one-of-your-devops-tools-29ae15861b1f" target="_blank">
-            Medium article analyzing terraforms increasing popularity
-        </a>
+             analyze
+        </a> on  terraforms increasing popularity
     </li>
-    <li> Two articles of shippable about terraform on AWS:
+    <li> Two articles from shippable about terraform on AWS:
         <a href="https://blog.shippable.com/provisioning-aws-infrastructure-with-terraform" target="_blank">
             provisioning infrastructure
         </a>
