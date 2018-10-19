@@ -64,7 +64,7 @@ Pros Operations:  Infrastructure is self-documentating by its code  Configuratio
       
       <guid>https://mlodzikowski.pl/presentations/terraform/6/</guid>
       <description>Thank you! Sources and helpful links to study terraform:
-  Reddit article  pointing terraform cons  Xero devblog post  on Continous Configuration Automation   Medium analyze  on terraforms increasing popularity   Two articles from shippable about terraform on AWS: provisioning infrastructure  and creating container cluster   </description>
+ Jakub Jańczak article  pointing terraform cons  Alexander Savchuk post  on Continous Configuration Automation   Pavan Belagatti&#39;s analyze  on terraforms increasing popularity   Two articles from shippable about terraform on AWS: provisioning infrastructure  by Manisha Sahasrabudhe and creating container cluster  by Tom Trahan  </description>
     </item>
     
   </channel>
