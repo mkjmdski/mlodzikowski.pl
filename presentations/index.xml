@@ -16,8 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/0/</guid>
-      <description>SysOps/DevOps Polska - Poznań #5  Mikołaj Młodzikowski
- root@sodo-meetup # neofetch    The main aim is to popularize IaC approach using terraform as an example  Terraform will be broadly presented as a tool without any complex examples   ---  root@sodo-meetup # whoami    My name is Miko and I like lingustics, travels and programing  I just started my career as a Build Automation Engineer, previously Java Developer and DevOps   ---  root@sodo-meetup # terraform plan -out=introduction    Infrastructure as Code - short summary  Terraform features specification  HCL - HashiCorp Configuration language &amp; &#34;</description>
+      <description>SysOps/DevOps Polska - Poznań #5  Mikołaj Młodzikowski</description>
     </item>
     
     <item>
@@ -26,9 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/1/</guid>
-      <description>IaC Approach 📖 Wikipedia definiton:  Infrastructure as code (IaC) is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.   A good starting article about IaC from thorntech  
-Pros 🤓 Operations:
- Infrastructure is self-documentating by its code  Configuration can become part of Continuous Configuration Automation  Keeping IaC inside VCS: changes tracking, easier rollbacks and reviewing process</description>
+      <description>root@sodo-meetup # neofetch    The main aim is to popularize IaC approach using terraform as an example  Terraform will be broadly presented as a tool without any complex examples   ---  root@sodo-meetup # whoami    My name is Miko and I like lingustics, travels and programing  I just started my career as a Build Automation Engineer, previously Java Developer and DevOps   ---  root@sodo-meetup # terraform plan -out=introduction    Infrastructure as Code - short summary  Terraform features specification  HCL - HashiCorp Configuration language &amp; &#34;</description>
     </item>
     
     <item>
@@ -37,7 +34,8 @@ Pros 🤓 Operations:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/2/</guid>
-      <description>Facts about terraform  Is declarative -&amp;gt; tell what you want  Uses push configuration method  Communication is JSON based  Extends by plugins written in Golang   Digest of the providers set  Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack  Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty  Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes  Networks: Cloudflare, DNS Servers, HTTP Requests  Databases, scripts, archives, vcs, many more&amp;hellip;</description>
+      <description>IaC Approach 📖 Wikipedia definiton:  Infrastructure as code (IaC) is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.   A good starting article about IaC from thorntech  
+Pros Operations:  Infrastructure is self-documentating by its code  Configuration can become part of Continuous Configuration Automation  Keeping IaC inside VCS: changes tracking, easier rollbacks and reviewing process</description>
     </item>
     
     <item>
@@ -46,15 +44,24 @@ Pros 🤓 Operations:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/3/</guid>
+      <description>Facts about terraform  Is declarative -&amp;gt; tell what you want  Uses push configuration method  Communication is JSON based  Extends by plugins written in Golang   Digest of the providers set  Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack  Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty  Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes  Networks: Cloudflare, DNS Servers, HTTP Requests  Databases, scripts, archives, vcs, many more&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlodzikowski.pl/presentations/terraform/4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/terraform/4/</guid>
       <description>HCL Features  HCL is compromise between human-friendly and machine-friendly configurations  HCL is fusion of full programing languages and data structure languages  HCL is JSON-compatible - you can generate JSON and run it as HCL  HCL supports comments and &amp;lt;&amp;lt;EOF syntax for multiline strings.    Exact specification on the language can be found in the Hashicorps repository Terraform &amp;ldquo;${interpolation}&amp;rdquo; - logical statements  looping (0.11): ${count.</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://mlodzikowski.pl/presentations/terraform/5/</link>
+      <link>https://mlodzikowski.pl/presentations/terraform/6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://mlodzikowski.pl/presentations/terraform/5/</guid>
+      <guid>https://mlodzikowski.pl/presentations/terraform/6/</guid>
       <description>Thank you! Sources and helpful links to study terraform:
   Reddit article pointing terraform cons     Xero devblog article on Continous Configuration Automation    Medium article analyzing terraforms increasing popularity    Two articles of shippable about terraform on AWS: provisioning infrastructure  and creating container cluster   </description>
     </item>
