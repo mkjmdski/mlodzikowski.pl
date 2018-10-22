@@ -25,8 +25,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/1/</guid>
-      <description>root@sodo-meetup # neofetch    The main aim is to popularize IaC approach using terraform as an example  Terraform will be broadly presented as a tool without any complex examples  
- root@sodo-meetup # whoami    My name is Miko and I like lingustics, travels and programing  I just started my career as a Build Automation Engineer, previously Java Developer and DevOps</description>
+      <description>root@sodo-meetup # whoami    My name is Miko I like lingustics, travels and programing  I&amp;rsquo;ve just started my career as a Build Automation Engineer, previously Java Developer and DevOps  
+ root@sodo-meetup # neofetch    This presentations is focused on popularizing IaC approach using terraform as an example  Terraform will be broadly presented as a tool with mostly easy examples  Presentation is full of links, sources and referals so if you are interested in the topic - check out later the presentation online    root@sodo-meetup # terraform plan -out=introduction    Infrastructure as Code - short summary  Terraform features specification  HCL together with &amp;ldquo;${interpolation}&amp;rdquo;  Modules and community tools  Snippets!</description>
     </item>
     
     <item>
@@ -54,7 +54,7 @@ Pros Operations:  Infrastructure is self-documentating by its code  Configuratio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/4/</guid>
-      <description>HCL &amp;amp;&amp;amp; &amp;ldquo;${interpolation}&amp;rdquo;  HCL is compromise between human-friendly and machine-friendly configurations  HCL is fusion of full programing languages and data structure languages  HCL is JSON-compatible - you can generate JSON and run it as HCL  HCL supports comments and &amp;lt;&amp;lt;EOF syntax for multiline strings.    Exact specification on the language can be found in the Hashicorps repository Logical statements  if: subnet = &amp;ldquo;${var.env == &amp;ldquo;production&amp;rdquo; ?</description>
+      <description>HCL &amp;amp;&amp;amp; &amp;ldquo;${interpolation}&amp;rdquo;  HCL is compromise between human-friendly and machine-friendly configurations  HCL is fusion of full programing languages and data structure languages  HCL is JSON-compatible - you can generate JSON and run it as HCL  HCL supports comments and &amp;lt;&amp;lt;EOF syntax for multiline strings.    Exact specification on the language can be found in the Hashicorps repository Data types  // vars: &amp;ldquo;${var.aws_account_number}&amp;rdquo; //(0.11) var.</description>
     </item>
     
     <item>
@@ -63,8 +63,8 @@ Pros Operations:  Infrastructure is self-documentating by its code  Configuratio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/5/</guid>
-      <description>Terraform modules  Modules are blackbox configuration in which only some set of parameters is provided in aim to create more complex infrastructure behind the scenes.  Modules usually have a set of outputs which can be referenced in your terraform file.  
-Source of modules  First source is official terraform registry  You can also find terraform modules on github repositories. There are plenty of them.  If you don&amp;rsquo;t feel satisfied you can always create your own modules</description>
+      <description>What are terraform modules  Modules are blackbox configuration in which only some set of parameters is provided in aim to create more complex infrastructure behind the scenes.  Modules usually have a set of outputs which can be referenced in your terraform file.  
+Using modules  First source is official terraform registry  You can also find terraform modules on git repositories. There are plenty of them.  If you don&amp;rsquo;t feel satisfied you can always create your own modules and reference them as local files  Module is normal terraform project with: main.</description>
     </item>
     
     <item>
@@ -74,7 +74,9 @@ Source of modules  First source is official terraform registry  You can also fin
       
       <guid>https://mlodzikowski.pl/presentations/terraform/6/</guid>
       <description>Thank you! online @ https://mlodzikowski.pl/presentations/terraform Sources and helpful links to study terraform:
- Jakub Jańczak article  pointing terraform cons  Alexander Savchuk post  on Continous Configuration Automation   Pavan Belagatti&amp;rsquo;s analyze  on terraforms increasing popularity   Two articles from shippable about terraform on AWS: provisioning infrastructure  by Manisha Sahasrabudhe and creating container cluster  by Tom Trahan   Hashicrop webinars</description>
+ Jakub Jańczak article  pointing terraform cons  Alexander Savchuk post  on CCA   Pavan Belagatti&amp;rsquo;s analyze  on popularity of terraform   Two articles about terraform on AWS: provisioning AWS  by Manisha Sahasrabudhe and terraform ECS cluster  by Tom Trahan  
+More helpful links
+  Hashicrop webinars on YT   Introduction to terraform from Gruntwork.</description>
     </item>
     
   </channel>

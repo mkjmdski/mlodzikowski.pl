@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css">
     <link rel="stylesheet" href="/presentations/themes/indigo.css" id="theme">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/solarized-dark.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-bright.min.css">
     
     <script>
       var link = document.createElement( 'link' );
@@ -30,15 +30,15 @@
 <h5>Mikołaj Młodzikowski</h5></section><section><section data-shortcode-section>
 <p><pre>
     <code class="language-plaintext">
-        root@sodo-meetup # neofetch
+        root@sodo-meetup # whoami
     </code>
 </pre>
 <ul>
     <li class="fragment fade-up">
-        The main aim is to popularize IaC approach using terraform as an example
+        My name is Miko I like lingustics, travels and programing
     </li>
     <li class="fragment fade-up">
-        Terraform will be broadly presented as a tool without any complex examples
+        I&rsquo;ve just started my career as a Build Automation Engineer, previously Java Developer and DevOps
     </li>
 </ul></p>
 
@@ -46,17 +46,21 @@
 
 <p><pre>
     <code class="language-plaintext">
-        root@sodo-meetup # whoami
+        root@sodo-meetup # neofetch
     </code>
 </pre>
 <ul>
     <li class="fragment fade-up">
-        My name is Miko and I like lingustics, travels and programing
+        This presentations is focused on popularizing IaC approach using terraform as an example
     </li>
     <li class="fragment fade-up">
-        I just started my career as a Build Automation Engineer, previously Java Developer and DevOps
+        Terraform will be broadly presented as a tool with mostly easy examples
     </li>
-</ul></p>
+    <li class="fragment fade-up">
+        Presentation is full of links, sources and referals so if you are interested in the topic - check out later the presentation online
+    </li>
+</ul>
+<img src="/presentations/img/terraform/tool.png" alt="Reddis comment on terraform" class="fragment fade-up"/></p>
 
 </section><section>
 
@@ -76,13 +80,12 @@
         HCL together with &ldquo;${interpolation}&rdquo;
     </li>
     <li class="fragment fade-up">
-        Modules and tools
+        Modules and community tools
     </li>
     <li class="fragment fade-up">
         Snippets!
     </li>
-</ul>
-<img src="/presentations/img/terraform/tool.png" alt="Reddis comment on terraform" class="fragment fade-up"/></p>
+</ul></p>
 
 </section></section><section><section data-shortcode-section>
 <p><h3>IaC Approach</h3>
@@ -135,6 +138,9 @@
     </li>
     <li class="fragment fade-up">
         High learning curve
+    </li>
+    <li class="fragment fade-up">
+        Some lacks in the documentations
     </li>
 </ul></p>
 
@@ -202,7 +208,7 @@
         Taint - marking resources for recreation
     </li>
     <li class="fragment fade-up">
-        Generating graphs of resources
+        Generating dependencies graph
     </li>
 </ul></p>
 
@@ -229,45 +235,97 @@ Exact specification on the language can be found in the Hashicorps
 
 </section><section>
 
-<p><h3>Logical statements</h3>
-<ul>
-    <li class="fragment fade-up">
-        if: subnet = &ldquo;${var.env == &ldquo;production&rdquo; ? var.prod_subnet : var.dev_subnet}&rdquo;
-    </li>
-    <li class="fragment fade-up">
-        comprassions and boolean logic: == != &gt; &lt; &gt;= &lt;=
-    </li>
-    <li class="fragment fade-up">
-            looping (0.11): ${count.index} -&gt; creating ++like loops
-    </li>
-    <li class="fragment fade-up">
-        looping (0.12): %{ for instance in aws_instance.example ~}server ${instance.id}%{ endfor }. -&gt; templating
-    </li>
-</ul></p>
+<p><h3>Data types</h3>
+<pre>
+    <code class="language-javascript">
+        // vars:
+        &ldquo;${var.aws_account_number}&rdquo; //(0.11)
+        var.aws_account_number // (0.12)
+        // lists:
+        &ldquo;${var.aws_account_number[count.index]}&rdquo;
+        // maps:
+        &ldquo;${var.aws_account_number[&lsquo;client1&rsquo;]}&rdquo;
+    </code>
+</pre></p>
 
 </section><section>
 
-<p><h3>References</h3>
-<ul>
-    <li class="fragment fade-up">
-        vars: &ldquo;${var.aws_account_number}&rdquo; (0.11), var.aws_account_number (0.12)
-    </li>
-    <li class="fragment fade-up">
-        maps: &ldquo;${var.aws_account_number[&lsquo;client1&rsquo;]}&rdquo;
-    </li>
-    <li class="fragment fade-up">
-        lists: &ldquo;${var.aws_account_number[count.index]}&rdquo;
-    </li>
-    <li class="fragment fade-up">
-        single resources/data: &ldquo;${data.aws_ec2_instance.single.ipv4}&rdquo;
-    </li>
-    <li class="fragment fade-up">
-        multiple: &ldquo;${data.aws_ec2_instance.cluster.*.ipv4}&rdquo;
-    </li>
-    <li class="fragment fade-up">
-        modules: &ldquo;${module.module_name.output_name.key}&rdquo;
-    </li>
-</ul></p>
+<p><h3>Loops</h3>
+<pre>
+    <code class="language-javascript">
+        // looping (0.11): creating ++like loops
+        resource instance {
+            count = 3
+            name = &ldquo;instance-${count.index}&rdquo;
+        }
+        // looping (0.12): templating
+        %{ for instance in aws_instance.example ~}
+            server ${instance.id}
+        %{ endfor }
+    </code>
+</pre></p>
+
+</section><section>
+
+<p><h3>Logical statements</h3>
+<pre>
+    <code class="language-javascript">
+        //if
+        resource aws_vpc vpc {
+            count = &ldquo;${var.create_vpc}&rdquo;
+            // In HCL true/false is mapped to 1 and 0
+        }
+        //if-else
+        // comprassions and boolean logic: == != &gt; &lt; &gt;= &lt;=
+        resource aws_vpc vpc {
+            subnet = &ldquo;${
+                var.env == &ldquo;production&rdquo; ?
+                    var.prod_subnet : var.dev_subnet
+            }&rdquo;
+        }
+    </code>
+</pre></p>
+
+</section><section>
+
+<p><h3>Refrences</h3>
+<pre>
+    <code class="language-javascript">
+        resource aws_ec2_instance manager {
+            name = &ldquo;swarm-manager&rdquo;
+        }
+        resource aws_ec2_instance workers {
+            counte = 3
+            name = &ldquo;swarm-worker-${count.index}&rdquo;
+        }
+        module docker_swarm swarm {
+            manager_ip = &ldquo;${data.aws_ec2_instance.manager.ipv4}&rdquo;
+            workers_ips = &ldquo;${data.aws_ec2_instance.workers.*.ipv4}&rdquo;
+        }
+    </code>
+</pre></p>
+
+</section><section>
+
+<p><h3>Referencing modules</h3>
+<pre data-fragment-index=1>
+    <code class="language-javascript">
+        // module file
+        resource s3_bucket data {
+            name = &ldquo;${var.name}&rdquo;
+        }
+        output policy_ref {
+            value = &ldquo;${s3_bucket.policy.json}&rdquo;
+        }
+        //main.tf
+        module bucket {
+            name = &ldquo;my-bucket&rdquo;
+        }
+        module bucket-2 {
+            policy = &ldquo;${module.bucket.policy_ref.value}&rdquo;
+        }
+    </code>
+</pre></p>
 
 </section><section>
 
@@ -293,7 +351,7 @@ All interpolations can be found in the
 
 </section>
 </section><section><section data-shortcode-section>
-<p><h3>Terraform modules</h3>
+<p><h3>What are terraform modules</h3>
 <ul>
     <li class="fragemnt fade-up">
         Modules are blackbox configuration in which only some set of parameters is provided in aim to create more complex infrastructure behind the scenes.
@@ -305,29 +363,51 @@ All interpolations can be found in the
 
 </section><section>
 
-<p><h3>Source of modules</h3>
+<p><h3>Using modules</h3>
 <ul>
     <li class="fragment fade-up">
         First source is official terraform <a href="https://registry.terraform.io/" target="_blank">registry</a>
     </li>
     <li class="fragment fade-up">
-        You can also find terraform modules on github repositories. There are plenty of them.
+        You can also find terraform modules on git repositories. There are plenty of them.
     </li>
     <li class="fragment fade-up">
-        If you don&rsquo;t feel satisfied you can always create your own modules
+        If you don&rsquo;t feel satisfied you can always create your own modules and reference them as local files
+    </li>
+    <li class="fragment fade-up">
+        Module is normal terraform project with: main.tf, variables.tf and optional outputs.
     </li>
 </ul></p>
 
 </section><section>
 
-<p><h3>Creating your own module</h3>
+<p><h3>Terraform extensions</h3>
 <ul>
-    <li class="fragment fade-up"></p>
+    <li class="fragment fade-up">
+        <a href="https://github.com/gruntwork-io/terragrunt" target="_blank">Terragrunt</a> - used for applying DRY ideology in your projects for e.g. if you have same configuration for three envs
+    </li>
+    <li class="fragment fade-up">
+        <a href="https://github.com/gruntwork-io/terratest" target="_blank">Terratest</a> - go library which helps in writting http requests/api calls/ssh connetcions to test your infrastructure.
+    </li>
+    <li class="fragment fade-up">
+        Terraform <a href="https://github.com/adammck/terraform-inventory" target="_blank">dynamic inventory</a> for ansible.
+    </li>
+</ul></p>
 
-<pre><code>&lt;/li&gt;
-</code></pre>
+</section><section>
 
-<p></ul></p>
+<p><h3>Terraform extensions</h3>
+<ul>
+        <li class="fragment fade-up">
+            <a href="https://marketplace.visualstudio.com/items?itemName=mauve.terraform" target="_blank">VS Code plugin</a> for terraform with syntax highligthing. There are also other plugins with snippets for AWS/Azure and generic HCL blocks.
+        </li>
+        <li class="fragment fade-up">
+            Terraform <a href="https://github.com/wata727/tflint" target="_blank">linter</a> as addition to terraform fmt.
+        </li>
+        <li class="fragment fade-up">
+                Terraform <a href="https://github.com/coinbase/terraform-landscape" target="_blank">landscape</a> to help producing prettier output for terraform.
+        </li>
+</ul></p>
 
 </section>
 </section><section><section data-shortcode-section>
@@ -346,23 +426,38 @@ All interpolations can be found in the
     <li>Alexander Savchuk
         <a href="https://devblog.xero.com/ci-cd-with-jenkins-pipelines-part-2-managing-infrastructure-with-terraform-and-docker-bd4b81554aa7" target="_blank">
             post
-        </a> on Continous Configuration Automation
+        </a> on CCA
     </li>
     <li> Pavan Belagatti&rsquo;s
         <a href="https://medium.com/devopslinks/why-should-terraform-be-one-of-your-devops-tools-29ae15861b1f" target="_blank">
              analyze
-        </a> on terraforms increasing popularity
+        </a> on popularity of terraform
     </li>
-    <li> Two articles from shippable about terraform on AWS:
+    <li> Two articles about terraform on AWS:
         <a href="https://blog.shippable.com/provisioning-aws-infrastructure-with-terraform" target="_blank">
-            provisioning infrastructure
+            provisioning AWS
         </a> by Manisha Sahasrabudhe and
         <a href="http://blog.shippable.com/create-a-container-cluster-using-terraform-with-aws-part-1" target="_blank">
-            creating container cluster
+            terraform ECS cluster
         </a> by Tom Trahan
     </li>
+</ul></p>
+
+</section><section>
+
+<p><p>More helpful links</p>
+<ul>
     <li>
-        Hashicrop <a href="https://www.youtube.com/watch?v=PjxJzyP_bdU&list=PL81sUbsFNc5aHvC3tAJRr7GlaMcS19zSO&index=11" target="_blank"> webinars</a>
+        Hashicrop <a href="https://www.youtube.com/watch?v=PjxJzyP_bdU&list=PL81sUbsFNc5aHvC3tAJRr7GlaMcS19zSO&index=11" target="_blank"> webinars on YT</a>
+    </li>
+    <li>
+        Introduction to terraform from <a href="https://blog.gruntwork.io/an-introduction-to-terraform-f17df9c6d180" target="_blank">Gruntwork.io</a> which created terragrunt and terratest.
+    </li>
+    <li>
+        Terraform <a href="https://github.com/gruntwork-io/terraform-training-solutions" target="_blank">training</a> with 8 exercises from beginner to advanced.
+    </li>
+    <li>
+        About <a href="https://blog.gruntwork.io/terraform-tips-tricks-loops-if-statements-and-gotchas-f739bbae55f9" target="_blank">loops and logic</a> in terraform
     </li>
 </ul></p>
 
@@ -372,7 +467,7 @@ All interpolations can be found in the
       
 
     </div>
-    <script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"/themes/indigo.css","highlight_cdn":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0","highlight_theme":"solarized-dark","reveal_cdn":"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0"}</script>
+    <script type="application/json" id="reveal-hugo-site-params">{"custom_theme":"/themes/indigo.css","highlight_cdn":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0","highlight_theme":"styles/tomorrow-night-bright","reveal_cdn":"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0"}</script>
     <script type="application/json" id="reveal-hugo-page-params">null</script>
     <script type="text/javascript"> window.revealHugoDependencies = { dependencies: [ { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.7.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
           { src: 'https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/reveal.js\/3.7.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
