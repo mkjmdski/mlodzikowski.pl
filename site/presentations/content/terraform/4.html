@@ -24,45 +24,97 @@ Exact specification on the language can be found in the Hashicorps
 
 ---
 
-<h3>Logical statements</h3>
-<ul>
-    <li class="fragment fade-up">
-        if: subnet = "${var.env == "production" ? var.prod_subnet : var.dev_subnet}"
-    </li>
-    <li class="fragment fade-up">
-        comprassions and boolean logic: == != &gt; &lt; &gt;= &lt;=
-    </li>
-    <li class="fragment fade-up">
-            looping (0.11): ${count.index} -> creating ++like loops
-    </li>
-    <li class="fragment fade-up">
-        looping (0.12): %{ for instance in aws_instance.example ~}server ${instance.id}%{ endfor }. -> templating
-    </li>
-</ul>
+<h3>Data types</h3>
+<pre>
+    <code class="language-javascript">
+        // vars:
+        "${var.aws_account_number}" //(0.11)
+        var.aws_account_number // (0.12)
+        // lists:
+        "${var.aws_account_number[count.index]}"
+        // maps:
+        "${var.aws_account_number['client1']}"
+    </code>
+</pre>
 
 ---
 
-<h3>References</h3>
-<ul>
-    <li class="fragment fade-up">
-        vars: "${var.aws_account_number}" (0.11), var.aws_account_number (0.12)
-    </li>
-    <li class="fragment fade-up">
-        maps: "${var.aws_account_number['client1']}"
-    </li>
-    <li class="fragment fade-up">
-        lists: "${var.aws_account_number[count.index]}"
-    </li>
-    <li class="fragment fade-up">
-        single resources/data: "${data.aws_ec2_instance.single.ipv4}"
-    </li>
-    <li class="fragment fade-up">
-        multiple: "${data.aws_ec2_instance.cluster.*.ipv4}"
-    </li>
-    <li class="fragment fade-up">
-        modules: "${module.module_name.output_name.key}"
-    </li>
-</ul>
+<h3>Loops</h3>
+<pre>
+    <code class="language-javascript">
+        // looping (0.11): creating ++like loops
+        resource instance {
+            count = 3
+            name = "instance-${count.index}"
+        }
+        // looping (0.12): templating
+        %{ for instance in aws_instance.example ~}
+            server ${instance.id}
+        %{ endfor }
+    </code>
+</pre>
+
+---
+
+<h3>Logical statements</h3>
+<pre>
+    <code class="language-javascript">
+        //if
+        resource aws_vpc vpc {
+            count = "${var.create_vpc}"
+            // In HCL true/false is mapped to 1 and 0
+        }
+        //if-else
+        // comprassions and boolean logic: == != &gt; &lt; &gt;= &lt;=
+        resource aws_vpc vpc {
+            subnet = "${
+                var.env == "production" ?
+                    var.prod_subnet : var.dev_subnet
+            }"
+        }
+    </code>
+</pre>
+
+---
+
+<h3>Refrences</h3>
+<pre>
+    <code class="language-javascript">
+        resource aws_ec2_instance manager {
+            name = "swarm-manager"
+        }
+        resource aws_ec2_instance workers {
+            counte = 3
+            name = "swarm-worker-${count.index}"
+        }
+        module docker_swarm swarm {
+            manager_ip = "${data.aws_ec2_instance.manager.ipv4}"
+            workers_ips = "${data.aws_ec2_instance.workers.*.ipv4}"
+        }
+    </code>
+</pre>
+
+---
+
+<h3>Referencing modules</h3>
+<pre data-fragment-index=1>
+    <code class="language-javascript">
+        // module file
+        resource s3_bucket data {
+            name = "${var.name}"
+        }
+        output policy_ref {
+            value = "${s3_bucket.policy.json}"
+        }
+        //main.tf
+        module bucket {
+            name = "my-bucket"
+        }
+        module bucket-2 {
+            policy = "${module.bucket.policy_ref.value}"
+        }
+    </code>
+</pre>
 
 ---
 

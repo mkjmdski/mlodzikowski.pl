@@ -1,7 +1,7 @@
 +++
 +++
 {{% section %}}
-<h3>Terraform modules</h3>
+<h3>What are terraform modules</h3>
 <ul>
     <li class="fragemnt fade-up">
         Modules are blackbox configuration in which only some set of parameters is provided in aim to create more complex infrastructure behind the scenes.
@@ -13,25 +13,50 @@
 
 ---
 
-<h3>Source of modules</h3>
+<h3>Using modules</h3>
 <ul>
     <li class="fragment fade-up">
         First source is official terraform <a href="https://registry.terraform.io/" target="_blank">registry</a>
     </li>
     <li class="fragment fade-up">
-        You can also find terraform modules on github repositories. There are plenty of them.
+        You can also find terraform modules on git repositories. There are plenty of them.
     </li>
     <li class="fragment fade-up">
-        If you don't feel satisfied you can always create your own modules
+        If you don't feel satisfied you can always create your own modules and reference them as local files
+    </li>
+    <li class="fragment fade-up">
+        Module is normal terraform project with: main.tf, variables.tf and optional outputs.
     </li>
 </ul>
 
 ---
 
-<h3>Creating your own module</h3>
+<h3>Terraform extensions</h3>
 <ul>
     <li class="fragment fade-up">
-        
+        <a href="https://github.com/gruntwork-io/terragrunt" target="_blank">Terragrunt</a> - used for applying DRY ideology in your projects for e.g. if you have same configuration for three envs
+    </li>
+    <li class="fragment fade-up">
+        <a href="https://github.com/gruntwork-io/terratest" target="_blank">Terratest</a> - go library which helps in writting http requests/api calls/ssh connetcions to test your infrastructure.
+    </li>
+    <li class="fragment fade-up">
+        Terraform <a href="https://github.com/adammck/terraform-inventory" target="_blank">dynamic inventory</a> for ansible.
     </li>
 </ul>
+
+---
+
+<h3>Terraform extensions</h3>
+<ul>
+        <li class="fragment fade-up">
+            <a href="https://marketplace.visualstudio.com/items?itemName=mauve.terraform" target="_blank">VS Code plugin</a> for terraform with syntax highligthing. There are also other plugins with snippets for AWS/Azure and generic HCL blocks.
+        </li>
+        <li class="fragment fade-up">
+            Terraform <a href="https://github.com/wata727/tflint" target="_blank">linter</a> as addition to terraform fmt.
+        </li>
+        <li class="fragment fade-up">
+                Terraform <a href="https://github.com/coinbase/terraform-landscape" target="_blank">landscape</a> to help producing prettier output for terraform.
+        </li>
+</ul>
+
 {{% /section %}}

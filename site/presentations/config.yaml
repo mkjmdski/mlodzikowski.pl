@@ -6,9 +6,9 @@ theme: reveal
 params:
   reveal_hugo:
     custom_theme: /themes/indigo.css
-    highlight_theme: solarized-dark
     reveal_cdn: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0'
     highlight_cdn: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0'
+    highlight_theme: styles/tomorrow-night-bright
 outputFormats:
   Reveal:
     baseName: index
