@@ -35,10 +35,10 @@
 </pre>
 <ul>
     <li class="fragment fade-up">
-        My name is Miko I like lingustics, travels and programing
+        My name is Miko, my interests are: lingustics, travels and programing
     </li>
     <li class="fragment fade-up">
-        I&rsquo;ve just started my career as a Build Automation Engineer, previously Java Developer and DevOps
+        I&rsquo;m going to start soon my career as a Build Automation Engineer, previously Java Developer and DevOps
     </li>
 </ul></p>
 
@@ -46,7 +46,7 @@
 
 <p><pre>
     <code class="language-plaintext">
-        root@sodo-meetup # neofetch
+        root@sodo-meetup # uname -a
     </code>
 </pre>
 <ul>
@@ -140,7 +140,7 @@
         High learning curve
     </li>
     <li class="fragment fade-up">
-        Some lacks in the documentations
+        Some lacks in the documentations - both in tools and providers API
     </li>
 </ul></p>
 
@@ -157,7 +157,7 @@
         Communication is JSON based
     </li>
     <li class="fragment fade-up" data-fragment-index="2">
-        Extends by plugins written in Golang
+        Is extendable by plugins written in Golang
     </li>
 </ul>
 <img class="fragment fade-up" data-fragment-index="2" alt="Go gopher writting code" src="/presentations/img/terraform/golang.gif"/></p>
@@ -219,7 +219,7 @@
         HCL is compromise between human-friendly and machine-friendly configurations
     </li>
     <li class="fragment fade-up">
-        HCL is fusion of full programing languages and data structure languages
+        HCL is fusion of complete programing languages and data structure languages
     </li>
     <li class="fragment fade-up">
         HCL is JSON-compatible - you can generate JSON and run it as HCL
@@ -228,7 +228,7 @@
         HCL supports comments and &lt;&lt;EOF syntax for multiline strings.
     </li>
 </ul>
-<p>
+<p class="fragment fade-up">
 Exact specification on the language can be found in the Hashicorps
 <a href="https://github.com/hashicorp/hcl" target="_blank"> repository</a>
 </p></p>
@@ -299,8 +299,8 @@ Exact specification on the language can be found in the Hashicorps
             name = &ldquo;swarm-worker-${count.index}&rdquo;
         }
         module docker_swarm swarm {
-            manager_ip = &ldquo;${data.aws_ec2_instance.manager.ipv4}&rdquo;
-            workers_ips = &ldquo;${data.aws_ec2_instance.workers.*.ipv4}&rdquo;
+            manager_ip = &ldquo;${aws_ec2_instance.manager.ipv4}&rdquo;
+            workers_ips = &ldquo;${aws_ec2_instance.workers.*.ipv4}&rdquo;
         }
     </code>
 </pre></p>
@@ -321,7 +321,8 @@ Exact specification on the language can be found in the Hashicorps
         module bucket {
             name = &ldquo;my-bucket&rdquo;
         }
-        module bucket-2 {
+        resource aws_s3_bucket copy {
+            name = &ldquo;copy-of-my-bucket&rdquo;
             policy = &ldquo;${module.bucket.policy_ref.value}&rdquo;
         }
     </code>
@@ -344,7 +345,7 @@ Exact specification on the language can be found in the Hashicorps
         System calls: dirname, file, timestamp
     </li>
 </ul>
-<p>
+<p class="fragment fade-up">
 All interpolations can be found in the
 <a href="https://github.com/hashicorp/hcl" target="_blank"> docs</a>.
 </p></p>
@@ -412,7 +413,8 @@ All interpolations can be found in the
 </section>
 </section><section><section data-shortcode-section>
 <p><h3>Thank you!</h3>
-<p>online @ <a href="https://mlodzikowski.pl/presentations/terraform">https://mlodzikowski.pl/presentations/terraform</a> </p></p>
+<p>online @ <a href="https://mlodzikowski.pl/presentations/terraform">https://mlodzikowski.pl/presentations/terraform</a> </p>
+<p>repo with snippets @ <a href="https://github.com/mkjmdski/terraform-examples">https://github.com/mkjmdski/terraform-examples</a> </p></p>
 
 </section><section>
 
