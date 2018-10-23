@@ -8,7 +8,7 @@
         HCL is compromise between human-friendly and machine-friendly configurations
     </li>
     <li class="fragment fade-up">
-        HCL is fusion of full programing languages and data structure languages
+        HCL is fusion of complete programing languages and data structure languages
     </li>
     <li class="fragment fade-up">
         HCL is JSON-compatible - you can generate JSON and run it as HCL
@@ -17,7 +17,7 @@
         HCL supports comments and &lt;&lt;EOF syntax for multiline strings.
     </li>
 </ul>
-<p>
+<p class="fragment fade-up">
 Exact specification on the language can be found in the Hashicorps
 <a href="https://github.com/hashicorp/hcl" target="_blank"> repository</a>
 </p>
@@ -88,8 +88,8 @@ Exact specification on the language can be found in the Hashicorps
             name = "swarm-worker-${count.index}"
         }
         module docker_swarm swarm {
-            manager_ip = "${data.aws_ec2_instance.manager.ipv4}"
-            workers_ips = "${data.aws_ec2_instance.workers.*.ipv4}"
+            manager_ip = "${aws_ec2_instance.manager.ipv4}"
+            workers_ips = "${aws_ec2_instance.workers.*.ipv4}"
         }
     </code>
 </pre>
@@ -110,7 +110,8 @@ Exact specification on the language can be found in the Hashicorps
         module bucket {
             name = "my-bucket"
         }
-        module bucket-2 {
+        resource aws_s3_bucket copy {
+            name = "copy-of-my-bucket"
             policy = "${module.bucket.policy_ref.value}"
         }
     </code>
@@ -133,7 +134,7 @@ Exact specification on the language can be found in the Hashicorps
         System calls: dirname, file, timestamp
     </li>
 </ul>
-<p>
+<p class="fragment fade-up">
 All interpolations can be found in the
 <a href="https://github.com/hashicorp/hcl" target="_blank"> docs</a>.
 </p>
