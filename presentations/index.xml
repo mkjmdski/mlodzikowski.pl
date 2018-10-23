@@ -73,10 +73,8 @@ Using modules  First source is official terraform registry  You can also find te
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/6/</guid>
-      <description>Thank you! online @ https://mlodzikowski.pl/presentations/terraform repo with snippets @ https://github.com/mkjmdski/terraform-examples Sources and helpful links to study terraform:
- Jakub Jańczak article  pointing terraform cons  Alexander Savchuk post  on CCA   Pavan Belagatti&amp;rsquo;s analyze  on popularity of terraform   Two articles about terraform on AWS: provisioning AWS  by Manisha Sahasrabudhe and terraform ECS cluster  by Tom Trahan  
-More helpful links
-  Hashicrop webinars on YT   Introduction to terraform from Gruntwork.</description>
+      <description>Thank you! online @ https://mlodzikowski.pl/presentations/terraform repo with snippets @ https://github.com/mkjmdski/terraform-examples Sources and helpful links to study terraform:  Jakub Jańczak article  pointing terraform cons  Alexander Savchuk post  on CCA   Pavan Belagatti&amp;rsquo;s analyze  on popularity of terraform   Two articles about terraform on AWS: provisioning AWS  by Manisha Sahasrabudhe and terraform ECS cluster  by Tom Trahan  
+More helpful links   Hashicrop webinars on YT   Introduction to terraform from Gruntwork.</description>
     </item>
     
   </channel>
