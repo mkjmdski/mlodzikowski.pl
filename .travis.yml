@@ -16,5 +16,3 @@ deploy:
   verbose: true
   on:
     branch: master
-after_deploy:
-  - curl -X POST -d '' $netlify_hook
