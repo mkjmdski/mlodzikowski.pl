@@ -1,2 +1,2 @@
 [backend]
-    functions = "api"
+    functions = "functions"
