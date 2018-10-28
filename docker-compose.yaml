@@ -4,12 +4,12 @@ services:
     build:
       context: site
       target: local_server
-      args:
-        baseURL: &baseURL 'http://localhost.test'
     ports:
       - target: 80
         published: 80
         protocol: tcp
         mode: host
+    volumes:
+      - ./site:/site
     environment:
-      baseURL: *baseURL
+      baseURL: 'http://localhost.test'

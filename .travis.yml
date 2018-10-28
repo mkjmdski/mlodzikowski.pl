@@ -1,8 +1,10 @@
+language: go
 sudo: required
 services:
   - docker
 script:
   - ./build_dist.sh
+  - ./build_api.sh
 branches:
   only:
     - master
@@ -11,7 +13,7 @@ deploy:
   skip-cleanup: true
   github-token: $github_token
   keep-history: true
-  local-dir: public
+  local-dir: production
   target-branch: production
   verbose: true
   on:

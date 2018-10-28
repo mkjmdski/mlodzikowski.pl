@@ -20,6 +20,9 @@ quickLinks: &quickLinks
   - name: DigitalOcean referal link 100$
     href: https://m.do.co/c/21d96d6ebff2
     title: Use this link to signup on DigitalOcean with 100$
+  - name: Netlify api
+    href: /.netlify/functions/hello
+    title: Lambda test
 
 social: &social
   - name: Github

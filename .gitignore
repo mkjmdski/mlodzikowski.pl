@@ -1,1 +1,3 @@
-public/
+production/*
+!production/netlify.toml
+site/public
