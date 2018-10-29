@@ -1,8 +1,10 @@
+language: go
 sudo: required
 services:
   - docker
 script:
   - ./build_dist.sh
+  - ./build_api.sh
 branches:
   only:
     - master
