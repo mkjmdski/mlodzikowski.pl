@@ -1,6 +1,6 @@
 [build]
-    functions = "api"
     command = "bash build_api.sh"
+    functions = "api"
     publish = "dist"
 [build.environment]
     GO_IMPORT_PATH = "github.com/mkjmdski/mlodzikowski.pl"
