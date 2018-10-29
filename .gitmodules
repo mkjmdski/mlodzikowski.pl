@@ -1,0 +1,6 @@
+[submodule "site/presentations/themes/reveal"]
+	path = site/presentations/themes/reveal
+	url = https://github.com/dzello/reveal-hugo.git
+[submodule "site/main/themes/coder"]
+	path = site/main/themes/coder
+	url = https://github.com/mkjmdski/mlodzkowski.pl-hugo-theme.git

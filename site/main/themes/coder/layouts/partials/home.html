@@ -1,0 +1,35 @@
+<section class="container centered">
+  <div class="about">
+    {{ with .Site.Params.avatarurl }}
+      <div class="avatar"><img src="{{ . }}" alt="avatar"></div>
+    {{ end }}
+    <h1>{{ .Site.Params.title }}</h1>
+    {{ with .Site.Params.tagline}}
+      <h2 class="tagline">
+        {{ range  $i, $e := .}}
+          {{if $i}} | {{end}} <!-- if not first -->
+          <i class="fab {{ .fabIcon }}"></i>{{ .name }}
+        {{ end }}
+      </h2>
+    {{ end }}
+    {{ with .Site.Params.social }}
+      <ul id="fab-icons-social">
+        {{ range sort .}}
+          <li>
+            <a target="_blank" class="icons-social-link" title="{{ .title }}" href="{{ .url }}">
+              <i class="fab fab-link {{ .icon }}"></i>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+    <h3>Quick links:</h3>
+    {{ with .Site.Params.quickLinks }}
+      {{ range .}}
+        <a target="_blank" class="btn btn--rounded action external-link" href="{{ .href }}" title="{{ .title }}">
+          {{ .name }}<i class="btn-icon fa fa-arrow-right"></i>
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>

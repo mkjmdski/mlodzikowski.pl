@@ -1,0 +1,74 @@
++++
++++
+{{% section %}}
+
+<h3>Facts about terraform</h3>
+<ul>
+    <li class="fragment fade-up" data-fragment-index="1">
+        Is declarative -> tell <b>what</b> you want
+    </li>
+    <li class="fragment fade-up" data-fragment-index="1">
+        Uses <b>push</b> configuration method
+    </li>
+    <li class="fragment fade-up" data-fragment-index="2">
+        Communication is JSON based
+    </li>
+    <li class="fragment fade-up" data-fragment-index="2">
+        Is extendable by plugins written in Golang
+    </li>
+</ul>
+<img class="fragment fade-up" data-fragment-index="2" alt="Go gopher writting code" src="/presentations/img/terraform/golang.gif"/>
+
+---
+
+<h3>Digest of the providers set</h3>
+<ul>
+    <li class="fragment fade-up">
+        Clouds: AWS, GCP, Azure, Alibaba, DigitalOcean, Heroku, OpenStack
+    </li>
+    <li class="fragment fade-up">
+        Monitors: Datadog, Grafana, Icinga, New Relic, PagerDuty
+    </li>
+    <li class="fragment fade-up">
+        Software: Docker, Nomad, Consul, Vault, Chef, Kubernetes
+    </li>
+    <li class="fragment fade-up">
+        Networks: Cloudflare, DNS Servers, HTTP Requests
+    </li>
+    <li class="fragment fade-up">
+        Databases, scripts, archives, vcs, many more...
+    </li>
+</ul>
+
+<p class="fragment fade-up">
+    <a href="https://www.terraform.io/docs/providers/" target="_blank">Terraform docs on providers</a>
+</p>
+
+---
+
+<h3>Terraform features</h3>
+<ul>
+    <li class="fragment fade-up">
+        Importing exsiting resources into your tfstate
+    </li>
+    <li class="fragment fade-up">
+        Mixing providers in one configuration
+    </li>
+    <li class="fragment fade-up">
+        Displaying plans before apply
+    </li>
+    <li class="fragment fade-up">
+        Data sources (immutable) and resources (mutable)
+    </li>
+    <li class="fragment fade-up">
+        Validating configuration and standard formatter
+    </li>
+    <li class="fragment fade-up">
+        Taint - marking resources for recreation
+    </li>
+    <li class="fragment fade-up">
+        Generating dependencies graph
+    </li>
+</ul>
+
+{{% /section %}}

@@ -1,0 +1,142 @@
++++
++++
+{{% section %}}
+
+<h3>HCL && "${interpolation}"</h3>
+<ul>
+    <li class="fragment fade-up">
+        HCL is compromise between human-friendly and machine-friendly configurations
+    </li>
+    <li class="fragment fade-up">
+        HCL is fusion of complete programing languages and data structure languages
+    </li>
+    <li class="fragment fade-up">
+        HCL is JSON-compatible - you can generate JSON and run it as HCL
+    </li>
+    <li class="fragment fade-up">
+        HCL supports comments and &lt;&lt;EOF syntax for multiline strings.
+    </li>
+</ul>
+<p class="fragment fade-up">
+Exact specification on the language can be found in the Hashicorps
+<a href="https://github.com/hashicorp/hcl" target="_blank"> repository</a>
+</p>
+
+---
+
+<h3>Data types</h3>
+<pre>
+    <code class="language-javascript">
+        // vars:
+        "${var.aws_account_number}" //(0.11)
+        var.aws_account_number // (0.12)
+        // lists:
+        "${var.aws_account_number[count.index]}"
+        // maps:
+        "${var.aws_account_number['client1']}"
+    </code>
+</pre>
+
+---
+
+<h3>Loops</h3>
+<pre>
+    <code class="language-javascript">
+        // looping (0.11): creating ++like loops
+        resource instance {
+            count = 3
+            name = "instance-${count.index}"
+        }
+        // looping (0.12): templating
+        %{ for instance in aws_instance.example ~}
+            server ${instance.id}
+        %{ endfor }
+    </code>
+</pre>
+
+---
+
+<h3>Logical statements</h3>
+<pre>
+    <code class="language-javascript">
+        //if
+        resource aws_vpc vpc {
+            count = "${var.create_vpc}"
+            // In HCL true/false is mapped to 1 and 0
+        }
+        //if-else
+        // comprassions and boolean logic: == != &gt; &lt; &gt;= &lt;=
+        resource aws_vpc vpc {
+            subnet = "${
+                var.env == "production" ?
+                    var.prod_subnet : var.dev_subnet
+            }"
+        }
+    </code>
+</pre>
+
+---
+
+<h3>Refrences</h3>
+<pre>
+    <code class="language-javascript">
+        resource aws_ec2_instance manager {
+            name = "swarm-manager"
+        }
+        resource aws_ec2_instance workers {
+            counte = 3
+            name = "swarm-worker-${count.index}"
+        }
+        module docker_swarm swarm {
+            manager_ip = "${aws_ec2_instance.manager.ipv4}"
+            workers_ips = "${aws_ec2_instance.workers.*.ipv4}"
+        }
+    </code>
+</pre>
+
+---
+
+<h3>Referencing modules</h3>
+<pre data-fragment-index=1>
+    <code class="language-javascript">
+        // module file
+        resource s3_bucket data {
+            name = "${var.name}"
+        }
+        output policy_ref {
+            value = "${s3_bucket.policy.json}"
+        }
+        //main.tf
+        module bucket {
+            name = "my-bucket"
+        }
+        resource aws_s3_bucket copy {
+            name = "copy-of-my-bucket"
+            policy = "${module.bucket.policy_ref.value}"
+        }
+    </code>
+</pre>
+
+---
+
+<h3>Functions</h3>
+<ul>
+    <li class="fragment fade-up">
+        Math functions: floor, abs, log, pow, max, signum, ${2 + 2}
+    </li>
+    <li class="fragment fade-up">
+        String functions: base64, concat, chomp, format, indent, join, lower
+    </li>
+    <li class="fragment fade-up">
+        Data types operations: chunklist, element, map, list, jsonencode, keys, sort, slice
+    </li>
+    <li class="fragment fade-up">
+        System calls: dirname, file, timestamp
+    </li>
+</ul>
+<p class="fragment fade-up">
+All interpolations can be found in the
+<a href="https://github.com/hashicorp/hcl" target="_blank"> docs</a>.
+</p>
+
+{{% /section %}}

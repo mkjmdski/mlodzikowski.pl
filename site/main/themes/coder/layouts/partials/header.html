@@ -1,0 +1,43 @@
+<nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="{{ .Site.BaseURL | absLangURL }}">
+      {{ .Site.Title }}
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      {{ with .Site.Menus.main}}
+        {{$n := len .}}
+        {{$n := add $n -1}}
+        {{ range $i, $e := sort . }}
+        <li class="navigation-item">
+          <a class="navigation-link" href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+        </li>
+        {{ if ne $i $n }}
+        <li class="navigation-item menu-separator">
+          <span>|</span>
+        </li>
+        {{ end }}
+      {{ end }}
+      {{ end }}
+      {{ if .Site.IsMultiLingual }}
+        {{ $node := . }}
+        {{ .Scratch.Set "separator" true }}
+        {{ range .Site.Home.AllTranslations }}
+          {{ if ne $.Site.Language .Language }}
+            {{ if $node.Scratch.Get "separator" }}
+              <li class="navigation-item menu-separator">
+                <span>|</span>
+              </li>
+              {{ $node.Scratch.Set "separator" false }}
+            {{ end }}
+            <li class="navigation-item">
+              <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+            </li>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+  <hr/>
+</nav>
