@@ -1,2 +1,5 @@
 [backend]
-    functions = "functions"
+    functions = "api-bin"
+    command = "bash build_api.sh"
+[build.environment]
+    GO_IMPORT_PATH = "github.com/mkjmdski/mlodzikowski.pl"
