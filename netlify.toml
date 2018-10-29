@@ -1,4 +1,4 @@
-[backend]
+[build]
     functions = "api"
     command = "bash build_api.sh"
     publish = "dist"
