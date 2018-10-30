@@ -1,0 +1,9 @@
+---
+linktitle: $title
+menu:
+    main:
+        parent: presentations
+title: $title
+weight: $weight
+---
+HACK

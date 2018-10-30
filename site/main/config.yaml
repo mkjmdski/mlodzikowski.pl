@@ -1,69 +1,19 @@
-# Site configuration
+languageCode: pl-pl
+title: Mikołaj Młodzikowski
+theme: retroful
+publishdir: ../public
+pygmentsUseClasses: true
+Params:
+  subtitle: ''
+  logo: img/logo.jpg
+  favicon: img/fav.ico
+Author:
+  handle: Mikołaj Młodzikowski
+  bitbucket: mkjmdski
+  github: mkjmdski
+  linkedin: in/mlodzikowski
 menu:
   main:
-    - name: Presentations
+    - name: DigitalOcean Referal
+      url: 'https://m.do.co/c/21d96d6ebff2'
       weight: 1
-      url: /presentations/
-    - name: Let's talk
-      weight: 2
-      url: /contact/
-
-tagline: &tagline
-  - name: DevOps Enthusiast
-    fabIcon: fa-docker
-  - name: Build Automation
-    fabIcon: fa-jenkins
-  - name: Linux Lover
-    fabIcon: fa-linux
-
-quickLinks: &quickLinks
-  - name: DigitalOcean referal link 100$
-    href: https://m.do.co/c/21d96d6ebff2
-    title: Use this link to signup on DigitalOcean with 100$
-  - name: Netlify api
-    href: /.netlify/functions/hello
-    title: Lambda test
-
-social: &social
-  - name: Github
-    icon: fa-github
-    weight: 1
-    url: https://github.com/mkjmdski/
-  - name: LinkedIn
-    icon: fa-linkedin
-    weight: 2
-    url: https://www.linkedin.com/in/mlodzikowski/
-  - name: Bitbucket
-    icon: fa-bitbucket
-    weight: 3
-    url: https://bitbucket.org/mkjmdski
-
-meta: &meta
-  description: Mikołaj's personal website
-  keywords: devops,linux,developer,blog
-
-landing: &landing
-  author: '"MikoSoft" Mikołaj Młodzikowski'
-  title: Hello, I'm Miko!
-  avatarurl: images/avatar.jpg
-
-params:
-  <<: *meta
-  <<: *landing
-  tagline: *tagline
-  quickLinks: *quickLinks
-  social: *social
-  hideCredits: true
-
-# Hugo configuration
-publishdir: ../public
-baseurl: 'https://mlodzikowski.pl'
-title: Mikołaj Młodzikowski
-theme: coder
-languagecode: en
-paginate: 20
-canonifyurls: true
-pygmentsstyle: dracula
-pygmentscodefences: true
-pygmentscodefencesguesssyntax: true
-disqusShortname: mlodzikowski
