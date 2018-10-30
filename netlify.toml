@@ -1,3 +1,4 @@
 [build]
     functions = "api"
     publish = "dist"
+    command = "bash organise_files.sh"
