@@ -6,4 +6,4 @@
 	url = https://github.com/mkjmdski/retrofulhugo.git
 [submodule "cv"]
 	path = cv
-	url = https://github.com/posquit0/Awesome-CV
+	url = https://github.com/mkjmdski/Awesome-CV

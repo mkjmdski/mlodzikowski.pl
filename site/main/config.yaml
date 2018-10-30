@@ -17,3 +17,6 @@ menu:
     - name: DigitalOcean Referal
       url: 'https://m.do.co/c/21d96d6ebff2'
       weight: 1
+    - name: CV
+      url: 'https://mlodzikowski.pl/cv.pdf'
+      weight: 10
