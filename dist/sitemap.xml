@@ -3,13 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mlodzikowski.pl/contact/</loc>
-    <lastmod>2018-10-14T22:42:44+02:00</lastmod>
+    <loc>https://mlodzikowski.pl/presentations/terraform/</loc>
   </url>
   
   <url>
-    <loc>https://mlodzikowski.pl/presentations/terraform/</loc>
-    <lastmod>2018-10-14T14:27:47+02:00</lastmod>
+    <loc>https://mlodzikowski.pl/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mlodzikowski.pl/contact/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -19,13 +23,12 @@
   
   <url>
     <loc>https://mlodzikowski.pl/</loc>
-    <lastmod>2018-10-14T22:42:44+02:00</lastmod>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mlodzikowski.pl/presentations/</loc>
-    <lastmod>2018-10-14T14:27:47+02:00</lastmod>
     <priority>0</priority>
   </url>
   
