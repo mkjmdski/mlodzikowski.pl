@@ -4,3 +4,6 @@
 [submodule "site/main/themes/retroful"]
 	path = site/main/themes/retroful
 	url = https://github.com/mkjmdski/retrofulhugo.git
+[submodule "cv"]
+	path = cv
+	url = https://github.com/posquit0/Awesome-CV

@@ -1,15 +1,8 @@
-#!/bin/bash
-image="cv:generator"
-name="cv"
+# #!/bin/bash
+# image="thomasweise/texlive"
 
-docker build \
-    --tag $image \
-    $name
+# docker run -it \
+#     --volume $PWD/cv:/doc \
+#     $image make
 
-docker run -itd \
-    --name $name \
-    $image
-
-docker cp \
-    $name:/usr/src/tex/pdf/cv.pdf \
-    production/cv.pdf
+# mv cv/examples/cv.pdf production
