@@ -18,5 +18,5 @@ menu:
       url: 'https://m.do.co/c/21d96d6ebff2'
       weight: 1
     - name: CV
-      url: 'https://mlodzikowski.pl/cv.pdf'
+      url: 'https://mlodzikowski.pl/cv'
       weight: 10
