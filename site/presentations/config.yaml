@@ -5,7 +5,6 @@ publishdir: ../public/presentations
 theme: reveal
 params:
   reveal_hugo:
-    custom_theme: /themes/indigo.css
     reveal_cdn: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0'
     highlight_cdn: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0'
     highlight_theme: styles/tomorrow-night-bright
