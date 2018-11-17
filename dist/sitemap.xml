@@ -3,6 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mlodzikowski.pl/presentations/programming/</loc>
+  </url>
+  
+  <url>
     <loc>https://mlodzikowski.pl/presentations/terraform/</loc>
   </url>
   
