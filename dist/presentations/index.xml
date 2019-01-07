@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/programming/2/</guid>
-      <description>O mnie  Mikołaj Młodzikowski - 24 lata  Skończyłem I stopień Informatyki na Politechnice Poznańskiej  Pracuję jako Build Automation Engineer w firmie Egnyte  Lubię jazdę na rowerze, gry komputerowe, pływanie oraz uczyć się języków   </description>
+      <description>Kim jestem?  Pracuję jako programista do spraw budowy aplikacji w firmie Egnyte. Skończyłem Politechnikę Poznańską, prywatnie fan jazdy na rowerze, papug i gier komputerowych. </description>
     </item>
     
     <item>
@@ -45,7 +45,7 @@ Zawody w IT  Administracja  Finanse Koordynacja życia w biurze Planowanie urlop
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/programming/4/</guid>
-      <description>Fakty i mity o programistach  Jest osobą zamkinętą w sobie i cichą FAŁSZ Umie dobrze matematykę PÓŁ PRAWDA Studiował informatykę FAŁSZ Umie włamać się na fejsbuka FAŁSZ Naprawi zepsuty komputer FAŁSZ</description>
+      <description>Fakty i mity o programistach  Jest osobą zamkinętą w sobie i cichą FAŁSZ Umie dobrze matematykę PÓŁ PRAWDA Umie włamać się na fejsbuka FAŁSZ Naprawi zepsuty komputer FAŁSZ Istnieją ślepi programiści PRAWDA</description>
     </item>
     
     <item>
@@ -73,8 +73,8 @@ Kilka ciekawostek o programistach  27% Nie uzyskało wyższego wykształcenia 46
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/programming/7/</guid>
-      <description>AI - zagrożenia  Algorytmy tworzące ważne decyzje Algorytmy udające człowieka Próba definiowania tego co jest uczciwe 
-AI - korzyści  Zwiększanie automatyzacji pracy Przełamywanie barier językowych Rozwój wielu dziedzin poza informatyką</description>
+      <description>Algorytmika  Nudna regułka: zadaniem algorytmu jest przeprowadzenie systemu z pewnego stanu początkowego do pożądanego stanu końcowego  Na chłopski rozum: Jest to wymyślenie i zapisanie sposobu jak doprowadzić coś z punktu A do punktu B  Jest wiele rodzajów algorytmów: zachłanne, sztucznej inteligencji, genetyczne  
+Algorytmika - algorytm parzenia herbaty  Nalej wody do czajnika Wstaw czajnik Przygotuj szklanke Wsadź torebkę do szklanki Poczekaj aż woda się zaparzy Zalej herbate Dosyp cukru Zamieszaj Wypij</description>
     </item>
     
     <item>
@@ -93,7 +93,7 @@ Podstawy programowania  Pętle liczące, np: for x in range(10): print(x)  Pętl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/programming/9/</guid>
-      <description>Dziękuję za uwagę! online @ https://mlodzikowski.pl/presentations/programming Filmiki i linki dla ciekawskich:   Zbiór materiałów  do nauki pythona w sieci oraz interaktywny kurs online od podstaw po polsku.   Książki do pythona: python z minecraftem , python na start  i Laura Ipsum , odpowiednik książki &#34;Świat Zofii&#34; w Informatyce.     Linda Lukas z Finlandii opowiada o tym jak uczy programować  najmłodszych (eng)   Thomas Suarez (12 lat) z USA opowiada o tym jak został programistą  (eng)   Materiały do programowania z prelekcji    </description>
+      <description>Dziękuję za uwagę! Czas na część praktyczną :) online @ https://mlodzikowski.pl/presentations/programming Filmiki i linki dla ciekawskich:   Zbiór materiałów  do nauki pythona w sieci oraz interaktywny kurs online od podstaw po polsku.   Książki do pythona: python z minecraftem , python na start  i Laura Ipsum , odpowiednik książki &#34;Świat Zofii&#34; w Informatyce.     Linda Lukas z Finlandii opowiada o tym jak uczy programować  najmłodszych (eng)   Thomas Suarez (12 lat) z USA opowiada o tym jak został programistą  (eng)   Materiały do programowania z prelekcji     Film o Denisie, ślepym programiście   Strona z grami do nauki programowania i algorytmiki, tynker i codecombat    </description>
     </item>
     
     <item>
