@@ -1,22 +1,5 @@
-sudo: required
 services:
   - docker
-cache:
-  bundler: true
-  directories:
-    - $HOME/docker
-before_cache:
-  - >
-    mkdir -p $HOME/docker && \
-    docker images -a --filter='dangling=false' --format '{{.Repository}}:{{.Tag}} {{.ID}}' | \
-    xargs -n 2 -t sh -c 'test -e $HOME/docker/$1.tar.gz || docker save $0 | \
-    gzip -2 > $HOME/docker/$1.tar.gz'
-before_install:
-  - >
-    if [[ -d $HOME/docker ]]; then
-      ls $HOME/docker/*.tar.gz | \
-        xargs -I {file} sh -c "zcat {file} | docker load"
-    fi
 language: go
 script:
   - >
@@ -27,12 +10,14 @@ branches:
   only:
     - master
 deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $github_token
-  keep-history: true
-  local-dir: production
-  target-branch: production
-  verbose: true
-  on:
-    branch: master
+  - provider: pages
+    skip-cleanup: true
+    github-token: $github_token
+    keep-history: true
+    local-dir: production
+    target-branch: production
+    verbose: true
+    on:
+      branch: master
+  - provider: script
+    script: curl -X POST -d {} $netlify_hook
