@@ -16,7 +16,37 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/1/</guid>
-      <description> Jenkins: Historical background  Groovy: the most exotic, scripting language  Pipelines: hydrualics driven development   </description>
+      <description>Introduction to pipelines hydrualics table of content  🌟 Groovy - a bit of shiny tricks in scripting 🤖 Jenkins - the most concrete CI/CD platform 🔨 Pipelines - process engineering 
+emoji legend  📌 - pins are used in the wide context to present focus of the presentation 📖 - link to source article which covers more details in the presented area ❗ - important information to notify</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlodzikowski.pl/presentations/jenkins/2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/jenkins/2/</guid>
+      <description>🌟 Groovy - a bit of shiny tricks in scripting  theory - language specification some snippets in practice 
+tell about primitive types and their relation to java tell about jenkins usecases for static typing python, ruby 1 + &amp;lsquo;1&amp;rsquo; -&amp;gt; error groovy 1 + &amp;lsquo;1&amp;rsquo; -&amp;gt; &amp;lsquo;11&amp;rsquo;, because of dynamic typing on tell about python/ruby AST vs Java compability (duck typing vs casting)
+  🥜 (Apache) Groovy in nutshell 🥜   groovy is complex: object-oriented, functional 📌, java syntax libraries compatible 📌 (and syntax)  is able to mix features of dynamically 📌 and statically typed language at the same time Abstract Syntax Tree features: operators overloading, native syntax for lists and associative arrays (maps), native support for regular expressions, polymorphic iteration, string interpolation and the safe navigation operator ?</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlodzikowski.pl/presentations/jenkins/3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/jenkins/3/</guid>
+      <description> Jenkins - the most concrete CI/CD platform  Plugins Job types Infrastructure   ---</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlodzikowski.pl/presentations/jenkins/4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/jenkins/4/</guid>
+      <description> Pipelines - process engineering  Freestyle jobs Freestyle on DSL Pipelines Multibranches </description>
     </item>
     
     <item>

@@ -19,18 +19,107 @@
 
 
   
-<section><ul>
-    <li class="fragment fade-up">
-        Jenkins: Historical background
-    </li>
-    <li class="fragment fade-up">
-        Groovy: the most exotic, scripting language
-    </li>
-    <li class="fragment fade-up">
-        Pipelines: hydrualics driven development
-    </li>
-</ul>
+<section><section data-shortcode-section>
+<h4>Introduction to pipelines hydrualics</h4>
+
+<p><img src="/presentations/img/jenkins/Egnyte_Builder.png"></p>
+
+</section><section>
+
+<p><h4>table of content</h3>
+<ul>
+    <li class="fragment fade-up">🌟 Groovy - a bit of shiny tricks in scripting</li>
+    <li class="fragment fade-up">🤖 Jenkins - the most concrete CI/CD platform</li>
+    <li class="fragment fade-up">🔨 Pipelines - process engineering</li>
+</ul></p>
+
+</section><section>
+
+<p><h4>emoji legend</h4>
+<ul>
+    <li class="fragment fade-up">📌 - pins are used in the wide context to present focus of the presentation</li>
+    <li class="fragment fade-up">📖 - link to source article which covers more details in the presented area</li>
+    <li class="fragment fade-up">❗ - important information to notify</li>
+</ul></p>
+
 </section>
+</section><section><section data-shortcode-section>
+<p><h4>🌟 Groovy - a bit of shiny tricks in scripting</h4>
+<ul>
+    <li class="fragment fade-up">theory - language specification</li>
+    <li class="fragment fade-up">some snippets in <a href = "https://github.com/mkjmdski/groovy-examples">practice</a></li>
+</ul></p>
+
+</section><section>
+
+<aside class="notes"><p>tell about primitive types and their relation to java
+tell about jenkins usecases for static typing
+python, ruby 1 + &lsquo;1&rsquo; -&gt; error
+groovy 1 + &lsquo;1&rsquo; -&gt; &lsquo;11&rsquo;, because of dynamic typing on
+tell about python/ruby AST vs Java compability (duck typing vs casting)</p>
+</aside>
+
+<p><h4> 🥜 (Apache) Groovy in nutshell 🥜 </h4>
+<ul>
+    <li>groovy is complex: object-oriented, functional 📌, java syntax libraries compatible 📌 (and syntax) </li>
+    <li class="fragment fade-up">is able to mix features of <a href="https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages">dynamically 📌 and statically</a> typed language at the same time</li>
+    <li class="fragment fade-up">Abstract Syntax Tree features: operators overloading, native syntax for lists and associative arrays (maps), native support for regular expressions, polymorphic iteration, string interpolation and the safe navigation operator ?., closures 📌 </li>
+</ul></p>
+
+</section><section>
+
+<p><h4> 🥜 (Apache) Groovy in nutshell 🥜 </h4>
+<ul>
+    <li class="fragment fade-up">used for programming and scripting 📌 with features similar to those of Python or Ruby, what makes it very easy to use non-native groovy idioms 😕 </li>
+    <li class="fragment fade-up">Groovy source code file can be executed as an (uncompiled) script - what means errors during runtime, it could be also compiled statically, but this is not Jenkins case</li>
+    <li class="fragment fade-up">Groovy implicitly generates getters and setters, and allows to construct object with a field -&gt; value map</li>
+</ul></p>
+
+</section><section>
+
+<p><h3>sources</h3>
+<ul>
+    <li> 📖 check <a href="https://en.wikipedia.org/wiki/Apache_Groovy">wikipedia</a>!</li>
+    <li>
+        Groovy Goodnes
+        <ul>
+            <li>
+                The best blog about groovy: <a href="www.mrhaki.com">www.mrhaki.com</a>
+            </li>
+            <li>
+                sources on git: <a href="https://github.com/mrhaki/Groovy-Goodness-Notebook">notebook</a>,
+                <a href="https://github.com/mrhaki/Groovy-Goodness">blog entries source</a>
+            </li>
+        </ul>
+    </li>
+</ul></p>
+
+</section></section><section><section data-shortcode-section>
+
+</section>
+
+
+<h4>Jenkins - the most concrete CI/CD platform</h4>
+<img src="/presentations/img/jenkins/swissknife.png">
+<ul>
+    <li class="fragment fade-up">Plugins</li>
+    <li class="fragment fade-up">Job types</li>
+    <li class="fragment fade-up">Infrastructure</li>
+    <li class="fragment fade-up"></li>
+</ul>
+
+---</section><section><section data-shortcode-section>
+
+</section>
+
+<h4>Pipelines - process engineering</h4>
+<img src="/presentations/img/jenkins/swissknife.png">
+<ul>
+    <li class="fragment fade-up">Freestyle jobs</li>
+    <li class="fragment fade-up">Freestyle on DSL</li>
+    <li class="fragment fade-up">Pipelines</li>
+    <li class="fragment fade-up">Multibranches</li>
+</ul></section>
 
 </div>
       
