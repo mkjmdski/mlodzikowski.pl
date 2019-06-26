@@ -54,13 +54,6 @@
 
 </section><section>
 
-<aside class="notes"><p>tell about primitive types and their relation to java
-tell about jenkins usecases for static typing
-python, ruby 1 + &lsquo;1&rsquo; -&gt; error
-groovy 1 + &lsquo;1&rsquo; -&gt; &lsquo;11&rsquo;, because of dynamic typing on
-tell about python/ruby AST vs Java compability (duck typing vs casting)</p>
-</aside>
-
 <p><h4> 🥜 (Apache) Groovy in nutshell 🥜 </h4>
 <ul>
     <li>groovy is complex: object-oriented, functional 📌, java syntax libraries compatible 📌 (and syntax) </li>
@@ -72,7 +65,7 @@ tell about python/ruby AST vs Java compability (duck typing vs casting)</p>
 
 <p><h4> 🥜 (Apache) Groovy in nutshell 🥜 </h4>
 <ul>
-    <li class="fragment fade-up">used for programming and scripting 📌 with features similar to those of Python or Ruby, what makes it very easy to use non-native groovy idioms 😕 </li>
+    <li>used for programming and scripting 📌 with features similar to those of Python or Ruby, what makes it very easy to use non-native groovy idioms 😕 </li>
     <li class="fragment fade-up">Groovy source code file can be executed as an (uncompiled) script - what means errors during runtime, it could be also compiled statically, but this is not Jenkins case</li>
     <li class="fragment fade-up">Groovy implicitly generates getters and setters, and allows to construct object with a field -&gt; value map</li>
 </ul></p>
@@ -98,45 +91,45 @@ tell about python/ruby AST vs Java compability (duck typing vs casting)</p>
 
 </section></section><section><section data-shortcode-section>
 <p><h4>Jenkins - introduction to pipelines hydrualics</h4>
-<img src="/presentations/img/jenkins/swissknife.jpg">
 <ul >
     <li class="fragment fade-up">Jobs management 📌 </li>
     <li class="fragment fade-up">Extensions</li>
     <li class="fragment fade-up">Infrastructure</li>
-</ul></p>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/swissknife.jpg"></p>
 
 </section><section>
 
 <p><h4>Job management</h4>
-<img  src="/presentations/img/jenkins/pipelines.jpg">
 <ul >
-    <li class="fragment fade-up">Freestyle - allows to configure manually set of Jenkins API calls into simple job</li>
+    <li>Freestyle - allows to configure manually set of Jenkins API calls into simple job</li>
     <li class="fragment fade-up">📌 Pipelines - groovy framework for creating CI/CD pipelines which consits of stages executing steps</li>
     <li class="fragment fade-up">DSL - way to configure any type of the job via Groovy code instead of manual actions</li>
     <li class="fragment fade-up">Multibranch - group of jobs generated for set of branches in the specified repository</li>
-</ul></p>
+</ul>
+<img  style="float: left;"  src="/presentations/img/jenkins/pipelines.jpg"></p>
 
 </section><section>
 
 <p><h4>Extensions</h4>
-<img src="/presentations/img/jenkins/jenkinsjenkins.jpeg">
 <ul>
-    <li class="fragment fade-up">Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on each part of job config - DSL, freestyle and pipelines</li>
+    <li>Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on each part of job config - DSL, freestyle and pipelines</li>
     <li class="fragment fade-up">📌 Libraries - the best way to add custom steps exposed as JVM libraries into your pipelines</li>
     <li class="fragment fade-up">UI tweaks - editing jobs HTML is the best way to add business crucial features into jenkins</li>
-</ul></p>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/jenkinsjenkins.jpeg"></p>
 
 </section><section>
 
 <p><h4>Infrastructure</h4>
-<img src="/presentations/img/jenkins/jenkins_master.jpg">
 <ul>
-    <li class="fragment fade-up">Manual administration - osx, windows, raspberrys, mobiles</li>
+    <li>Manual administration - osx, windows, raspberrys, mobiles</li>
     <li class="fragment fade-up">📌 CCA VMs - <sup>24</sup>&frasl;<sub>7</sub> VMs with tool for codified software management (e.g. puppet/chef)</li>
     <li class="fragment fade-up">📌 On demand VMs - public cloud computing instances spawned only for the time of job execution</li>
     <li class="fragment fade-up">📌 Containers - containers attached to jenkins via swarm/k8s/docker cli</li>
     <li class="fragment fade-up">Serverless - FaaS dispatchment, jenkins X, jenkinsfile runner</li>
-</ul>&gt;</p>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg"></p>
 
 </section>
 </section>

@@ -28,8 +28,7 @@ emoji legend  📌 - pins are used in the wide context to present focus of the p
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/2/</guid>
       <description>🌟 Groovy - a bit of shiny tricks in scripting  theory - language specification some snippets in practice 
-tell about primitive types and their relation to java tell about jenkins usecases for static typing python, ruby 1 + &amp;lsquo;1&amp;rsquo; -&amp;gt; error groovy 1 + &amp;lsquo;1&amp;rsquo; -&amp;gt; &amp;lsquo;11&amp;rsquo;, because of dynamic typing on tell about python/ruby AST vs Java compability (duck typing vs casting)
-  🥜 (Apache) Groovy in nutshell 🥜   groovy is complex: object-oriented, functional 📌, java syntax libraries compatible 📌 (and syntax)  is able to mix features of dynamically 📌 and statically typed language at the same time Abstract Syntax Tree features: operators overloading, native syntax for lists and associative arrays (maps), native support for regular expressions, polymorphic iteration, string interpolation and the safe navigation operator ?</description>
+ 🥜 (Apache) Groovy in nutshell 🥜   groovy is complex: object-oriented, functional 📌, java syntax libraries compatible 📌 (and syntax)  is able to mix features of dynamically 📌 and statically typed language at the same time Abstract Syntax Tree features: operators overloading, native syntax for lists and associative arrays (maps), native support for regular expressions, polymorphic iteration, string interpolation and the safe navigation operator ?</description>
     </item>
     
     <item>
@@ -38,8 +37,7 @@ tell about primitive types and their relation to java tell about jenkins usecase
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/3/</guid>
-      <description>Jenkins - introduction to pipelines hydrualics Jobs management 📌  Extensions Infrastructure 
-Job management Freestyle - allows to configure manually set of Jenkins API calls into simple job 📌 Pipelines - groovy framework for creating CI/CD pipelines which consits of stages executing steps DSL - way to configure any type of the job via Groovy code instead of manual actions Multibranch - group of jobs generated for set of branches in the specified repository</description>
+      <description>Jenkins - introduction to pipelines hydrualics Jobs management 📌  Extensions Infrastructure  Job management Freestyle - allows to configure manually set of Jenkins API calls into simple job 📌 Pipelines - groovy framework for creating CI/CD pipelines which consits of stages executing steps DSL - way to configure any type of the job via Groovy code instead of manual actions Multibranch - group of jobs generated for set of branches in the specified repository  Extensions  Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on each part of job config - DSL, freestyle and pipelines 📌 Libraries - the best way to add custom steps exposed as JVM libraries into your pipelines UI tweaks - editing jobs HTML is the best way to add business crucial features into jenkins  Infrastructure  Manual administration - osx, windows, raspberrys, mobiles 📌 CCA VMs - 24&amp;frasl;7 VMs with tool for codified software management (e.</description>
     </item>
     
     <item>
