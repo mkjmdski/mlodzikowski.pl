@@ -8,8 +8,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/theme/night.css" id="theme">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-bright.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"><link rel="stylesheet" href="/presentations/themes/indigo.css" id="theme"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-bright.min.css">
     
   </head>
   <body>
@@ -20,17 +19,19 @@
 
   
 <section><section data-shortcode-section>
-<h4>Introduction to pipelines hydrualics</h4>
+<h4>How to CI/CD with Jenkins?</h4>
 
-<p><img src="/presentations/img/jenkins/Egnyte_Builder.png"></p>
+<p><img class="fragment fade-up" src="/presentations/img/jenkins/Egnyte_Builder.png"></p>
 
 </section><section>
 
 <p><h4>table of content</h3>
 <ul>
     <li class="fragment fade-up">🌟 Groovy - a bit of shiny tricks in scripting</li>
-    <li class="fragment fade-up">🔨 Jenkins - the most concrete CI/CD platform</li>
+    <li class="fragment fade-up">🔨 Jenkins - introduction to pipelines hydrualics</li>
 </ul></p>
+
+<p><img src="/presentations/img/jenkins/mario.png"></p>
 
 </section><section>
 
@@ -48,6 +49,8 @@
     <li class="fragment fade-up">theory - language specification</li>
     <li class="fragment fade-up">some snippets in <a href = "https://github.com/mkjmdski/groovy-examples">practice</a></li>
 </ul></p>
+
+<p><img class="fragment fade-up" src="/presentations/img/jenkins/alien.png"></p>
 
 </section><section>
 
@@ -94,22 +97,46 @@ tell about python/ruby AST vs Java compability (duck typing vs casting)</p>
 </ul></p>
 
 </section></section><section><section data-shortcode-section>
-<p><h4>Jenkins - the most concrete CI/CD platform</h4>
-<img src="/presentations/img/jenkins/swissknife.jpg">
-<ul>
-    <li class="fragment fade-up">Plugins</li>
-    <li class="fragment fade-up">Job types</li>
+<p><h4>Jenkins - introduction to pipelines hydrualics</h4>
+<img style="float: left;"src="/presentations/img/jenkins/swissknife.jpg">
+<ul style="float: left; padding: 1.5% 0 0 0.35em;">
+    <li class="fragment fade-up">Jobs management</li>
+    <li class="fragment fade-up">Extensions</li>
     <li class="fragment fade-up">Infrastructure</li>
 </ul></p>
 
 </section><section>
 
-<p><ul>
+<p><h4>Job types</h4>
+<img style="float: left;" src="/presentations/img/jenkins/pipelines.jpg">
+<ul style="float: left; padding: 1.5% 0 0 0.35em;">
     <li class="fragment fade-up">Freestyle</li>
-    <li class="fragment fade-up">Freestyle</li>
+    <li class="fragment fade-up">Pipelines</li>
+    <li class="fragment fade-up">DSL</li>
+    <li class="fragment fade-up">Multibranch</li>
+</ul></p>
+
+</section><section>
+
+<p><h4>Extensions</h4>
+<img style="float: left;"src="/presentations/img/jenkins/jenkinsjenkins.jpeg">
+<ul style="float: left; padding: 1.5% 0 0 0.35em;">
     <li class="fragment fade-up">Plugins</li>
-</ul>
-<img src="/presentations/img/jenkins/pipelines.jpg"></p>
+    <li class="fragment fade-up">Libraries</li>
+    <li class="fragment fade-up">UI tweaks</li>
+</ul></p>
+
+</section><section>
+
+<p><h4>Infrastructure</h4>
+<img style="float: left;"src="/presentations/img/jenkins/jenkins_master.jpg">
+<ul style="float: left; padding: 1.5% 0 0 0.35em;">
+    <li class="fragment fade-up">Bare metals</li>
+    <li class="fragment fade-up">CCA VMs</li>
+    <li class="fragment fade-up">On demand VMs</li>
+    <li class="fragment fade-up">Containers</li>
+    <li class="fragment fade-up">Serverless</li>
+</ul></p>
 
 </section>
 </section>
@@ -131,7 +158,7 @@ tell about python/ruby AST vs Java compability (duck typing vs casting)</p>
 </script>
 
 <script type="application/json" id="reveal-hugo-site-params">{"highlight_cdn":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0","highlight_theme":"styles/tomorrow-night-bright","reveal_cdn":"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0"}</script>
-<script type="application/json" id="reveal-hugo-page-params">{"theme":"night"}</script>
+<script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"/themes/indigo.css"}</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.js"></script>

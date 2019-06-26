@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/1/</guid>
-      <description>Introduction to pipelines hydrualics table of content  🌟 Groovy - a bit of shiny tricks in scripting 🔨 Jenkins - the most concrete CI/CD platform 
+      <description>How to CI/CD with Jenkins? table of content  🌟 Groovy - a bit of shiny tricks in scripting 🔨 Jenkins - introduction to pipelines hydrualics 
 emoji legend  📌 - pins are used in the wide context to present focus of the presentation 📖 - link to source article which covers more details in the presented area ❗ - important information to notify 
  </description>
     </item>
@@ -38,8 +38,11 @@ tell about primitive types and their relation to java tell about jenkins usecase
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/3/</guid>
-      <description>Jenkins - the most concrete CI/CD platform  Plugins Job types Infrastructure 
- Freestyle Freestyle Plugins   </description>
+      <description>Jenkins - introduction to pipelines hydrualics Jobs management Extensions Infrastructure 
+Job types Freestyle Pipelines DSL Multibranch 
+Extensions Plugins Libraries UI tweaks 
+Infrastructure Bare metals CCA VMs On demand VMs Containers Serverless 
+ </description>
     </item>
     
     <item>
