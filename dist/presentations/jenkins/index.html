@@ -100,20 +100,20 @@ tell about python/ruby AST vs Java compability (duck typing vs casting)</p>
 <p><h4>Jenkins - introduction to pipelines hydrualics</h4>
 <img style="float: left;"src="/presentations/img/jenkins/swissknife.jpg">
 <ul style="float: left; padding: 1.5% 0 0 0.35em;">
-    <li class="fragment fade-up">Jobs management</li>
+    <li class="fragment fade-up">Jobs management 📌 </li>
     <li class="fragment fade-up">Extensions</li>
     <li class="fragment fade-up">Infrastructure</li>
 </ul></p>
 
 </section><section>
 
-<p><h4>Job types</h4>
+<p><h4>Job management</h4>
 <img style="float: left;" src="/presentations/img/jenkins/pipelines.jpg">
 <ul style="float: left; padding: 1.5% 0 0 0.35em;">
-    <li class="fragment fade-up">Freestyle</li>
-    <li class="fragment fade-up">Pipelines</li>
-    <li class="fragment fade-up">DSL</li>
-    <li class="fragment fade-up">Multibranch</li>
+    <li class="fragment fade-up">Freestyle - allows to configure manually set of Jenkins API calls into simple job</li>
+    <li class="fragment fade-up">📌 Pipelines - groovy framework for creating CI/CD pipelines which consits of stages executing steps</li>
+    <li class="fragment fade-up">DSL - way to configure any type of the job via Groovy code instead of manual actions</li>
+    <li class="fragment fade-up">Multibranch - group of jobs generated for set of branches in the specified repository</li>
 </ul></p>
 
 </section><section>
@@ -121,9 +121,9 @@ tell about python/ruby AST vs Java compability (duck typing vs casting)</p>
 <p><h4>Extensions</h4>
 <img style="float: left;"src="/presentations/img/jenkins/jenkinsjenkins.jpeg">
 <ul style="float: left; padding: 1.5% 0 0 0.35em;">
-    <li class="fragment fade-up">Plugins</li>
-    <li class="fragment fade-up">Libraries</li>
-    <li class="fragment fade-up">UI tweaks</li>
+    <li class="fragment fade-up">Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on each part of job config - DSL, freestyle and pipelines</li>
+    <li class="fragment fade-up">📌 Libraries - the best way to add custom steps exposed as JVM libraries into your pipelines</li>
+    <li class="fragment fade-up">UI tweaks - editing jobs HTML is the best way to add business crucial features into jenkins</li>
 </ul></p>
 
 </section><section>
@@ -131,12 +131,12 @@ tell about python/ruby AST vs Java compability (duck typing vs casting)</p>
 <p><h4>Infrastructure</h4>
 <img style="float: left;"src="/presentations/img/jenkins/jenkins_master.jpg">
 <ul style="float: left; padding: 1.5% 0 0 0.35em;">
-    <li class="fragment fade-up">Bare metals</li>
-    <li class="fragment fade-up">CCA VMs</li>
-    <li class="fragment fade-up">On demand VMs</li>
-    <li class="fragment fade-up">Containers</li>
-    <li class="fragment fade-up">Serverless</li>
-</ul></p>
+    <li class="fragment fade-up">Manual administration - osx, windows, raspberrys, mobiles</li>
+    <li class="fragment fade-up">📌 CCA VMs - <sup>24</sup>&frasl;<sub>7</sub> VMs with tool for codified software management (e.g. puppet/chef)</li>
+    <li class="fragment fade-up">📌 On demand VMs - public cloud computing instances spawned only for the time of job execution</li>
+    <li class="fragment fade-up">📌 Containers - containers attached to jenkins via swarm/k8s/docker cli</li>
+    <li class="fragment fade-up">Serverless - FaaS dispatchment, jenkins X, jenkinsfile runner</li>
+</ul>&gt;</p>
 
 </section>
 </section>
