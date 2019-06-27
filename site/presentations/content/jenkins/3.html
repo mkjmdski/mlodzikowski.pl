@@ -4,11 +4,28 @@
 {{% section %}}
 <h4>Jenkins - introduction to pipelines hydrualics</h4>
 <ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li class="fragment fade-up">Historical overview</li>
     <li class="fragment fade-up"> 📌 Jobs management - how to configure automations on Jenkins</li>
     <li class="fragment fade-up">Extensions - what are the ways to add missing functionalities</li>
     <li class="fragment fade-up">Infrastructure - a few words about time/cost optimizations for Jenkins</li>
+    <li class="fragment fade-up">Pipelines!</li>
 </ul>
 <img style="float: left;" src="/presentations/img/jenkins/swissknife.jpg">
+
+---
+
+<h4>Historical overview</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li>Jenkins has started as project Hudson in 2004 at Sun Microsystem, developed by Kohsuke Kawaguchi</li>
+    <li class="fragment fade-up">Jenkins as we know has started in 2011 as Hudson fork (while Hudson name belonged to Orcale after buying Sun) and Kohsuke Kawaguchi received O'Reilly Open Source Award</li>
+    <li class="fragment fade-up">Features used in current Jenkins development appeared in 2014 as Jenkins 2.0 introducing pipelines as standard</li>
+</ul>
+<img style="float: left;"  src="/presentations/img/jenkins/birthday.jpg">
+
+---
+
+<h4>Hudson</h4>
+<img src="/presentations/img/jenkins/hudson.png">
 
 ---
 
@@ -42,6 +59,18 @@
     <li class="fragment fade-up">Serverless - FaaS dispatchment, jenkins X, jenkinsfile runner</li>
 </ul>
 <img style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg">
+
+---
+
+<h4>Pipelines!</h4>
+<ul style="font-size: 2.2rem;float: left;padding-right: 5%;width: 70%;">
+    <li>agent -> the place to execute pipeline</li>
+    <li class="fragment fade-up">options -> configures jobs</li>
+    <li class="fragment fade-up">environment -> allows to add credentials or special environment variables</li>
+    <li class="fragment fade-up">stages -> sequential or parallel for logical components in the flow. Stages could be conditional (when block) and they consist steps</li>
+    <li class="fragment fade-up">post -> actions to be executed after single stage or group of stages</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/ninja.jpg">
 
 ---
 
