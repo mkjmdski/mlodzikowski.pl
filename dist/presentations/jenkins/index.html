@@ -33,15 +33,6 @@
 
 <p><img src="/presentations/img/jenkins/mario.png"></p>
 
-</section><section>
-
-<p><h4>emoji legend</h4>
-<ul>
-    <li class="fragment fade-up">📌 - pins are used in the wide context to present focus of the presentation</li>
-    <li class="fragment fade-up">📖 - link to source article which covers more details in the presented area</li>
-    <li class="fragment fade-up">❗ - important information to notify</li>
-</ul></p>
-
 </section>
 </section><section><section data-shortcode-section>
 <p><h4>🌟 Groovy - a bit of shiny tricks in scripting</h4>
@@ -50,25 +41,37 @@
     <li class="fragment fade-up">some snippets in <a href = "https://github.com/mkjmdski/groovy-examples">practice</a></li>
 </ul></p>
 
-<p><img class="fragment fade-up" src="/presentations/img/jenkins/alien.png"></p>
+<p><img src="/presentations/img/jenkins/hocuspocus.png"></p>
 
 </section><section>
 
-<p><h4> 🥜 (Apache) Groovy in nutshell 🥜 </h4>
-<ul>
-    <li>groovy is complex: object-oriented, functional 📌, java syntax libraries compatible 📌 (and syntax) </li>
-    <li class="fragment fade-up">is able to mix features of <a href="https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages">dynamically 📌 and statically</a> typed language at the same time</li>
-    <li class="fragment fade-up">Abstract Syntax Tree features: operators overloading, native syntax for lists and associative arrays (maps), native support for regular expressions, polymorphic iteration, string interpolation and the safe navigation operator ?., closures 📌 </li>
-</ul></p>
-
-</section><section>
-
-<p><h4> 🥜 (Apache) Groovy in nutshell 🥜 </h4>
+<p><h4> 🥜 Lifecycle 🥜 </h4>
 <ul>
     <li>used for programming and scripting 📌 with features similar to those of Python or Ruby, what makes it very easy to use non-native groovy idioms 😕 </li>
     <li class="fragment fade-up">Groovy source code file can be executed as an (uncompiled) script - what means errors during runtime, it could be also compiled statically, but this is not Jenkins case</li>
-    <li class="fragment fade-up">Groovy implicitly generates getters and setters, and allows to construct object with a field -&gt; value map</li>
 </ul></p>
+
+</section><section>
+
+<p><h4> 🥜 (Apache) Groovy in nutshell 🥜 </h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li>object-oriented</li>
+    <li class="fragment fade-up">functional</li>
+    <li class="fragment fade-up">java syntax and libraries compatible 📌 </li>
+    <li class="fragment fade-up">is able to mix features of <a href="https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages">dynamically 📌 and statically</a> typed language at the same time</li>
+    <li class="fragment fade-up">Groovy implicitly generates getters and setters, and allows to construct object with a field -&gt; value map</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/bug.jpg"></p>
+
+</section><section>
+
+<p><h4> 🥜 Abstract Syntax Tree features: 🥜 </h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li>operators overloading and the safe navigation operator ?.</li>
+    <li class="fragment fade-up">native syntax for lists and associative arrays (maps) and closures</li>
+    <li class="fragment fade-up">native support for regular expressions, polymorphic iteration, string interpolation</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/alien.png"></p>
 
 </section><section>
 
@@ -91,10 +94,10 @@
 
 </section></section><section><section data-shortcode-section>
 <p><h4>Jenkins - introduction to pipelines hydrualics</h4>
-<ul >
-    <li class="fragment fade-up">Jobs management 📌 </li>
-    <li class="fragment fade-up">Extensions</li>
-    <li class="fragment fade-up">Infrastructure</li>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li class="fragment fade-up"> 📌 Jobs management - how to configure automations on Jenkins</li>
+    <li class="fragment fade-up">Extensions - what are the ways to add missing functionalities</li>
+    <li class="fragment fade-up">Infrastructure - a few words about time/cost optimizations for Jenkins</li>
 </ul>
 <img style="float: left;" src="/presentations/img/jenkins/swissknife.jpg"></p>
 
@@ -130,6 +133,16 @@
     <li class="fragment fade-up">Serverless - FaaS dispatchment, jenkins X, jenkinsfile runner</li>
 </ul>
 <img style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg"></p>
+
+</section><section>
+
+<p><h3>sources</h3>
+<ul>
+    <li><a href="https://jenkinsci.github.io/job-dsl-plugin/">DSL</a></li>
+    <li><a href="https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline">Pipelines</a></li>
+    <li><a href="https://javadoc.jenkins.io/">Jenkins Core API (for libraries)</a></li>
+    <li><a href="https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/">Basic steps </a> and <a href="https://jenkins.io/doc/pipeline/steps/">all steps</a> for pipelines</li>
+</ul></p>
 
 </section>
 </section>
