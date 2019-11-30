@@ -3,34 +3,27 @@
 
 {{% section %}}
 
-<h4>Jobs triggers</h4>
+<h4>Parameters</h4>
 <ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li class="fragment fade-up">Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced</li>
-    <li class="fragment fade-up">Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -> deployment pipeline)</li>
-    <li class="fragment fade-up">Webhooks - generic hooks, VCS providers, Jira</li>
-    <li class="fragment fade-up">Jenkins Crons Syntax - TZ=UTC H 8 * * *</li>
+    <li> Parameters are available during build for executor shell </li>
+    <li> If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name</li>
+    <li> Parameters are also available in global variable params for pipelines </li>
 </ul>
-<img src="/presentations/img/jenkins/hocuspocus.png">
+<img style="float: left;" src="/presentations/img/jenkins/mario.png">
 
 ---
 
-<h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/when.png">
+<img src="/presentations/img/jenkins/branch-param.png">
+<img src="/presentations/img/jenkins/branch-param-example.png">
 
 ---
 
-<h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/when2.png">
+<img src="/presentations/img/jenkins/choice-param.png">
+<img src="/presentations/img/jenkins/choice-param-example.png">
 
 ---
 
-<h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/globals.png">
-<img src="/presentations/img/jenkins/when3.png">
-
----
-
-<h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/when4.png">
+<img src="/presentations/img/jenkins/regex-validation.png">
+<img src="/presentations/img/jenkins/validation-param-example.png">
 
 {{% /section %}}
