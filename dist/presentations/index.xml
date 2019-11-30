@@ -21,11 +21,20 @@
     
     <item>
       <title></title>
+      <link>https://mlodzikowski.pl/presentations/jenkins/10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/jenkins/10/</guid>
+      <description>sources  DSL Pipelines Jenkins Core API (for libraries) Basic steps  and all steps for pipelines   </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mlodzikowski.pl/presentations/jenkins/2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/2/</guid>
-      <description>UI Lifting Green Balls plugin - replaces blue color with green introducing Western culture context Simple Theme Plugin - Allows to install out of the box skins or introduce custom CSS - https://github.com/jenkinsci/simple-theme-plugin Groovy Postbuild plugin - Codified edition of HTML in Jenkins UI  UI Lifting - Simple changes UI Lifting - Material http://afonsof.com/jenkins-material-theme/ UI Lifting - groovy extra description UI Lifting - groovy extra description - code UI Lifting - Adding icons  https://github.</description>
+      <description>Discarding builds Too many builds and artifacts are heavy on jenkins operating memory You can set specific number of days you want to keep builds and/or artifacts You can set specific number of builds and/or artifacts you want to keep  Jobs configuration schools Manual - of course :) DSL - Domain specific language Plugins / tools using API - for instance job-builder plugin Pipeline closures - requires initial run  DSL - Domain specific language Allows to configure jobs as Groovy scripts Available under env.</description>
     </item>
     
     <item>
@@ -34,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/3/</guid>
-      <description>Parameters  Parameters are available during build for executor shell   If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name  Parameters are also available in global variable params for pipelines    </description>
+      <description>UI Lifting Green Balls plugin - replaces blue color with green introducing Western culture context Simple Theme Plugin - Allows to install out of the box skins or introduce custom CSS - https://github.com/jenkinsci/simple-theme-plugin Groovy Postbuild plugin - Codified edition of HTML in Jenkins UI  UI Lifting - Simple changes UI Lifting - Material http://afonsof.com/jenkins-material-theme/ UI Lifting - groovy extra description UI Lifting - groovy extra description - code UI Lifting - Adding icons  https://github.</description>
     </item>
     
     <item>
@@ -43,7 +52,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/4/</guid>
-      <description>Jobs triggers Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -&amp;gt; deployment pipeline) Webhooks - generic hooks, VCS providers, Jira Jenkins Crons Syntax - TZ=UTC H 8 * * *  Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions  </description>
+      <description>Parameters  Parameters are available during build for executor shell   If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name  Parameters are also available in global variable params for pipelines    </description>
     </item>
     
     <item>
@@ -52,7 +61,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/5/</guid>
-      <description>sources  DSL Pipelines Jenkins Core API (for libraries) Basic steps  and all steps for pipelines   </description>
+      <description>Jobs triggers Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -&amp;gt; deployment pipeline) Webhooks - generic hooks, VCS providers, Jira Jenkins Crons Syntax - TZ=UTC H 8 * * *  Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions  </description>
     </item>
     
     <item>

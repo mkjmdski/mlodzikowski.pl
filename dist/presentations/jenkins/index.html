@@ -63,6 +63,61 @@
 </section>
 </section>
     <section><section data-shortcode-section>
+<h3>sources</h3>
+<ul>
+    <li><a href="https://jenkinsci.github.io/job-dsl-plugin/">DSL</a></li>
+    <li><a href="https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline">Pipelines</a></li>
+    <li><a href="https://javadoc.jenkins.io/">Jenkins Core API (for libraries)</a></li>
+    <li><a href="https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/">Basic steps </a> and <a href="https://jenkins.io/doc/pipeline/steps/">all steps</a> for pipelines</li>
+</ul>
+</section>
+</section>
+    <section><section data-shortcode-section>
+<p><h4>Discarding builds</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li class="fragment fade-up">Too many builds and artifacts are heavy on jenkins operating memory</li>
+    <li class="fragment fade-up">You can set specific number of days you want to keep builds and/or artifacts</li>
+    <li class="fragment fade-up">You can set specific number of builds and/or artifacts you want to keep</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/swissknife.jpg"></p>
+
+</section><section>
+
+<p><h4>Jobs configuration schools</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li>Manual - of course :)</li>
+    <li class="fragment fade-up">DSL - Domain specific language</li>
+    <li class="fragment fade-up">Plugins / tools using API - for instance job-builder plugin</li>
+    <li class="fragment fade-up">Pipeline closures - requires initial run</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/alien.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/discard.jpg"></p>
+
+</section><section>
+
+<p><h4>DSL - Domain specific language</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li class="fragment fade-up">Allows to configure jobs as Groovy scripts</li>
+    <li class="fragment fade-up">Available under env.JENKINS_URL/plugin/job-dsl/api-viewer/index.html</li>
+    <li class="fragment fade-up">Requires DSL plugin</li>
+    <li class="fragment fade-up">Could be configured as cron to overwrite manual changes made by users</li>
+</ul>
+<img src="/presentations/img/jenkins/bug.jpg"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/discard-dsl.jpg"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/discard-pipeline.jpg"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
 <p><h4>UI Lifting</h4>
 <ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
     <li class="fragment fade-up">Green Balls plugin - replaces blue color with green introducing Western culture context</li>
@@ -205,16 +260,6 @@
 <p><h4>Triggers tricks - when conditions</h4>
 <img src="/presentations/img/jenkins/when4.png"></p>
 
-</section>
-</section>
-    <section><section data-shortcode-section>
-<h3>sources</h3>
-<ul>
-    <li><a href="https://jenkinsci.github.io/job-dsl-plugin/">DSL</a></li>
-    <li><a href="https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline">Pipelines</a></li>
-    <li><a href="https://javadoc.jenkins.io/">Jenkins Core API (for libraries)</a></li>
-    <li><a href="https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/">Basic steps </a> and <a href="https://jenkins.io/doc/pipeline/steps/">all steps</a> for pipelines</li>
-</ul>
 </section>
 </section>
 
