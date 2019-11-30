@@ -16,8 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/1/</guid>
-      <description>How to CI/CD with Jenkins? table of content  🌟 Groovy - a bit of shiny tricks in scripting 🔨 Jenkins - introduction to pipelines hydrualics Source code 
- </description>
+      <description>How to CI/CD with Jenkins? by Mikołaj Młodzikowski Jenkins - who is he ? Jenkins has started as project Hudson in 2004 at Sun Microsystem, developed by Kohsuke Kawaguchi in java Jenkins as we know has started in 2011 as Hudson fork (while Hudson name belonged to Orcale after buying Sun) and Kohsuke Kawaguchi received O&amp;rsquo;Reilly Open Source Award Features used in current Jenkins development appeared in 2014 as Jenkins 2.</description>
     </item>
     
     <item>
@@ -26,8 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/2/</guid>
-      <description>🌟 Groovy - a bit of shiny tricks in scripting  theory - language specification some snippets in practice 
- 🥜 Lifecycle 🥜   used for programming and scripting 📌 with features similar to those of Python or Ruby, what makes it very easy to use non-native groovy idioms 😕  Groovy source code file can be executed as an (uncompiled) script - what means errors during runtime, it could be also compiled statically, but this is not Jenkins case</description>
+      <description>UI Lifting Green Balls plugin - replaces blue color with green introducing Western culture context Simple Theme Plugin - Allows to install out of the box skins or introduce custom CSS - https://github.com/jenkinsci/simple-theme-plugin Groovy Postbuild plugin - Codified edition of HTML in Jenkins UI  UI Lifting - Simple changes UI Lifting - Material http://afonsof.com/jenkins-material-theme/ UI Lifting - groovy extra description UI Lifting - groovy extra description - code UI Lifting - Adding icons  https://github.</description>
     </item>
     
     <item>
@@ -36,7 +34,25 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/3/</guid>
-      <description>Jenkins - introduction to pipelines hydrualics Historical overview 📌 Jobs management - how to configure automations on Jenkins Extensions - what are the ways to add missing functionalities Infrastructure - a few words about time/cost optimizations for Jenkins Pipelines!  Historical overview Jenkins has started as project Hudson in 2004 at Sun Microsystem, developed by Kohsuke Kawaguchi Jenkins as we know has started in 2011 as Hudson fork (while Hudson name belonged to Orcale after buying Sun) and Kohsuke Kawaguchi received O&amp;rsquo;Reilly Open Source Award Features used in current Jenkins development appeared in 2014 as Jenkins 2.</description>
+      <description>Parameters  Parameters are available during build for executor shell   If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name  Parameters are also available in global variable params for pipelines    </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlodzikowski.pl/presentations/jenkins/4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/jenkins/4/</guid>
+      <description>Jobs triggers Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -&amp;gt; deployment pipeline) Webhooks - generic hooks, VCS providers, Jira Jenkins Crons Syntax - TZ=UTC H 8 * * *  Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlodzikowski.pl/presentations/jenkins/5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/jenkins/5/</guid>
+      <description>sources  DSL Pipelines Jenkins Core API (for libraries) Basic steps  and all steps for pipelines   </description>
     </item>
     
     <item>

@@ -8,7 +8,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"><link rel="stylesheet" href="/presentations/themes/indigo.css" id="theme"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-bright.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reset.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"><link rel="stylesheet" href="/presentations/themes/indigo.css" id="theme"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-bright.min.css">
     
   </head>
   <body>
@@ -18,97 +19,17 @@
 
 
   
-<section><section data-shortcode-section>
-<h4>How to CI/CD with Jenkins?</h4>
 
-<p><img class="fragment fade-up" src="/presentations/img/jenkins/Egnyte_Builder.png"></p>
-
-</section><section>
-
-<p><h4>table of content</h3>
-<ul>
-    <li class="fragment fade-up">🌟 Groovy - a bit of shiny tricks in scripting</li>
-    <li class="fragment fade-up">🔨 Jenkins - introduction to pipelines hydrualics</li>
-    <li class="fragment fade-up"> <a href="https://github.com/mkjmdski/groovy-examples">Source code</a></li>
-</ul></p>
-
-<p><img src="/presentations/img/jenkins/mario.png"></p>
-
-</section>
-</section><section><section data-shortcode-section>
-<p><h4>🌟 Groovy - a bit of shiny tricks in scripting</h4>
-<ul>
-    <li class="fragment fade-up">theory - language specification</li>
-    <li class="fragment fade-up">some snippets in <a href = "https://github.com/mkjmdski/groovy-examples">practice</a></li>
-</ul></p>
-
-<p><img src="/presentations/img/jenkins/hocuspocus.png"></p>
+    <section><section data-shortcode-section>
+<p><h4>How to CI/CD with Jenkins?</h4>
+<h6>by Mikołaj Młodzikowski</h6>
+<img class="fragment fade-up" src="/presentations/img/jenkins/Egnyte_Builder.png"></p>
 
 </section><section>
 
-<p><h4> 🥜 Lifecycle 🥜 </h4>
-<ul>
-    <li>used for programming and scripting 📌 with features similar to those of Python or Ruby, what makes it very easy to use non-native groovy idioms 😕 </li>
-    <li class="fragment fade-up">Groovy source code file can be executed as an (uncompiled) script - what means errors during runtime, it could be also compiled statically, but this is not Jenkins case</li>
-</ul></p>
-
-</section><section>
-
-<p><h4> 🥜 (Apache) Groovy in nutshell 🥜 </h4>
+<p><h4>Jenkins - who is he ?</h4>
 <ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li>object-oriented</li>
-    <li class="fragment fade-up">functional</li>
-    <li class="fragment fade-up">java syntax and libraries compatible 📌 </li>
-    <li class="fragment fade-up">is able to mix features of <a href="https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages">dynamically 📌 and statically</a> typed language at the same time</li>
-    <li class="fragment fade-up">Groovy implicitly generates getters and setters, and allows to construct object with a field -&gt; value map</li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/bug.jpg"></p>
-
-</section><section>
-
-<p><h4> 🥜 Abstract Syntax Tree features: 🥜 </h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li>operators overloading and the safe navigation operator ?.</li>
-    <li class="fragment fade-up">native syntax for lists and associative arrays (maps) and closures</li>
-    <li class="fragment fade-up">native support for regular expressions, polymorphic iteration, string interpolation</li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/alien.png"></p>
-
-</section><section>
-
-<p><h3>sources</h3>
-<ul>
-    <li> 📖 check <a href="https://en.wikipedia.org/wiki/Apache_Groovy">wikipedia</a>!</li>
-    <li>
-        Groovy Goodnes
-        <ul>
-            <li>
-                The best blog about groovy: <a href="www.mrhaki.com">www.mrhaki.com</a>
-            </li>
-            <li>
-                sources on git: <a href="https://github.com/mrhaki/Groovy-Goodness-Notebook">notebook</a>,
-                <a href="https://github.com/mrhaki/Groovy-Goodness">blog entries source</a>
-            </li>
-        </ul>
-    </li>
-</ul></p>
-
-</section></section><section><section data-shortcode-section>
-<p><h4>Jenkins - introduction to pipelines hydrualics</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li class="fragment fade-up">Historical overview</li>
-    <li class="fragment fade-up"> 📌 Jobs management - how to configure automations on Jenkins</li>
-    <li class="fragment fade-up">Extensions - what are the ways to add missing functionalities</li>
-    <li class="fragment fade-up">Infrastructure - a few words about time/cost optimizations for Jenkins</li>
-    <li class="fragment fade-up">Pipelines!</li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/swissknife.jpg"></p>
-
-</section><section>
-
-<p><h4>Historical overview</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li>Jenkins has started as project Hudson in 2004 at Sun Microsystem, developed by Kohsuke Kawaguchi</li>
+    <li>Jenkins has started as project Hudson in 2004 at Sun Microsystem, developed by Kohsuke Kawaguchi in java</li>
     <li class="fragment fade-up">Jenkins as we know has started in 2011 as Hudson fork (while Hudson name belonged to Orcale after buying Sun) and Kohsuke Kawaguchi received O&rsquo;Reilly Open Source Award</li>
     <li class="fragment fade-up">Features used in current Jenkins development appeared in 2014 as Jenkins 2.0 introducing pipelines as standard</li>
 </ul>
@@ -121,59 +42,179 @@
 
 </section><section>
 
-<p><h4>Job management</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li>Freestyle - allows to configure manually set of Jenkins API calls into simple job</li>
-    <li class="fragment fade-up">📌 Pipelines - groovy framework for creating CI/CD pipelines which consits of stages executing steps</li>
-    <li class="fragment fade-up">DSL - way to configure any type of the job via Groovy code instead of manual actions</li>
-    <li class="fragment fade-up">Multibranch - group of jobs generated for set of branches in the specified repository</li>
-</ul>
-<img style="float: left;"  src="/presentations/img/jenkins/pipelines.jpg"></p>
-
-</section><section>
-
 <p><h4>Extensions</h4>
 <ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on each part of job config - DSL, freestyle and pipelines</li>
-    <li class="fragment fade-up">📌 Libraries - the best way to add custom steps exposed as JVM libraries into your pipelines</li>
-    <li class="fragment fade-up">UI tweaks - editing jobs HTML is the best way to add business crucial features into jenkins</li>
+    <li>Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on most of Jenkins abstraction layers - DSL, freestyle jobs and pipelines</li>
+    <li class="fragment fade-up">Libraries - the best way to add custom steps exposed as JVM libraries into your pipelines</li>
+    <li class="fragment fade-up">Agents - core part of each jenkins architecture</li>
 </ul>
 <img  style="float: left;" src="/presentations/img/jenkins/jenkinsjenkins.jpeg"></p>
 
 </section><section>
 
-<p><h4>Infrastructure</h4>
-<ul style="font-size: 2.2rem;float: left;padding-right: 5%;width: 70%;">
-    <li>Manual administration - osx, windows, raspberrys, mobiles</li>
-    <li class="fragment fade-up">📌 CCA VMs - <sup>24</sup>&frasl;<sub>7</sub> VMs with tool for codified software management (e.g. puppet/chef)</li>
-    <li class="fragment fade-up">📌 On demand VMs - public cloud computing instances spawned only for the time of job execution</li>
-    <li class="fragment fade-up">📌 Containers - containers attached to jenkins via swarm/k8s/docker cli</li>
-    <li class="fragment fade-up">Serverless - FaaS dispatchment, jenkins X, jenkinsfile runner</li>
+<p><h4>Agents types</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent</li>
+    <li class="fragment fade-up">JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master</li>
+    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&rsquo;s request</li>
 </ul>
-<img style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg"></p>
+<img  style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<p><h4>UI Lifting</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li class="fragment fade-up">Green Balls plugin - replaces blue color with green introducing Western culture context</li>
+    <li class="fragment fade-up">Simple Theme Plugin - Allows to install out of the box skins or introduce custom CSS - <a href="https://github.com/jenkinsci/simple-theme-plugin">https://github.com/jenkinsci/simple-theme-plugin</a></li>
+    <li class="fragment fade-up">Groovy Postbuild plugin - Codified edition of HTML in Jenkins UI</li>
+</ul>
+<img style="float: left;"  src="/presentations/img/jenkins/birthday.jpg"></p>
 
 </section><section>
 
-<p><h4>Pipelines!</h4>
-<ul style="font-size: 2.2rem;float: left;padding-right: 5%;width: 70%;">
-    <li>agent -&gt; the place to execute pipeline</li>
-    <li class="fragment fade-up">options -&gt; configures jobs</li>
-    <li class="fragment fade-up">environment -&gt; allows to add credentials or special environment variables</li>
-    <li class="fragment fade-up">stages -&gt; sequential or parallel for logical components in the flow. Stages could be conditional (when block) and they consist steps</li>
-    <li class="fragment fade-up">post -&gt; actions to be executed after single stage or group of stages</li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/ninja.jpg"></p>
+<p><h4>UI Lifting - Simple changes</h4>
+<img src="/presentations/img/jenkins/green.png">
+<img src="/presentations/img/jenkins/protect.png"></p>
 
 </section><section>
 
-<p><h3>sources</h3>
+<p><h4>UI Lifting - Material</h4>
+<a href="http://afonsof.com/jenkins-material-theme/">http://afonsof.com/jenkins-material-theme/</a>
+<img src="/presentations/img/jenkins/material-config.jpg"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/screenshot-jenkins-theme-material-console-large.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/screenshot-jenkins-theme-material-history-large.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/screenshot-jenkins-theme-material-legend-large.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/screenshot-jenkins-theme-material-main-large.png"></p>
+
+</section><section>
+
+<p><h4>UI Lifting - groovy extra description</h4>
+<img src="/presentations/img/jenkins/description.png">
+<img src="/presentations/img/jenkins/description-history.png"></p>
+
+</section><section>
+
+<p><h4>UI Lifting - groovy extra description - code</h4>
+<img src="/presentations/img/jenkins/description-code.png">
+<img src="/presentations/img/jenkins/calling-description.png"></p>
+
+</section><section>
+
+<p><h4>UI Lifting - Adding icons </h4>
+<a href="https://github.com/jenkinsci/jenkins/tree/master/war/src/main/webapp/images/48x48">https://github.com/jenkinsci/jenkins/tree/master/war/src/main/webapp/images/48x48</a>
+<img src="/presentations/img/jenkins/icons.png"></p>
+
+</section><section>
+
+<p><h4>UI Lifting - Adding icons - code </h4>
+<img src="/presentations/img/jenkins/manager.png">
+<img src="/presentations/img/jenkins/manager-call.png"></p>
+
+</section><section>
+
+<p><h4>UI Lifting - HTML raports </h4>
+<img src="/presentations/img/jenkins/reports.png">
+<img src="/presentations/img/jenkins/reports-ui.png"></p>
+
+</section><section>
+
+<p><h4>UI Lifting - summaries </h4>
+<img src="/presentations/img/jenkins/summary-final.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/summary-example.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/summary-bootstrap.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/summary-promotions.png"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<p><h4>Parameters</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li> Parameters are available during build for executor shell </li>
+    <li> If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name</li>
+    <li> Parameters are also available in global variable params for pipelines </li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/mario.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/branch-param.png">
+<img src="/presentations/img/jenkins/branch-param-example.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/choice-param.png">
+<img src="/presentations/img/jenkins/choice-param-example.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/regex-validation.png">
+<img src="/presentations/img/jenkins/validation-param-example.png"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<p><h4>Jobs triggers</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li class="fragment fade-up">Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced</li>
+    <li class="fragment fade-up">Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -&gt; deployment pipeline)</li>
+    <li class="fragment fade-up">Webhooks - generic hooks, VCS providers, Jira</li>
+    <li class="fragment fade-up">Jenkins Crons Syntax - TZ=UTC H 8 * * *</li>
+</ul>
+<img src="/presentations/img/jenkins/hocuspocus.png"></p>
+
+</section><section>
+
+<p><h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/when.png"></p>
+
+</section><section>
+
+<p><h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/when2.png"></p>
+
+</section><section>
+
+<p><h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/globals.png">
+<img src="/presentations/img/jenkins/when3.png"></p>
+
+</section><section>
+
+<p><h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/when4.png"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<h3>sources</h3>
 <ul>
     <li><a href="https://jenkinsci.github.io/job-dsl-plugin/">DSL</a></li>
     <li><a href="https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline">Pipelines</a></li>
     <li><a href="https://javadoc.jenkins.io/">Jenkins Core API (for libraries)</a></li>
     <li><a href="https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/">Basic steps </a> and <a href="https://jenkins.io/doc/pipeline/steps/">all steps</a> for pipelines</li>
-</ul></p>
-
+</ul>
 </section>
 </section>
 
@@ -196,7 +237,6 @@
 <script type="application/json" id="reveal-hugo-site-params">{"highlight_cdn":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0","highlight_theme":"styles/tomorrow-night-bright","reveal_cdn":"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0"}</script>
 <script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"/themes/indigo.css"}</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.js"></script>
 
 <script type="text/javascript">
@@ -226,26 +266,22 @@
   Reveal.initialize(options);
 </script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/classList.js"></script>
+
+  
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/presentations/reveal-js/plugin/notes/notes.js"></script>
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.js"></script>
-
-
-<script type="text/javascript" src="/presentations/reveal-js/plugin/notes/notes.js"></script>
-
-
-
-<script type="text/javascript">
-if (hljs)
-  hljs.initHighlightingOnLoad();
-</script>
     
     
   </body>

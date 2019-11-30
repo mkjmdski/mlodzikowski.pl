@@ -8,7 +8,8 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"><link rel="stylesheet" href="/presentations/themes/indigo.css" id="theme"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-bright.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reset.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/css/reveal.css"><link rel="stylesheet" href="/presentations/themes/indigo.css" id="theme"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-bright.min.css">
     
   </head>
   <body>
@@ -18,10 +19,12 @@
 
 
   
-<section><img src="/presentations/img/terraform/terraform.png" alt="terraform logo"/>
+
+    <section><img src="/presentations/img/terraform/terraform.png" alt="terraform logo"/>
 <h5>SysOps/DevOps Poznań MeetUp #5</h5>
 <hr/>
-<h5>Mikołaj Młodzikowski</h5></section><section><section data-shortcode-section>
+<h5>Mikołaj Młodzikowski</h5></section>
+    <section><section data-shortcode-section>
 <p><pre>
     <code class="language-plaintext">
         root@sodo-meetup # whoami
@@ -81,7 +84,8 @@
     </li>
 </ul></p>
 
-</section></section><section><section data-shortcode-section>
+</section></section>
+    <section><section data-shortcode-section>
 <p><h3>IaC Approach</h3>
 <div class="fragment fade-up">
 📖 Wikipedia definiton:
@@ -138,7 +142,8 @@
     </li>
 </ul></p>
 
-</section></section><section><section data-shortcode-section>
+</section></section>
+    <section><section data-shortcode-section>
 <p><h3>Facts about terraform</h3>
 <ul>
     <li class="fragment fade-up" data-fragment-index="1">
@@ -208,7 +213,8 @@
     </li>
 </ul></p>
 
-</section></section><section><section data-shortcode-section>
+</section></section>
+    <section><section data-shortcode-section>
 <p><h3>HCL &amp;&amp; &ldquo;${interpolation}&rdquo;</h3>
 <ul>
     <li class="fragment fade-up">
@@ -347,7 +353,8 @@ All interpolations can be found in the
 </p></p>
 
 </section>
-</section><section><section data-shortcode-section>
+</section>
+    <section><section data-shortcode-section>
 <p><h3>What are terraform modules</h3>
 <ul>
     <li class="fragemnt fade-up">
@@ -407,7 +414,8 @@ All interpolations can be found in the
 </ul></p>
 
 </section>
-</section><section><section data-shortcode-section>
+</section>
+    <section><section data-shortcode-section>
 <p><h3>Thank you!</h3>
 <p>online @ <a href="https://mlodzikowski.pl/presentations/terraform">https://mlodzikowski.pl/presentations/terraform</a> </p>
 <p>repo with snippets @ <a href="https://github.com/mkjmdski/terraform-examples">https://github.com/mkjmdski/terraform-examples</a> </p></p>
@@ -480,7 +488,6 @@ All interpolations can be found in the
 <script type="application/json" id="reveal-hugo-site-params">{"highlight_cdn":"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0","highlight_theme":"styles/tomorrow-night-bright","reveal_cdn":"https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0"}</script>
 <script type="application/json" id="reveal-hugo-page-params">{"custom_theme":"/themes/indigo.css"}</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/head.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/js/reveal.js"></script>
 
 <script type="text/javascript">
@@ -510,26 +517,22 @@ All interpolations can be found in the
   Reveal.initialize(options);
 </script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/lib/js/classList.js"></script>
+
+  
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.js"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.js"></script>
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.js"></script>
+  
+  
+  <script type="text/javascript" src="/presentations/reveal-js/plugin/notes/notes.js"></script>
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/marked.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/markdown/markdown.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/highlight/highlight.js"></script>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.7.0/plugin/zoom-js/zoom.js"></script>
-
-
-<script type="text/javascript" src="/presentations/reveal-js/plugin/notes/notes.js"></script>
-
-
-
-<script type="text/javascript">
-if (hljs)
-  hljs.initHighlightingOnLoad();
-</script>
     
     
   </body>
