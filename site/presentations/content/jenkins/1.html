@@ -4,18 +4,43 @@
 {{% section %}}
 
 <h4>How to CI/CD with Jenkins?</h4>
-
+<h6>by Mikołaj Młodzikowski</h6>
 <img class="fragment fade-up" src="/presentations/img/jenkins/Egnyte_Builder.png">
 
 ---
 
-<h4>table of content</h3>
-<ul>
-    <li class="fragment fade-up">🌟 Groovy - a bit of shiny tricks in scripting</li>
-    <li class="fragment fade-up">🔨 Jenkins - introduction to pipelines hydrualics</li>
-    <li class="fragment fade-up"> <a href="https://github.com/mkjmdski/groovy-examples">Source code</a></li>
+<h4>Jenkins - who is he ?</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li>Jenkins has started as project Hudson in 2004 at Sun Microsystem, developed by Kohsuke Kawaguchi in java</li>
+    <li class="fragment fade-up">Jenkins as we know has started in 2011 as Hudson fork (while Hudson name belonged to Orcale after buying Sun) and Kohsuke Kawaguchi received O'Reilly Open Source Award</li>
+    <li class="fragment fade-up">Features used in current Jenkins development appeared in 2014 as Jenkins 2.0 introducing pipelines as standard</li>
 </ul>
+<img style="float: left;"  src="/presentations/img/jenkins/birthday.jpg">
 
-<img src="/presentations/img/jenkins/mario.png">
+---
+
+<h4>Hudson</h4>
+<img src="/presentations/img/jenkins/hudson.png">
+
+---
+
+<h4>Extensions</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on most of Jenkins abstraction layers - DSL, freestyle jobs and pipelines</li>
+    <li class="fragment fade-up">Libraries - the best way to add custom steps exposed as JVM libraries into your pipelines</li>
+    <li class="fragment fade-up">Agents - core part of each jenkins architecture</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/jenkinsjenkins.jpeg">
+
+---
+
+<h4>Agents types</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent</li>
+    <li class="fragment fade-up">JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master</li>
+    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master's request</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg">
+
 
 {{% /section %}}

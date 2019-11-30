@@ -2,84 +2,28 @@
 +++
 
 {{% section %}}
-<h4>Jenkins - introduction to pipelines hydrualics</h4>
+
+<h4>Parameters</h4>
 <ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li class="fragment fade-up">Historical overview</li>
-    <li class="fragment fade-up"> 📌 Jobs management - how to configure automations on Jenkins</li>
-    <li class="fragment fade-up">Extensions - what are the ways to add missing functionalities</li>
-    <li class="fragment fade-up">Infrastructure - a few words about time/cost optimizations for Jenkins</li>
-    <li class="fragment fade-up">Pipelines!</li>
+    <li> Parameters are available during build for executor shell </li>
+    <li> If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name</li>
+    <li> Parameters are also available in global variable params for pipelines </li>
 </ul>
-<img style="float: left;" src="/presentations/img/jenkins/swissknife.jpg">
+<img style="float: left;" src="/presentations/img/jenkins/mario.png">
 
 ---
 
-<h4>Historical overview</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li>Jenkins has started as project Hudson in 2004 at Sun Microsystem, developed by Kohsuke Kawaguchi</li>
-    <li class="fragment fade-up">Jenkins as we know has started in 2011 as Hudson fork (while Hudson name belonged to Orcale after buying Sun) and Kohsuke Kawaguchi received O'Reilly Open Source Award</li>
-    <li class="fragment fade-up">Features used in current Jenkins development appeared in 2014 as Jenkins 2.0 introducing pipelines as standard</li>
-</ul>
-<img style="float: left;"  src="/presentations/img/jenkins/birthday.jpg">
+<img src="/presentations/img/jenkins/branch-param.png">
+<img src="/presentations/img/jenkins/branch-param-example.png">
 
 ---
 
-<h4>Hudson</h4>
-<img src="/presentations/img/jenkins/hudson.png">
+<img src="/presentations/img/jenkins/choice-param.png">
+<img src="/presentations/img/jenkins/choice-param-example.png">
 
 ---
 
-<h4>Job management</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li>Freestyle - allows to configure manually set of Jenkins API calls into simple job</li>
-    <li class="fragment fade-up">📌 Pipelines - groovy framework for creating CI/CD pipelines which consits of stages executing steps</li>
-    <li class="fragment fade-up">DSL - way to configure any type of the job via Groovy code instead of manual actions</li>
-    <li class="fragment fade-up">Multibranch - group of jobs generated for set of branches in the specified repository</li>
-</ul>
-<img style="float: left;"  src="/presentations/img/jenkins/pipelines.jpg">
-
----
-
-<h4>Extensions</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on each part of job config - DSL, freestyle and pipelines</li>
-    <li class="fragment fade-up">📌 Libraries - the best way to add custom steps exposed as JVM libraries into your pipelines</li>
-    <li class="fragment fade-up">UI tweaks - editing jobs HTML is the best way to add business crucial features into jenkins</li>
-</ul>
-<img  style="float: left;" src="/presentations/img/jenkins/jenkinsjenkins.jpeg">
-
----
-
-<h4>Infrastructure</h4>
-<ul style="font-size: 2.2rem;float: left;padding-right: 5%;width: 70%;">
-    <li>Manual administration - osx, windows, raspberrys, mobiles</li>
-    <li class="fragment fade-up">📌 CCA VMs - 24/7 VMs with tool for codified software management (e.g. puppet/chef)</li>
-    <li class="fragment fade-up">📌 On demand VMs - public cloud computing instances spawned only for the time of job execution</li>
-    <li class="fragment fade-up">📌 Containers - containers attached to jenkins via swarm/k8s/docker cli</li>
-    <li class="fragment fade-up">Serverless - FaaS dispatchment, jenkins X, jenkinsfile runner</li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg">
-
----
-
-<h4>Pipelines!</h4>
-<ul style="font-size: 2.2rem;float: left;padding-right: 5%;width: 70%;">
-    <li>agent -> the place to execute pipeline</li>
-    <li class="fragment fade-up">options -> configures jobs</li>
-    <li class="fragment fade-up">environment -> allows to add credentials or special environment variables</li>
-    <li class="fragment fade-up">stages -> sequential or parallel for logical components in the flow. Stages could be conditional (when block) and they consist steps</li>
-    <li class="fragment fade-up">post -> actions to be executed after single stage or group of stages</li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/ninja.jpg">
-
----
-
-<h3>sources</h3>
-<ul>
-    <li><a href="https://jenkinsci.github.io/job-dsl-plugin/">DSL</a></li>
-    <li><a href="https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline">Pipelines</a></li>
-    <li><a href="https://javadoc.jenkins.io/">Jenkins Core API (for libraries)</a></li>
-    <li><a href="https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/">Basic steps </a> and <a href="https://jenkins.io/doc/pipeline/steps/">all steps</a> for pipelines</li>
-</ul>
+<img src="/presentations/img/jenkins/regex-validation.png">
+<img src="/presentations/img/jenkins/validation-param-example.png">
 
 {{% /section %}}
