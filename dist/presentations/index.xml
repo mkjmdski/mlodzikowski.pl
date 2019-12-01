@@ -66,6 +66,15 @@
     
     <item>
       <title></title>
+      <link>https://mlodzikowski.pl/presentations/jenkins/6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/jenkins/6/</guid>
+      <description>Agents types SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&amp;rsquo;s request  Kubernetes agents Under the hood the Pod object is formed within side container which contains JNLP agent Jenkins master has to be reachable from K8s cluster Pod template could be defined in Jenkins configuration with label or could be created inline  Docker software isolation Workspace could be mapped into docker container within the agent if it has docker software This requires mapping container user to user running jenkins process on agent Private registry and dockerfile are supported too   </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mlodzikowski.pl/presentations/programming/1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

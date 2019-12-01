@@ -50,16 +50,6 @@
 </ul>
 <img  style="float: left;" src="/presentations/img/jenkins/jenkinsjenkins.jpeg"></p>
 
-</section><section>
-
-<p><h4>Agents types</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent</li>
-    <li class="fragment fade-up">JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master</li>
-    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&rsquo;s request</li>
-</ul>
-<img  style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg"></p>
-
 </section>
 </section>
     <section><section data-shortcode-section>
@@ -259,6 +249,45 @@
 
 <p><h4>Triggers tricks - when conditions</h4>
 <img src="/presentations/img/jenkins/when4.png"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<p><h4>Agents types</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent</li>
+    <li class="fragment fade-up">JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master</li>
+    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&rsquo;s request</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg"></p>
+
+</section><section>
+
+<p><h4>Kubernetes agents</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Under the hood the Pod object is formed within side container which contains JNLP agent</li>
+    <li class="fragment fade-up">Jenkins master has to be reachable from K8s cluster</li>
+    <li class="fragment fade-up">Pod template could be defined in Jenkins configuration with label or could be created inline</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/drunk.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/k8s-agent.png"></p>
+
+</section><section>
+
+<p><h4>Docker software isolation</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Workspace could be mapped into docker container within the agent if it has docker software</li>
+    <li class="fragment fade-up">This requires mapping container user to user running jenkins process on agent</li>
+    <li class="fragment fade-up">Private registry and dockerfile are supported too</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/whiskey.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/docker-agent.png"></p>
 
 </section>
 </section>
