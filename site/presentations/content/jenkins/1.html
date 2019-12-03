@@ -32,4 +32,37 @@
 </ul>
 <img  style="float: left;" src="/presentations/img/jenkins/jenkinsjenkins.jpeg">
 
+---
+
+<h4>Most used job types</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Freestyle - manual or DSL setup where flow is configured via XML file which uses steps and plugins</li>
+    <li class="fragment fade-up">Pipelines - Jenkinsfile or groovy script in job configuration</li>
+    <li class="fragment fade-up">Maven Project - Java orientated extension of freesytle job</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/cool-jenkins.png">
+
+---
+
+<h4>Pipeline types</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Scripted - closures to define the flow have no order and are defined by progammer (low level)</li>
+    <li class="fragment fade-up">Declarative - clousers have documentated structure (high level)</li>
+    <li class="fragment fade-up">Single pipeline - only one job is created and could be independent from repository</li>
+    <li class="fragment fade-up">Multibranch pipeline - project is assigned to the repository and creates multiple jobs depending on discovery strategy</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/mighty.jpg">
+
+---
+
+<h4>Libraries</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>vars catalog - contains groovy code with steps where each file is the name of step and has call method</li>
+    <li class="fragment fade-up">Each step underhood is an object which helper methods could be accessed like stepName.helperMethod()</li>
+    <li class="fragment fade-up">call method for each step could be overloaded</li>
+    <li class="fragment fade-up">src catalog - contains Java-like code which could be imported in steps / pipelines</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/hudson.png">
+
+
 {{% /section %}}
