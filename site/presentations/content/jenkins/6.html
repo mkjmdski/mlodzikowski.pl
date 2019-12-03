@@ -8,9 +8,29 @@
 <ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
     <li>SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent</li>
     <li class="fragment fade-up">JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master</li>
-    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master's request</li>
+    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master's request - supported bo JCloud</li>
 </ul>
 <img  style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg">
+
+---
+
+<h4>SSH Agents</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Recommended by CloudBees when using their plugin :)</li>
+    <li class="fragment fade-up">Has less software requirements what comes in handy when using dynamic agents</li>
+    <li class="fragment fade-up">Has issues with non-linux servers</li>
+</ul>
+<img class="fragment fade-up" src="/presentations/img/jenkins/ssh.jpg">
+
+---
+
+<h4>JNLP Agents</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Comes in handy when you need to codify your Jenkins Agents (jar could be </li>
+    <li class="fragment fade-up">Has less software requirements what comes in handy when using dynamic agents</li>
+    <li class="fragment fade-up">Has issues with non-linux servers</li>
+</ul>
+<img class="fragment fade-up" style="float: left;" src="/presentations/img/jenkins/jenkins-agent-hiera.png">
 
 ---
 
@@ -40,5 +60,23 @@
 
 <img src="/presentations/img/jenkins/docker-agent.png">
 
+---
+
+<h4>Dynamic VMs</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Supported clouds: Digital Ocean, GCP, AWS, Azure, etc...</li>
+    <li class="fragment fade-up">Best settings are retention time and number of executors set to 1</li>
+    <li class="fragment fade-up">It is required that VM image contains java</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/ninja.jpg">
+
+---
+
+<img src="/presentations/img/jenkins/dynamic-vm.png">
+
+---
+
+<img src="/presentations/img/jenkins/gce-vm-casc.png">
+<img src="/presentations/img/jenkins/new-vm.png">
 
 {{% /section %}}
