@@ -66,6 +66,15 @@
     
     <item>
       <title></title>
+      <link>https://mlodzikowski.pl/presentations/jenkins/7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/jenkins/7/</guid>
+      <description>Plugins management - installation Manual - from central repository or HPI file (useful for downgrades) :) Ansible - geerlingguy role for installing Jenkins Docker - https://github.com/jenkinsci/docker/blob/master/install-plugins.sh Helm Chart - template for deploying Jenkins on Kubernetes (use @ for pinning version)  Plugins management - configuration All Jenkins configurations - including plugins and jobs are XML - backup them! You can use JCasC - Jenkins Configuration as Code (tool from Praqma) Try to use Jenkins Credentials for storing secrets for plugin configurations - same as for Jobs ;)   </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://mlodzikowski.pl/presentations/jenkins/99/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
