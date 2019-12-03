@@ -53,16 +53,6 @@
 </section>
 </section>
     <section><section data-shortcode-section>
-<h3>sources</h3>
-<ul>
-    <li><a href="https://jenkinsci.github.io/job-dsl-plugin/">DSL</a></li>
-    <li><a href="https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline">Pipelines</a></li>
-    <li><a href="https://javadoc.jenkins.io/">Jenkins Core API (for libraries)</a></li>
-    <li><a href="https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/">Basic steps </a> and <a href="https://jenkins.io/doc/pipeline/steps/">all steps</a> for pipelines</li>
-</ul>
-</section>
-</section>
-    <section><section data-shortcode-section>
 <p><h4>Discarding builds</h4>
 <ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
     <li class="fragment fade-up">Too many builds and artifacts are heavy on jenkins operating memory</li>
@@ -84,7 +74,7 @@
 
 </section><section>
 
-<p><img src="/presentations/img/jenkins/discard.jpg"></p>
+<p><img src="/presentations/img/jenkins/discard.png"></p>
 
 </section><section>
 
@@ -99,11 +89,11 @@
 
 </section><section>
 
-<p><img src="/presentations/img/jenkins/discard-dsl.jpg"></p>
+<p><img src="/presentations/img/jenkins/discard-dsl.png"></p>
 
 </section><section>
 
-<p><img src="/presentations/img/jenkins/discard-pipeline.jpg"></p>
+<p><img src="/presentations/img/jenkins/discard-pipeline.png"></p>
 
 </section>
 </section>
@@ -114,7 +104,7 @@
     <li class="fragment fade-up">Simple Theme Plugin - Allows to install out of the box skins or introduce custom CSS - <a href="https://github.com/jenkinsci/simple-theme-plugin">https://github.com/jenkinsci/simple-theme-plugin</a></li>
     <li class="fragment fade-up">Groovy Postbuild plugin - Codified edition of HTML in Jenkins UI</li>
 </ul>
-<img style="float: left;"  src="/presentations/img/jenkins/birthday.jpg"></p>
+<img style="float: left;"  src="/presentations/img/jenkins/hippy.png"></p>
 
 </section><section>
 
@@ -126,7 +116,8 @@
 
 <p><h4>UI Lifting - Material</h4>
 <a href="http://afonsof.com/jenkins-material-theme/">http://afonsof.com/jenkins-material-theme/</a>
-<img src="/presentations/img/jenkins/material-config.jpg"></p>
+<img src="/presentations/img/jenkins/material-config.jpg">
+<img src="/presentations/img/jenkins/casc-css.png"></p>
 
 </section><section>
 
@@ -250,6 +241,10 @@
 <p><h4>Triggers tricks - when conditions</h4>
 <img src="/presentations/img/jenkins/when4.png"></p>
 
+</section><section>
+
+<p><img src="/presentations/img/jenkins/cron-pipeline.png"></p>
+
 </section>
 </section>
     <section><section data-shortcode-section>
@@ -257,9 +252,29 @@
 <ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
     <li>SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent</li>
     <li class="fragment fade-up">JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master</li>
-    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&rsquo;s request</li>
+    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&rsquo;s request - supported bo JCloud</li>
 </ul>
 <img  style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg"></p>
+
+</section><section>
+
+<p><h4>SSH Agents</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Recommended by CloudBees when using their plugin :)</li>
+    <li class="fragment fade-up">Has less software requirements what comes in handy when using dynamic agents</li>
+    <li class="fragment fade-up">Has issues with non-linux servers</li>
+</ul>
+<img class="fragment fade-up" src="/presentations/img/jenkins/ssh.jpg"></p>
+
+</section><section>
+
+<p><h4>JNLP Agents</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Comes in handy when you need to codify your Jenkins Agents (jar could be </li>
+    <li class="fragment fade-up">Has less software requirements what comes in handy when using dynamic agents</li>
+    <li class="fragment fade-up">Has issues with non-linux servers</li>
+</ul>
+<img class="fragment fade-up" style="float: left;" src="/presentations/img/jenkins/jenkins-agent-hiera.png"></p>
 
 </section><section>
 
@@ -289,6 +304,35 @@
 
 <p><img src="/presentations/img/jenkins/docker-agent.png"></p>
 
+</section><section>
+
+<p><h4>Dynamic VMs</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Supported clouds: Digital Ocean, GCP, AWS, Azure, etc&hellip;</li>
+    <li class="fragment fade-up">Best settings are retention time and number of executors set to 1</li>
+    <li class="fragment fade-up">It is required that VM image contains java</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/ninja.jpg"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/dynamic-vm.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/gce-vm-casc.png">
+<img src="/presentations/img/jenkins/new-vm.png"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<h3>sources</h3>
+<ul>
+    <li><a href="https://jenkinsci.github.io/job-dsl-plugin/">DSL</a></li>
+    <li><a href="https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline">Pipelines</a></li>
+    <li><a href="https://javadoc.jenkins.io/">Jenkins Core API (for libraries)</a></li>
+    <li><a href="https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/">Basic steps </a> and <a href="https://jenkins.io/doc/pipeline/steps/">all steps</a> for pipelines</li>
+</ul>
 </section>
 </section>
 

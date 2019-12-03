@@ -21,15 +21,6 @@
     
     <item>
       <title></title>
-      <link>https://mlodzikowski.pl/presentations/jenkins/10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mlodzikowski.pl/presentations/jenkins/10/</guid>
-      <description>sources  DSL Pipelines Jenkins Core API (for libraries) Basic steps  and all steps for pipelines   </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://mlodzikowski.pl/presentations/jenkins/2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -70,7 +61,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/6/</guid>
-      <description>Agents types SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&amp;rsquo;s request  Kubernetes agents Under the hood the Pod object is formed within side container which contains JNLP agent Jenkins master has to be reachable from K8s cluster Pod template could be defined in Jenkins configuration with label or could be created inline  Docker software isolation Workspace could be mapped into docker container within the agent if it has docker software This requires mapping container user to user running jenkins process on agent Private registry and dockerfile are supported too   </description>
+      <description>Agents types SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&amp;rsquo;s request - supported bo JCloud  SSH Agents Recommended by CloudBees when using their plugin :) Has less software requirements what comes in handy when using dynamic agents Has issues with non-linux servers  JNLP Agents Comes in handy when you need to codify your Jenkins Agents (jar could be  Has less software requirements what comes in handy when using dynamic agents Has issues with non-linux servers  Kubernetes agents Under the hood the Pod object is formed within side container which contains JNLP agent Jenkins master has to be reachable from K8s cluster Pod template could be defined in Jenkins configuration with label or could be created inline  Docker software isolation Workspace could be mapped into docker container within the agent if it has docker software This requires mapping container user to user running jenkins process on agent Private registry and dockerfile are supported too  Dynamic VMs Supported clouds: Digital Ocean, GCP, AWS, Azure, etc&amp;hellip; Best settings are retention time and number of executors set to 1 It is required that VM image contains java   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://mlodzikowski.pl/presentations/jenkins/99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/presentations/jenkins/99/</guid>
+      <description>sources  DSL Pipelines Jenkins Core API (for libraries) Basic steps  and all steps for pipelines   </description>
     </item>
     
     <item>
