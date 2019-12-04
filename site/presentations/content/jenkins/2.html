@@ -3,46 +3,38 @@
 
 {{% section %}}
 
-<h4>Discarding builds</h4>
+<h4>Jobs triggers</h4>
 <ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li class="fragment fade-up">Too many builds and artifacts are heavy on jenkins operating memory</li>
-    <li class="fragment fade-up">You can set specific number of days you want to keep builds and/or artifacts</li>
-    <li class="fragment fade-up">You can set specific number of builds and/or artifacts you want to keep</li>
+    <li class="fragment fade-up">Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced</li>
+    <li class="fragment fade-up">Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -> deployment pipeline)</li>
+    <li class="fragment fade-up">Webhooks - generic hooks, VCS providers, Jira</li>
+    <li class="fragment fade-up">Jenkins Crons Syntax - TZ=UTC H 8 * * *</li>
 </ul>
-<img style="float: left;" src="/presentations/img/jenkins/swissknife.jpg">
+<img src="/presentations/img/jenkins/hocuspocus.png">
 
 ---
 
-<h4>Jobs configuration schools</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li>Manual - of course :)</li>
-    <li class="fragment fade-up">DSL - Domain specific language</li>
-    <li class="fragment fade-up">Plugins / tools using API - for instance job-builder plugin</li>
-    <li class="fragment fade-up">Pipeline closures - requires initial run</li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/alien.png">
+<h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/when.png">
 
 ---
 
-<img src="/presentations/img/jenkins/discard.png">
+<h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/when2.png">
 
 ---
 
-<h4>DSL - Domain specific language</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li class="fragment fade-up">Allows to configure jobs as Groovy scripts</li>
-    <li class="fragment fade-up">Available under env.JENKINS_URL/plugin/job-dsl/api-viewer/index.html</li>
-    <li class="fragment fade-up">Requires DSL plugin</li>
-    <li class="fragment fade-up">Could be configured as cron to overwrite manual changes made by users</li>
-</ul>
-<img src="/presentations/img/jenkins/bug.jpg">
+<h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/globals.png">
+<img src="/presentations/img/jenkins/when3.png">
 
 ---
 
-<img src="/presentations/img/jenkins/discard-dsl.png">
+<h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/when4.png">
 
 ---
 
-<img src="/presentations/img/jenkins/discard-pipeline.png">
+<img src="/presentations/img/jenkins/cron-pipeline.png">
 
 {{% /section %}}

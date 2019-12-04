@@ -1,34 +1,90 @@
 +++
 +++
 
-
 {{% section %}}
 
-<h4>Plugins management - installation</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li class="fragment fade-up">Manual - from central repository or HPI file (useful for downgrades) :)</li>
-    <li class="fragment fade-up">Ansible - geerlingguy role for installing Jenkins</li>
-    <li class="fragment fade-up">Docker - https://github.com/jenkinsci/docker/blob/master/install-plugins.sh</li>
-    <li class="fragment fade-up">Helm Chart - template for deploying Jenkins on Kubernetes (use @ for pinning version)</li>
+<h4>UI Lifting</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li class="fragment fade-up">Green Balls plugin - replaces blue color with green introducing Western culture context</li>
+    <li class="fragment fade-up">Simple Theme Plugin - Allows to install out of the box skins or introduce custom CSS - https://github.com/jenkinsci/simple-theme-plugin</li>
+    <li class="fragment fade-up">Groovy Postbuild plugin - Codified edition of HTML in Jenkins UI</li>
 </ul>
-<img style="float: left;" src="/presentations/img/jenkins/spanish.png">
+<img style="float: left;"  src="/presentations/img/jenkins/hippy.png">
 
 ---
 
-<h4>Plugins management - configuration</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li class="fragment fade-up">All Jenkins configurations - including plugins and jobs are XML - backup them!</li>
-    <li class="fragment fade-up">You can use JCasC - Jenkins Configuration as Code (tool from Praqma)</li>
-    <li class="fragment fade-up">Try to use Jenkins Credentials for storing secrets for plugin configurations - same as for Jobs ;)</li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/voltron.png">
+<h4>UI Lifting - Simple changes</h4>
+<img src="/presentations/img/jenkins/green.png">
+<img src="/presentations/img/jenkins/protect.png">
 
 ---
 
-<img src="/presentations/img/jenkins/casc-example.png">
+<h4>UI Lifting - Material</h4>
+http://afonsof.com/jenkins-material-theme/
+<img src="/presentations/img/jenkins/material-config.jpg">
+<img src="/presentations/img/jenkins/casc-css.png">
 
 ---
 
-<img src="/presentations/img/jenkins/casc-reference.png">
+<img src="/presentations/img/jenkins/screenshot-jenkins-theme-material-console-large.png">
+
+---
+
+<img src="/presentations/img/jenkins/screenshot-jenkins-theme-material-history-large.png">
+
+---
+
+<img src="/presentations/img/jenkins/screenshot-jenkins-theme-material-legend-large.png">
+
+---
+
+<img src="/presentations/img/jenkins/screenshot-jenkins-theme-material-main-large.png">
+
+---
+
+<h4>UI Lifting - groovy extra description</h4>
+<img src="/presentations/img/jenkins/description.png">
+<img src="/presentations/img/jenkins/description-history.png">
+
+---
+
+<h4>UI Lifting - groovy extra description - code</h4>
+<img src="/presentations/img/jenkins/description-code.png">
+<img src="/presentations/img/jenkins/calling-description.png">
+
+---
+
+<h4>UI Lifting - Adding icons </h4>
+https://github.com/jenkinsci/jenkins/tree/master/war/src/main/webapp/images/48x48
+<img src="/presentations/img/jenkins/icons.png">
+
+---
+
+<h4>UI Lifting - Adding icons - code </h4>
+<img src="/presentations/img/jenkins/manager.png">
+<img src="/presentations/img/jenkins/manager-call.png">
+
+---
+
+<h4>UI Lifting - HTML raports </h4>
+<img src="/presentations/img/jenkins/reports.png">
+<img src="/presentations/img/jenkins/reports-ui.png">
+
+---
+
+<h4>UI Lifting - summaries </h4>
+<img src="/presentations/img/jenkins/summary-final.png">
+
+---
+
+<img src="/presentations/img/jenkins/summary-example.png">
+
+---
+
+<img src="/presentations/img/jenkins/summary-bootstrap.png">
+
+---
+
+<img src="/presentations/img/jenkins/summary-promotions.png">
 
 {{% /section %}}

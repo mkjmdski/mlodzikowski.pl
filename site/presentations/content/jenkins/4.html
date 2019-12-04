@@ -3,27 +3,46 @@
 
 {{% section %}}
 
-<h4>Parameters</h4>
+<h4>Discarding builds</h4>
 <ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li> Parameters are available during build for executor shell </li>
-    <li> If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name</li>
-    <li> Parameters are also available in global variable params for pipelines </li>
+    <li class="fragment fade-up">Too many builds and artifacts are heavy on jenkins operating memory</li>
+    <li class="fragment fade-up">You can set specific number of days you want to keep builds and/or artifacts</li>
+    <li class="fragment fade-up">You can set specific number of builds and/or artifacts you want to keep</li>
 </ul>
-<img style="float: left;" src="/presentations/img/jenkins/mario.png">
+<img style="float: left;" src="/presentations/img/jenkins/swissknife.jpg">
 
 ---
 
-<img src="/presentations/img/jenkins/branch-param.png">
-<img src="/presentations/img/jenkins/branch-param-example.png">
+<h4>Jobs configuration schools</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li>Manual - of course :)</li>
+    <li class="fragment fade-up">DSL - Domain specific language</li>
+    <li class="fragment fade-up">Plugins / tools using API - for instance job-builder plugin</li>
+    <li class="fragment fade-up">Pipeline closures - requires initial run</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/alien.png">
 
 ---
 
-<img src="/presentations/img/jenkins/choice-param.png">
-<img src="/presentations/img/jenkins/choice-param-example.png">
+<img src="/presentations/img/jenkins/discard.png">
 
 ---
 
-<img src="/presentations/img/jenkins/regex-validation.png">
-<img src="/presentations/img/jenkins/validation-param-example.png">
+<h4>DSL - Domain specific language</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li class="fragment fade-up">Allows to configure jobs as Groovy scripts</li>
+    <li class="fragment fade-up">Available under env.JENKINS_URL/plugin/job-dsl/api-viewer/index.html</li>
+    <li class="fragment fade-up">Requires DSL plugin</li>
+    <li class="fragment fade-up">Could be configured as cron to overwrite manual changes made by users</li>
+</ul>
+<img src="/presentations/img/jenkins/bug.jpg">
+
+---
+
+<img src="/presentations/img/jenkins/discard-dsl.png">
+
+---
+
+<img src="/presentations/img/jenkins/discard-pipeline.png">
 
 {{% /section %}}

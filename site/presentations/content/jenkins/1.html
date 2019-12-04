@@ -3,36 +3,6 @@
 
 {{% section %}}
 
-<h4>How to CI/CD with Jenkins?</h4>
-<h6>by Mikołaj Młodzikowski</h6>
-<img class="fragment fade-up" src="/presentations/img/jenkins/Egnyte_Builder.png">
-
----
-
-<h4>Jenkins - who is he ?</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li>Jenkins has started as project Hudson in 2004 at Sun Microsystem, developed by Kohsuke Kawaguchi in java</li>
-    <li class="fragment fade-up">Jenkins as we know has started in 2011 as Hudson fork (while Hudson name belonged to Orcale after buying Sun) and Kohsuke Kawaguchi received O'Reilly Open Source Award</li>
-    <li class="fragment fade-up">Features used in current Jenkins development appeared in 2014 as Jenkins 2.0 introducing pipelines as standard</li>
-</ul>
-<img style="float: left;"  src="/presentations/img/jenkins/birthday.jpg">
-
----
-
-<h4>Hudson</h4>
-<img src="/presentations/img/jenkins/hudson.png">
-
----
-
-<h4>Extensions</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on most of Jenkins abstraction layers - DSL, freestyle jobs and pipelines</li>
-    <li class="fragment fade-up">Libraries - the best way to add custom steps exposed as JVM libraries into your pipelines</li>
-    <li class="fragment fade-up">Agents - core part of each jenkins architecture</li>
-</ul>
-<img  style="float: left;" src="/presentations/img/jenkins/jenkinsjenkins.jpeg">
-
----
 
 <h4>Most used job types</h4>
 <ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
@@ -55,14 +25,10 @@
 
 ---
 
-<h4>Libraries</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>vars catalog - contains groovy code with steps where each file is the name of step and has call method</li>
-    <li class="fragment fade-up">Each step underhood is an object which helper methods could be accessed like stepName.helperMethod()</li>
-    <li class="fragment fade-up">call method for each step could be overloaded</li>
-    <li class="fragment fade-up">src catalog - contains Java-like code which could be imported in steps / pipelines</li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/hudson.png">
+<img src="/presentations/img/jenkins/scripted-pipeline.png">
 
+---
+
+<img src="/presentations/img/jenkins/declarative-pipeline.png">
 
 {{% /section %}}

@@ -3,38 +3,36 @@
 
 {{% section %}}
 
-<h4>Jobs triggers</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li class="fragment fade-up">Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced</li>
-    <li class="fragment fade-up">Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -> deployment pipeline)</li>
-    <li class="fragment fade-up">Webhooks - generic hooks, VCS providers, Jira</li>
-    <li class="fragment fade-up">Jenkins Crons Syntax - TZ=UTC H 8 * * *</li>
+<h4>Libraries</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>vars catalog - contains groovy code with steps where each file is the name of step and has call method</li>
+    <li class="fragment fade-up">Each step underhood is an object which helper methods could be accessed like stepName.helperMethod()</li>
+    <li class="fragment fade-up">call method for each step could be overloaded</li>
+    <li class="fragment fade-up">src catalog - contains Java-like code which could be imported in steps / pipelines</li>
 </ul>
-<img src="/presentations/img/jenkins/hocuspocus.png">
+<img style="float: left;" src="/presentations/img/jenkins/hudson.png">
 
 ---
 
-<h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/when.png">
+<h4>Libraries</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>resource catalog - contains helper filer which could be loaded (bash scripts, json files etc)</li>
+    <li class="fragment fade-up">libraries could be versioned - by branch, tag or commit</li>
+    <li class="fragment fade-up">you can load multiple libraries at once</li>
+    <li class="fragment fade-up">you can define full pipelines within libraries</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/jenkins-cactus.png">
 
 ---
 
-<h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/when2.png">
+<img src="/presentations/img/jenkins/lib-definition.png">
 
 ---
 
-<h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/globals.png">
-<img src="/presentations/img/jenkins/when3.png">
+<img src="/presentations/img/jenkins/library-def.png">
 
 ---
 
-<h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/when4.png">
-
----
-
-<img src="/presentations/img/jenkins/cron-pipeline.png">
+<img src="/presentations/img/jenkins/library-example.png">
 
 {{% /section %}}

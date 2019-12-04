@@ -1,0 +1,95 @@
++++
++++
+
+{{% section %}}
+
+<h4>How to CI/CD with Jenkins?</h4>
+<h6>by Mikołaj Młodzikowski</h6>
+<img class="fragment fade-up" src="/presentations/img/jenkins/Egnyte_Builder.png">
+
+---
+
+<h4>Jenkins - who is he ?</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li>Jenkins has started as project Hudson in 2004 at Sun Microsystem, developed by Kohsuke Kawaguchi in java</li>
+    <li class="fragment fade-up">Jenkins as we know has started in 2011 as Hudson fork (while Hudson name belonged to Orcale after buying Sun) and Kohsuke Kawaguchi received O'Reilly Open Source Award</li>
+    <li class="fragment fade-up">Features used in current Jenkins development appeared in 2014 as Jenkins 2.0 introducing pipelines as standard</li>
+</ul>
+<img style="float: left;"  src="/presentations/img/jenkins/birthday.jpg">
+
+---
+
+<img src="/presentations/img/jenkins/hudson-ui.png">
+
+---
+
+<h4>Extensions</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Plugins - base part of Jenkins ecosystem, java API provided by plugins is accessible on most of Jenkins abstraction layers - DSL, freestyle jobs and pipelines</li>
+    <li class="fragment fade-up">Libraries - the best way to add custom steps exposed as JVM libraries into your pipelines</li>
+    <li class="fragment fade-up">Agents - core part of each jenkins architecture</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/jenkinsjenkins.jpeg">
+
+---
+
+<h4>Groovy</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>used for programming and scripting with features similar to those of Python or Ruby, what makes it very easy to use non-native groovy idioms </li>
+    <li class="fragment fade-up">Groovy source code file can be executed as an (uncompiled) script - what means errors during runtime, it could be also compiled statically, but this is not Jenkins case</li>
+    <li class="fragment fade-up">object-oriented, functional, java syntax and libraries compatible</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/jenkins-cactus.png">
+
+---
+
+<h4>Groovy</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>is able to mix features of <a href="https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages">dynamically 📌 and statically</a> typed language at the same time</li>
+    <li class="fragment fade-up">Groovy implicitly generates getters and setters, and allows to construct object with a field -> value map</li>
+    <li class="fragment fade-up">operators overloading and the safe navigation operator ?.</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/jenkins-zombie.png">
+
+---
+
+<h4>Groovy</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>native syntax for lists and associative arrays (maps) and closures</li>
+    <li class="fragment fade-up">native support for regular expressions, polymorphic iteration, string interpolation</li>
+    <li class="fragment fade-up">has kind of cool groovyshell ;)</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/jenkins-java.png">
+
+---
+
+<img src="beans.png"/>
+---
+
+<img src="closures.png"/>
+
+---
+
+<img src="delegates.png"/>
+
+---
+
+<img src="functional.png"/>
+
+---
+
+<img src="meta-class.png"/>
+
+---
+
+<img src="operators.png"/>
+
+---
+
+<img src="safe-operators.png"/>
+
+---
+
+<img src="traits.png"/>
+
+{{% /section %}}
