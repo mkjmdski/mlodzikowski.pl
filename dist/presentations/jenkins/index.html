@@ -37,8 +37,7 @@
 
 </section><section>
 
-<p><h4>Hudson</h4>
-<img src="/presentations/img/jenkins/hudson.png"></p>
+<p><img src="/presentations/img/jenkins/hudson-ui.png"></p>
 
 </section><section>
 
@@ -52,6 +51,67 @@
 
 </section><section>
 
+<p><h4>Groovy</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>used for programming and scripting with features similar to those of Python or Ruby, what makes it very easy to use non-native groovy idioms </li>
+    <li class="fragment fade-up">Groovy source code file can be executed as an (uncompiled) script - what means errors during runtime, it could be also compiled statically, but this is not Jenkins case</li>
+    <li class="fragment fade-up">object-oriented, functional, java syntax and libraries compatible</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/jenkins-cactus.png"></p>
+
+</section><section>
+
+<p><h4>Groovy</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>is able to mix features of <a href="https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages">dynamically 📌 and statically</a> typed language at the same time</li>
+    <li class="fragment fade-up">Groovy implicitly generates getters and setters, and allows to construct object with a field -&gt; value map</li>
+    <li class="fragment fade-up">operators overloading and the safe navigation operator ?.</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/jenkins-zombie.png"></p>
+
+</section><section>
+
+<p><h4>Groovy</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>native syntax for lists and associative arrays (maps) and closures</li>
+    <li class="fragment fade-up">native support for regular expressions, polymorphic iteration, string interpolation</li>
+    <li class="fragment fade-up">has kind of cool groovyshell ;)</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/jenkins-java.png"></p>
+
+</section><section>
+
+<h2 id="img-src-beans-png"><img src="beans.png"/></h2>
+
+<p><img src="closures.png"/></p>
+
+</section><section>
+
+<p><img src="delegates.png"/></p>
+
+</section><section>
+
+<p><img src="functional.png"/></p>
+
+</section><section>
+
+<p><img src="meta-class.png"/></p>
+
+</section><section>
+
+<p><img src="operators.png"/></p>
+
+</section><section>
+
+<p><img src="safe-operators.png"/></p>
+
+</section><section>
+
+<p><img src="traits.png"/></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
 <p><h4>Most used job types</h4>
 <ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
     <li>Freestyle - manual or DSL setup where flow is configured via XML file which uses steps and plugins</li>
@@ -73,14 +133,74 @@
 
 </section><section>
 
-<p><h4>Libraries</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>vars catalog - contains groovy code with steps where each file is the name of step and has call method</li>
-    <li class="fragment fade-up">Each step underhood is an object which helper methods could be accessed like stepName.helperMethod()</li>
-    <li class="fragment fade-up">call method for each step could be overloaded</li>
-    <li class="fragment fade-up">src catalog - contains Java-like code which could be imported in steps / pipelines</li>
+<p><img src="/presentations/img/jenkins/scripted-pipeline.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/declarative-pipeline.png"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<p><h4>Jobs triggers</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li class="fragment fade-up">Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced</li>
+    <li class="fragment fade-up">Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -&gt; deployment pipeline)</li>
+    <li class="fragment fade-up">Webhooks - generic hooks, VCS providers, Jira</li>
+    <li class="fragment fade-up">Jenkins Crons Syntax - TZ=UTC H 8 * * *</li>
 </ul>
-<img style="float: left;" src="/presentations/img/jenkins/hudson.png"></p>
+<img src="/presentations/img/jenkins/hocuspocus.png"></p>
+
+</section><section>
+
+<p><h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/when.png"></p>
+
+</section><section>
+
+<p><h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/when2.png"></p>
+
+</section><section>
+
+<p><h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/globals.png">
+<img src="/presentations/img/jenkins/when3.png"></p>
+
+</section><section>
+
+<p><h4>Triggers tricks - when conditions</h4>
+<img src="/presentations/img/jenkins/when4.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/cron-pipeline.png"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<p><h4>Parameters</h4>
+<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
+    <li> Parameters are available during build for executor shell </li>
+    <li class="fragment fade-up"> If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name</li>
+    <li class="fragment fade-up"> Parameters are also available in global variable params for pipelines </li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/mario.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/branch-param.png">
+<img src="/presentations/img/jenkins/branch-param-example.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/choice-param.png">
+<img src="/presentations/img/jenkins/choice-param-example.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/regex-validation.png">
+<img src="/presentations/img/jenkins/validation-param-example.png"></p>
 
 </section>
 </section>
@@ -126,6 +246,119 @@
 </section><section>
 
 <p><img src="/presentations/img/jenkins/discard-pipeline.png"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<p><h4>Libraries</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>vars catalog - contains groovy code with steps where each file is the name of step and has call method</li>
+    <li class="fragment fade-up">Each step underhood is an object which helper methods could be accessed like stepName.helperMethod()</li>
+    <li class="fragment fade-up">call method for each step could be overloaded</li>
+    <li class="fragment fade-up">src catalog - contains Java-like code which could be imported in steps / pipelines</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/hudson.png"></p>
+
+</section><section>
+
+<p><h4>Libraries</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>resource catalog - contains helper filer which could be loaded (bash scripts, json files etc)</li>
+    <li class="fragment fade-up">libraries could be versioned - by branch, tag or commit</li>
+    <li class="fragment fade-up">you can load multiple libraries at once</li>
+    <li class="fragment fade-up">you can define full pipelines within libraries</li>
+</ul>
+<img style="float: left;" src="/presentations/img/jenkins/jenkins-cactus.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/lib-definition.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/library-def.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/library-example.png"></p>
+
+</section>
+</section>
+    <section><section data-shortcode-section>
+<p><h4>Agents types</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent</li>
+    <li class="fragment fade-up">JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master</li>
+    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&rsquo;s request - supported bo JCloud</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg"></p>
+
+</section><section>
+
+<p><h4>SSH Agents</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Recommended by CloudBees when using their plugin :)</li>
+    <li class="fragment fade-up">Has less software requirements what comes in handy when using dynamic agents</li>
+    <li class="fragment fade-up">Has issues with non-linux servers</li>
+</ul>
+<img class="fragment fade-up" src="/presentations/img/jenkins/ssh.jpg"></p>
+
+</section><section>
+
+<p><h4>JNLP Agents</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Comes in handy when you need to codify your Jenkins Agents (jar could be </li>
+    <li class="fragment fade-up">Has less software requirements what comes in handy when using dynamic agents</li>
+    <li class="fragment fade-up">Has issues with non-linux servers</li>
+</ul>
+<img class="fragment fade-up" style="float: left;" src="/presentations/img/jenkins/jenkins-agent-hiera.png"></p>
+
+</section><section>
+
+<p><h4>Kubernetes agents</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Under the hood the Pod object is formed within side container which contains JNLP agent</li>
+    <li class="fragment fade-up">Jenkins master has to be reachable from K8s cluster</li>
+    <li class="fragment fade-up">Pod template could be defined in Jenkins configuration with label or could be created inline</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/drunk.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/k8s-agent.png"></p>
+
+</section><section>
+
+<p><h4>Docker software isolation</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Workspace could be mapped into docker container within the agent if it has docker software</li>
+    <li class="fragment fade-up">This requires mapping container user to user running jenkins process on agent</li>
+    <li class="fragment fade-up">Private registry and dockerfile are supported too</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/whiskey.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/docker-agent.png"></p>
+
+</section><section>
+
+<p><h4>Dynamic VMs</h4>
+<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
+    <li>Supported clouds: Digital Ocean, GCP, AWS, Azure, etc&hellip;</li>
+    <li class="fragment fade-up">Best settings are retention time and number of executors set to 1</li>
+    <li class="fragment fade-up">It is required that VM image contains java</li>
+</ul>
+<img  style="float: left;" src="/presentations/img/jenkins/ninja.jpg"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/dynamic-vm.png"></p>
+
+</section><section>
+
+<p><img src="/presentations/img/jenkins/gce-vm-casc.png">
+<img src="/presentations/img/jenkins/new-vm.png"></p>
 
 </section>
 </section>
@@ -217,147 +450,6 @@
 </section>
 </section>
     <section><section data-shortcode-section>
-<p><h4>Parameters</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li> Parameters are available during build for executor shell </li>
-    <li> If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name</li>
-    <li> Parameters are also available in global variable params for pipelines </li>
-</ul>
-<img style="float: left;" src="/presentations/img/jenkins/mario.png"></p>
-
-</section><section>
-
-<p><img src="/presentations/img/jenkins/branch-param.png">
-<img src="/presentations/img/jenkins/branch-param-example.png"></p>
-
-</section><section>
-
-<p><img src="/presentations/img/jenkins/choice-param.png">
-<img src="/presentations/img/jenkins/choice-param-example.png"></p>
-
-</section><section>
-
-<p><img src="/presentations/img/jenkins/regex-validation.png">
-<img src="/presentations/img/jenkins/validation-param-example.png"></p>
-
-</section>
-</section>
-    <section><section data-shortcode-section>
-<p><h4>Jobs triggers</h4>
-<ul style="float: left;width: 50%;padding-right: 5%;margin-left: 0;font-size: 2rem;">
-    <li class="fragment fade-up">Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced</li>
-    <li class="fragment fade-up">Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -&gt; deployment pipeline)</li>
-    <li class="fragment fade-up">Webhooks - generic hooks, VCS providers, Jira</li>
-    <li class="fragment fade-up">Jenkins Crons Syntax - TZ=UTC H 8 * * *</li>
-</ul>
-<img src="/presentations/img/jenkins/hocuspocus.png"></p>
-
-</section><section>
-
-<p><h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/when.png"></p>
-
-</section><section>
-
-<p><h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/when2.png"></p>
-
-</section><section>
-
-<p><h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/globals.png">
-<img src="/presentations/img/jenkins/when3.png"></p>
-
-</section><section>
-
-<p><h4>Triggers tricks - when conditions</h4>
-<img src="/presentations/img/jenkins/when4.png"></p>
-
-</section><section>
-
-<p><img src="/presentations/img/jenkins/cron-pipeline.png"></p>
-
-</section>
-</section>
-    <section><section data-shortcode-section>
-<p><h4>Agents types</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent</li>
-    <li class="fragment fade-up">JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master</li>
-    <li class="fragment fade-up">Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&rsquo;s request - supported bo JCloud</li>
-</ul>
-<img  style="float: left;" src="/presentations/img/jenkins/jenkins_master.jpg"></p>
-
-</section><section>
-
-<p><h4>SSH Agents</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>Recommended by CloudBees when using their plugin :)</li>
-    <li class="fragment fade-up">Has less software requirements what comes in handy when using dynamic agents</li>
-    <li class="fragment fade-up">Has issues with non-linux servers</li>
-</ul>
-<img class="fragment fade-up" src="/presentations/img/jenkins/ssh.jpg"></p>
-
-</section><section>
-
-<p><h4>JNLP Agents</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>Comes in handy when you need to codify your Jenkins Agents (jar could be </li>
-    <li class="fragment fade-up">Has less software requirements what comes in handy when using dynamic agents</li>
-    <li class="fragment fade-up">Has issues with non-linux servers</li>
-</ul>
-<img class="fragment fade-up" style="float: left;" src="/presentations/img/jenkins/jenkins-agent-hiera.png"></p>
-
-</section><section>
-
-<p><h4>Kubernetes agents</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>Under the hood the Pod object is formed within side container which contains JNLP agent</li>
-    <li class="fragment fade-up">Jenkins master has to be reachable from K8s cluster</li>
-    <li class="fragment fade-up">Pod template could be defined in Jenkins configuration with label or could be created inline</li>
-</ul>
-<img  style="float: left;" src="/presentations/img/jenkins/drunk.png"></p>
-
-</section><section>
-
-<p><img src="/presentations/img/jenkins/k8s-agent.png"></p>
-
-</section><section>
-
-<p><h4>Docker software isolation</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>Workspace could be mapped into docker container within the agent if it has docker software</li>
-    <li class="fragment fade-up">This requires mapping container user to user running jenkins process on agent</li>
-    <li class="fragment fade-up">Private registry and dockerfile are supported too</li>
-</ul>
-<img  style="float: left;" src="/presentations/img/jenkins/whiskey.png"></p>
-
-</section><section>
-
-<p><img src="/presentations/img/jenkins/docker-agent.png"></p>
-
-</section><section>
-
-<p><h4>Dynamic VMs</h4>
-<ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
-    <li>Supported clouds: Digital Ocean, GCP, AWS, Azure, etc&hellip;</li>
-    <li class="fragment fade-up">Best settings are retention time and number of executors set to 1</li>
-    <li class="fragment fade-up">It is required that VM image contains java</li>
-</ul>
-<img  style="float: left;" src="/presentations/img/jenkins/ninja.jpg"></p>
-
-</section><section>
-
-<p><img src="/presentations/img/jenkins/dynamic-vm.png"></p>
-
-</section><section>
-
-<p><img src="/presentations/img/jenkins/gce-vm-casc.png">
-<img src="/presentations/img/jenkins/new-vm.png"></p>
-
-</section>
-</section>
-    <section><section data-shortcode-section>
 <p><h4>Plugins management - installation</h4>
 <ul style="float: left;width: 66%;padding-right: 5%;font-size: 2.2rem;">
     <li class="fragment fade-up">Manual - from central repository or HPI file (useful for downgrades) :)</li>
@@ -394,6 +486,8 @@
     <li><a href="https://jenkins.io/doc/book/pipeline/syntax/#declarative-pipeline">Pipelines</a></li>
     <li><a href="https://javadoc.jenkins.io/">Jenkins Core API (for libraries)</a></li>
     <li><a href="https://jenkins.io/doc/pipeline/steps/workflow-basic-steps/">Basic steps </a> and <a href="https://jenkins.io/doc/pipeline/steps/">all steps</a> for pipelines</li>
+    <li>The best blog about groovy: <a href="www.mrhaki.com">www.mrhaki.com</a></li>
+    <li>sources on git: <a href="https://github.com/mrhaki/Groovy-Goodness-Notebook">notebook</a>,<a href="https://github.com/mrhaki/Groovy-Goodness">blog entries source</a></li>
 </ul>
 </section>
 </section>
