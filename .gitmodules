@@ -3,4 +3,4 @@
 	url = https://github.com/dzello/reveal-hugo.git
 [submodule "site/main/themes/retroful"]
 	path = site/main/themes/retroful
-	url = https://github.com/mkjmdski/retrofulhugo.git
+	url = https://github.com/5ARMALE/retrofulhugo.git

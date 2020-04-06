@@ -9,11 +9,10 @@ Params:
   favicon: img/fav.ico
 Author:
   handle: Mikołaj Młodzikowski
-  bitbucket: mkjmdski
   github: mkjmdski
   linkedin: in/mlodzikowski
-menu:
-  main:
-    - name: CV
-      url: 'https://mlodzikowski.pl/cv'
-      weight: 10
+# menu:
+#   main:
+#     - name: CV
+#       url: 'https://mlodzikowski.pl/cv'
+#       weight: 10

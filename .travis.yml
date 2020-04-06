@@ -2,10 +2,7 @@ services:
   - docker
 language: go
 script:
-  - >
-    for file in builds/*.sh; do
-      bash $file
-    done
+  - bash build_dist.sh
 branches:
   only:
     - master
