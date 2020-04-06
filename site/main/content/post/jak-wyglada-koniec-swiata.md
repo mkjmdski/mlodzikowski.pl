@@ -11,7 +11,7 @@ Ale nie jest prorokiem, bo ma inne zajęcie, <br/>
 Powiada przewiązując pomidory: <br/>
 Innego końca świata nie będzie, <br/>
 Innego końca świata nie będzie. <br/>
-~ *Zbigniew Herbert, u wrót doliny*
+~ *Czesław Miłosz, piosenka o końcu świata*
 
 ## 森: pierwszy był las
 
