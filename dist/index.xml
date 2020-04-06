@@ -6,10 +6,20 @@
     <description>Recent content on Mikołaj Młodzikowski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pl-pl</language>
-    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mlodzikowski.pl/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Jak wygląda koniec świata</title>
+      <link>https://mlodzikowski.pl/post/jak-wyglada-koniec-swiata/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/post/jak-wyglada-koniec-swiata/</guid>
+      <description>Tylko siwy staruszek, który byłby prorokiem,  Ale nie jest prorokiem, bo ma inne zajęcie,  Powiada przewiązując pomidory:  Innego końca świata nie będzie,  Innego końca świata nie będzie.  ~ Zbigniew Herbert, u wrót doliny
+ 森: pierwszy był las Pytanie to zwykłem zadawać przy wielu niezobowiązujących okazjach - i muszę przyznać że zwykło być jednym z mych ulubionym, tuż obok: będąc dzieckiem kim chciałeś zostać gdy dorośniesz i jaki jest Twój ulubiony owoc.</description>
+    </item>
     
     <item>
       <title>terraform</title>
@@ -36,15 +46,6 @@
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/</guid>
       <description>HACK</description>
-    </item>
-    
-    <item>
-      <title>About me</title>
-      <link>https://mlodzikowski.pl/about/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://mlodzikowski.pl/about/</guid>
-      <description>Hello I&#39;m Miko</description>
     </item>
     
     <item>

@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/1/</guid>
-      <description>Most used job types Freestyle - manual or DSL setup where flow is configured via XML file which uses steps and plugins Pipelines - Jenkinsfile or groovy script in job configuration Maven Project - Java orientated extension of freesytle job  Pipeline types Scripted - closures to define the flow have no order and are defined by progammer (low level) Declarative - clousers have documentated structure (high level) Single pipeline - only one job is created and could be independent from repository Multibranch pipeline - project is assigned to the repository and creates multiple jobs depending on discovery strategy   </description>
+      <description> Most used job types Freestyle - manual or DSL setup where flow is configured via XML file which uses steps and plugins Pipelines - Jenkinsfile or groovy script in job configuration Maven Project - Java orientated extension of freesytle job  Pipeline types Scripted - closures to define the flow have no order and are defined by progammer (low level) Declarative - clousers have documentated structure (high level) Single pipeline - only one job is created and could be independent from repository Multibranch pipeline - project is assigned to the repository and creates multiple jobs depending on discovery strategy   </description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/2/</guid>
-      <description>Jobs triggers Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -&amp;gt; deployment pipeline) Webhooks - generic hooks, VCS providers, Jira Jenkins Crons Syntax - TZ=UTC H 8 * * *  Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions  </description>
+      <description> Jobs triggers Poll SCM - Jenkins actively checks source code and triggers jobs if any changes where introduced Internal - upstream/downstream relations to the other jobs (e.g. build pipeline -&amp;gt; deployment pipeline) Webhooks - generic hooks, VCS providers, Jira Jenkins Crons Syntax - TZ=UTC H 8 * * *  Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions Triggers tricks - when conditions  </description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/3/</guid>
-      <description>Parameters  Parameters are available during build for executor shell  If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name Parameters are also available in global variable params for pipelines    </description>
+      <description> Parameters  Parameters are available during build for executor shell  If parameters is defined with lower case letters then it will be available in shell with UPPER_CASE name Parameters are also available in global variable params for pipelines    </description>
     </item>
     
     <item>
@@ -61,7 +61,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/5/</guid>
-      <description>Libraries vars catalog - contains groovy code with steps where each file is the name of step and has call method Each step underhood is an object which helper methods could be accessed like stepName.helperMethod() call method for each step could be overloaded src catalog - contains Java-like code which could be imported in steps / pipelines  Libraries resource catalog - contains helper filer which could be loaded (bash scripts, json files etc) libraries could be versioned - by branch, tag or commit you can load multiple libraries at once you can define full pipelines within libraries   </description>
+      <description> Libraries vars catalog - contains groovy code with steps where each file is the name of step and has call method Each step underhood is an object which helper methods could be accessed like stepName.helperMethod() call method for each step could be overloaded src catalog - contains Java-like code which could be imported in steps / pipelines  Libraries resource catalog - contains helper filer which could be loaded (bash scripts, json files etc) libraries could be versioned - by branch, tag or commit you can load multiple libraries at once you can define full pipelines within libraries   </description>
     </item>
     
     <item>
@@ -70,7 +70,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/6/</guid>
-      <description>Agents types SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&amp;rsquo;s request - supported bo JCloud  SSH Agents Recommended by CloudBees when using their plugin :) Has less software requirements what comes in handy when using dynamic agents Has issues with non-linux servers  JNLP Agents Comes in handy when you need to codify your Jenkins Agents (jar could be  Has less software requirements what comes in handy when using dynamic agents Has issues with non-linux servers  Kubernetes agents Under the hood the Pod object is formed within side container which contains JNLP agent Jenkins master has to be reachable from K8s cluster Pod template could be defined in Jenkins configuration with label or could be created inline  Docker software isolation Workspace could be mapped into docker container within the agent if it has docker software This requires mapping container user to user running jenkins process on agent Private registry and dockerfile are supported too  Dynamic VMs Supported clouds: Digital Ocean, GCP, AWS, Azure, etc&amp;hellip; Best settings are retention time and number of executors set to 1 It is required that VM image contains java   </description>
+      <description> Agents types SSH Agents - connected to Jenkins via SSH connection performed from Master to Agent JNLP (Java Network Launch Protocol) Agents - connected to Jenkins via socket connection performed from Agewnt to Master Dynamic agents - they are mostly JNLP agents and they are created dynamically on Master&amp;rsquo;s request - supported bo JCloud  SSH Agents Recommended by CloudBees when using their plugin :) Has less software requirements what comes in handy when using dynamic agents Has issues with non-linux servers  JNLP Agents Comes in handy when you need to codify your Jenkins Agents (jar could be  Has less software requirements what comes in handy when using dynamic agents Has issues with non-linux servers  Kubernetes agents Under the hood the Pod object is formed within side container which contains JNLP agent Jenkins master has to be reachable from K8s cluster Pod template could be defined in Jenkins configuration with label or could be created inline  Docker software isolation Workspace could be mapped into docker container within the agent if it has docker software This requires mapping container user to user running jenkins process on agent Private registry and dockerfile are supported too  Dynamic VMs Supported clouds: Digital Ocean, GCP, AWS, Azure, etc&amp;hellip; Best settings are retention time and number of executors set to 1 It is required that VM image contains java   </description>
     </item>
     
     <item>
@@ -88,7 +88,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/8/</guid>
-      <description>Plugins management - installation Manual - from central repository or HPI file (useful for downgrades) :) Ansible - geerlingguy role for installing Jenkins Docker - https://github.com/jenkinsci/docker/blob/master/install-plugins.sh Helm Chart - template for deploying Jenkins on Kubernetes (use @ for pinning version)  Plugins management - configuration All Jenkins configurations - including plugins and jobs are XML - backup them! You can use JCasC - Jenkins Configuration as Code (tool from Praqma) Try to use Jenkins Credentials for storing secrets for plugin configurations - same as for Jobs ;)   </description>
+      <description> Plugins management - installation Manual - from central repository or HPI file (useful for downgrades) :) Ansible - geerlingguy role for installing Jenkins Docker - https://github.com/jenkinsci/docker/blob/master/install-plugins.sh Helm Chart - template for deploying Jenkins on Kubernetes (use @ for pinning version)  Plugins management - configuration All Jenkins configurations - including plugins and jobs are XML - backup them! You can use JCasC - Jenkins Configuration as Code (tool from Praqma) Try to use Jenkins Credentials for storing secrets for plugin configurations - same as for Jobs ;)   </description>
     </item>
     
     <item>
@@ -97,7 +97,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/jenkins/99/</guid>
-      <description>sources  DSL Pipelines Jenkins Core API (for libraries) Basic steps  and all steps for pipelines The best blog about groovy: www.mrhaki.com sources on git: notebook,blog entries source   </description>
+      <description> sources  DSL Pipelines Jenkins Core API (for libraries) Basic steps  and all steps for pipelines The best blog about groovy: www.mrhaki.com sources on git: notebook,blog entries source 
+ </description>
     </item>
     
     <item>
@@ -183,7 +184,7 @@ Podstawy programowania  Pętle liczące, np: for x in range(10): print(x)  Pętl
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/programming/9/</guid>
-      <description>Dziękuję za uwagę! Czas na część praktyczną :) online @ https://mlodzikowski.pl/presentations/programming Filmiki i linki dla ciekawskich:   Zbiór materiałów  do nauki pythona w sieci oraz interaktywny kurs online od podstaw po polsku.   Książki do pythona: python z minecraftem , python na start  i Laura Ipsum , odpowiednik książki &#34;Świat Zofii&#34; w Informatyce.     Linda Lukas z Finlandii opowiada o tym jak uczy programować  najmłodszych (eng)   Thomas Suarez (12 lat) z USA opowiada o tym jak został programistą  (eng)   Materiały do programowania z prelekcji     Film o Denisie, ślepym programiście   Strona z grami do nauki programowania i algorytmiki, tynker i codecombat    </description>
+      <description> Dziękuję za uwagę! Czas na część praktyczną :) online @ https://mlodzikowski.pl/presentations/programming Filmiki i linki dla ciekawskich:   Zbiór materiałów  do nauki pythona w sieci oraz interaktywny kurs online od podstaw po polsku.   Książki do pythona: python z minecraftem , python na start  i Laura Ipsum , odpowiednik książki &#34;Świat Zofii&#34; w Informatyce.     Linda Lukas z Finlandii opowiada o tym jak uczy programować  najmłodszych (eng)   Thomas Suarez (12 lat) z USA opowiada o tym jak został programistą  (eng)   Materiały do programowania z prelekcji     Film o Denisie, ślepym programiście   Strona z grami do nauki programowania i algorytmiki, tynker i codecombat    </description>
     </item>
     
     <item>
@@ -230,7 +231,7 @@ Pros Operations:  Infrastructure is self-documentating by its code  Configuratio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mlodzikowski.pl/presentations/terraform/4/</guid>
-      <description>HCL &amp;amp;&amp;amp; &amp;ldquo;${interpolation}&amp;rdquo;  HCL is compromise between human-friendly and machine-friendly configurations  HCL is fusion of complete programing languages and data structure languages  HCL is JSON-compatible - you can generate JSON and run it as HCL  HCL supports comments and &amp;lt;&amp;lt;EOF syntax for multiline strings.   Exact specification on the language can be found in the Hashicorps repository Data types  // vars: &amp;ldquo;${var.aws_account_number}&amp;rdquo; //(0.11) var.aws_account_number // (0.</description>
+      <description>HCL &amp;amp;&amp;amp; &amp;ldquo;${interpolation}&amp;rdquo;  HCL is compromise between human-friendly and machine-friendly configurations  HCL is fusion of complete programing languages and data structure languages  HCL is JSON-compatible - you can generate JSON and run it as HCL  HCL supports comments and &amp;lt;&amp;lt;EOF syntax for multiline strings.   Exact specification on the language can be found in the Hashicorps repository Data types  // vars: &amp;ldquo;${var.aws_account_number}&amp;rdquo; //(0.11) var.</description>
     </item>
     
     <item>
@@ -240,7 +241,7 @@ Pros Operations:  Infrastructure is self-documentating by its code  Configuratio
       
       <guid>https://mlodzikowski.pl/presentations/terraform/5/</guid>
       <description>What are terraform modules  Modules are blackbox configuration in which only some set of parameters is provided in aim to create more complex infrastructure behind the scenes.  Modules usually have a set of outputs which can be referenced in your terraform file.  
-Using modules  First source is official terraform registry  You can also find terraform modules on git repositories. There are plenty of them.  If you don&amp;rsquo;t feel satisfied you can always create your own modules and reference them as local files  Module is normal terraform project with: main.</description>
+Using modules  First source is official terraform registry  You can also find terraform modules on git repositories. There are plenty of them.</description>
     </item>
     
     <item>
