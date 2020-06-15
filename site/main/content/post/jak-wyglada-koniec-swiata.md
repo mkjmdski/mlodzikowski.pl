@@ -3,7 +3,7 @@ author: "Mikołaj Młodzikowski"
 date: 2020-04-06
 linktitle: Jak wygląda koniec świata
 title: Jak wygląda koniec świata
-next: /post/living-la-vida-lockdown
+next: /post/rosnac-na-zgliszczach
 weight: 10
 ---
 

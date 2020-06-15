@@ -1,15 +1,15 @@
 ---
 author: "Mikołaj Młodzikowski"
 date: 2020-04-10
-linktitle: Życie na krawędzi
-title: Życie na krawędzi
+linktitle: Rosnąc na zgliszczach
+title: Rosnąc na zgliszczach
 prev: /post/jak-wyglada-koniec-swiata
 weight: 20
 ---
 
 Warta, siedzimy sobie, piwko pijemy, nic się nie dzieje. Kolejny dzień z livin' la vida lockdown, który wygląda jak nowa normalność. I tak sączy się zupa chmielowa, chleba powszedniego kompot nalany w butelki. Gaz z nich ucieka, słońce powoli chyli się ku zachodowi ocieplając szkło brązowych szyjek. Myśli leniwie toczą się po głowie, ulatują tak jak dym z kolejnego lolka. I niby wszystko jest tak samo, a jednak jakby inaczej.
 
-> - Tej wiesz, nie potrafię już chyba pisać -- powiedziałem do N.
+> Tej wiesz, nie potrafię już chyba pisać -- powiedziałem do N.
 
 I chyba skłamałem. Bo to nie jest tak z tym pisaniem. Wszystko działo się etapowo, a tych było wiele. Kiedyś pisałem, bo widziałem innych ludzi co pisali i też tak chciałem. Brakowało mi jakiegoś poklasku, jakiejś więzi którą mógłbym nawiązać z anonimowym gremium. I nawiązałem, dostałem kawałek władzy nad światem. Stałem się DMem przygód które widziałem. Każde zdarzenie, które mogłoby się wydarzyć musiało pierw przejść przez moją korektę, przez młodzikową wizję świata, jego własną, osobistą klawiaturę. I tak dostałem kajak. Pływałem nim sobie jakiś czas, ale tylko z nurtem rzeki.
 
