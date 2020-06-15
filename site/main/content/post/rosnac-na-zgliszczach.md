@@ -1,6 +1,6 @@
 ---
 author: "Mikołaj Młodzikowski"
-date: 2020-04-10
+date: 2020-06-15
 linktitle: Rosnąc na zgliszczach
 title: Rosnąc na zgliszczach
 prev: /post/jak-wyglada-koniec-swiata
