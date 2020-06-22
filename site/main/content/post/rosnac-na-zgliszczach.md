@@ -3,8 +3,8 @@ author: "Mikołaj Młodzikowski"
 date: 2020-06-15
 linktitle: Rosnąc na zgliszczach
 title: Rosnąc na zgliszczach
-prev: /post/jak-wyglada-koniec-swiata
-weight: 20
+next: /post/jak-wyglada-koniec-swiata
+weight: 999
 ---
 
 Warta, siedzimy sobie, piwko pijemy, nic się nie dzieje. Kolejny dzień z livin' la vida lockdown, który wygląda jak nowa normalność. I tak sączy się zupa chmielowa, chleba powszedniego kompot nalany w butelki. Gaz z nich ucieka, słońce powoli chyli się ku zachodowi ocieplając szkło brązowych szyjek. Myśli leniwie toczą się po głowie, ulatują tak jak dym z kolejnego lolka. I niby wszystko jest tak samo, a jednak jakby inaczej.

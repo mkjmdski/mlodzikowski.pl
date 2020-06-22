@@ -3,8 +3,8 @@ author: "Mikołaj Młodzikowski"
 date: 2020-04-06
 linktitle: Jak wygląda koniec świata
 title: Jak wygląda koniec świata
-next: /post/rosnac-na-zgliszczach
-weight: 10
+prev: /post/rosnac-na-zgliszczach
+weight: 1000
 ---
 
 > Tylko siwy staruszek, który byłby prorokiem, <br/>
