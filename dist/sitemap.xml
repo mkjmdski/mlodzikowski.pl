@@ -3,17 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://mlodzikowski.pl/post/jak-wyglada-koniec-swiata/</loc>
-    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mlodzikowski.pl/presentations/terraform/</loc>
-  </url>
-  
-  <url>
-    <loc>https://mlodzikowski.pl/post/rosnac-na-zgliszczach/</loc>
-    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -22,6 +12,16 @@
   
   <url>
     <loc>https://mlodzikowski.pl/presentations/jenkins/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mlodzikowski.pl/post/rosnac-na-zgliszczach/</loc>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mlodzikowski.pl/post/jak-wyglada-koniec-swiata/</loc>
+    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -36,13 +36,13 @@
   
   <url>
     <loc>https://mlodzikowski.pl/</loc>
-    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mlodzikowski.pl/post/</loc>
-    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2020-06-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

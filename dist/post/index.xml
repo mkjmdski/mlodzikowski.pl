@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Mikołaj Młodzikowski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pl-pl</language>
-    <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 15 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mlodzikowski.pl/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rosnąc na zgliszczach</title>
+      <link>https://mlodzikowski.pl/post/rosnac-na-zgliszczach/</link>
+      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/post/rosnac-na-zgliszczach/</guid>
+      <description>Warta, siedzimy sobie, piwko pijemy, nic się nie dzieje. Kolejny dzień z livin&amp;rsquo; la vida lockdown, który wygląda jak nowa normalność. I tak sączy się zupa chmielowa, chleba powszedniego kompot nalany w butelki. Gaz z nich ucieka, słońce powoli chyli się ku zachodowi ocieplając szkło brązowych szyjek. Myśli leniwie toczą się po głowie, ulatują tak jak dym z kolejnego lolka. I niby wszystko jest tak samo, a jednak jakby inaczej.</description>
+    </item>
     
     <item>
       <title>Jak wygląda koniec świata</title>
@@ -19,15 +28,6 @@
       <guid>https://mlodzikowski.pl/post/jak-wyglada-koniec-swiata/</guid>
       <description>Tylko siwy staruszek, który byłby prorokiem,  Ale nie jest prorokiem, bo ma inne zajęcie,  Powiada przewiązując pomidory:  Innego końca świata nie będzie,  Innego końca świata nie będzie.  ~ Czesław Miłosz, piosenka o końcu świata
  森: pierwszy był las Pytanie to zwykłem zadawać przy wielu niezobowiązujących okazjach - i muszę przyznać że zwykło być jednym z mych ulubionym, tuż obok: będąc dzieckiem kim chciałeś zostać gdy dorośniesz i jaki jest Twój ulubiony owoc.</description>
-    </item>
-    
-    <item>
-      <title>Rosnąc na zgliszczach</title>
-      <link>https://mlodzikowski.pl/post/rosnac-na-zgliszczach/</link>
-      <pubDate>Mon, 15 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://mlodzikowski.pl/post/rosnac-na-zgliszczach/</guid>
-      <description>Warta, siedzimy sobie, piwko pijemy, nic się nie dzieje. Kolejny dzień z livin&amp;rsquo; la vida lockdown, który wygląda jak nowa normalność. I tak sączy się zupa chmielowa, chleba powszedniego kompot nalany w butelki. Gaz z nich ucieka, słońce powoli chyli się ku zachodowi ocieplając szkło brązowych szyjek. Myśli leniwie toczą się po głowie, ulatują tak jak dym z kolejnego lolka. I niby wszystko jest tak samo, a jednak jakby inaczej.</description>
     </item>
     
   </channel>
