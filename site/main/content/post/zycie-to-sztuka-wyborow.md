@@ -7,7 +7,7 @@ next: /post/zycie-to-sztuka-wyborow
 weight: 998
 ---
 
-# Życie to sztuka wyborów
+# Do sztuki preludium
 
 Dżentelmeni nie rozmawiają o pieniądzach, ani o polityce. I jak dobrze, że nigdy nim nie byłem, bo mogę się wypowiedzieć na oba z tych tematów. :) Mój przyjaciel, nazwijmy go Marek (co zapewne go ucieszy gdy to przeczyta), przychodząc do swej pracy usłyszał już na samym początku firmowe motto: "Life is an art of choice". I jak źle byśmy wszyscy nie myśleli o życiu w korporacjach, to hasło zdaje się mimo wszystko prawdziwe. Dlatego dzisiaj opowiem trochę o sztuce, jaką są wybory. A jest to kawał niezłej sztuki tego lata...
 
