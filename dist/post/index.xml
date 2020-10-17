@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Mikołaj Młodzikowski</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pl-pl</language>
-    <lastBuildDate>Fri, 10 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mlodzikowski.pl/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Siła pędu</title>
+      <link>https://mlodzikowski.pl/post/sila-pedu/</link>
+      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://mlodzikowski.pl/post/sila-pedu/</guid>
+      <description>Czasem jest szybko, a czasem jest wolno. Czasem wolno się spieszyć, a czasem wypada czym prędzej zwolnić. Rytm życia ma rożne oblicza. Zegarki, lecz nie te na baterie, już nie. Teraz mamy zegary. Zegary atomowe, serwery NTP i dedlajny. To znak naszych czasów. Wczoraj, bieg i jutro &amp;ndash; taki mamy cykl. A gdy wybije ostatnia godzina, to o co zapyta kostucha? Która godzina?
+Szczerze wątpię, że zapyta. I że obchodzi ją dzień lub godzina.</description>
+    </item>
     
     <item>
       <title>Życie to sztuka wyborów</title>
