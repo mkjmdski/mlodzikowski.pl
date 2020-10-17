@@ -3,7 +3,7 @@ author: "Mikołaj Młodzikowski"
 date: 2020-06-15
 linktitle: Rosnąc na zgliszczach
 title: Rosnąc na zgliszczach
-prev: /post/smrod-polityki
+prev: /post/zycie-to-sztuka-wyborow
 next: /post/jak-wyglada-koniec-swiata
 weight: 999
 ---

@@ -3,7 +3,8 @@ author: "Mikołaj Młodzikowski"
 date: 2020-07-10
 title: Życie to sztuka wyborów
 linktitle: Życie to sztuka wyborów
-next: /post/zycie-to-sztuka-wyborow
+next: /post/rosnac-na-zgliszczach
+prev: /post/sila-pedu
 weight: 998
 ---
 
